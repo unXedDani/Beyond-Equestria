@@ -1,0 +1,7 @@
+<Shader type="glsl">
+	<FileName vs="Materials/test.vert" fs="Materials/bump.frag"/>
+	<fsConstant name="ambientR" value="0.2" />
+	<fsConstant name="ambientG" value="0.2" />
+	<fsConstant name="ambientB" value="0.2" />
+	<fsConstant name="bumpDepth" value="1.0" />
+</Shader>

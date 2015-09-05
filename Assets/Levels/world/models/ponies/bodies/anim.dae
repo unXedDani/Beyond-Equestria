@@ -1,0 +1,1361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 2.73.0 commit date:2015-01-20, commit time:18:16, hash:bbf09d9</authoring_tool>
+    </contributor>
+    <created>2015-08-02T18:12:20</created>
+    <modified>2015-08-02T18:12:20</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_images/>
+  <library_animations>
+    <animation id="ref_body_01_skeleton_LrigPelvis_pose_matrix">
+      <source id="ref_body_01_skeleton_LrigPelvis_pose_matrix-input">
+        <float_array id="ref_body_01_skeleton_LrigPelvis_pose_matrix-input-array" count="3">0.04166662 4.166666 8.333333</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_LrigPelvis_pose_matrix-input-array" count="3" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_LrigPelvis_pose_matrix-output">
+        <float_array id="ref_body_01_skeleton_LrigPelvis_pose_matrix-output-array" count="48">1.07947e-6 -2.98023e-7 1 -7.99998e-6 -0.9995121 0.03123475 1.0886e-6 7.942365 -0.03123475 -0.9995121 -2.75671e-7 67.03625 0 0 0 1 1.07947e-6 -2.98023e-7 1 -7.99998e-6 -0.9995121 0.03123475 1.0886e-6 7.942365 -0.03123475 -0.9995121 -2.75671e-7 67.03625 0 0 0 1 1.07947e-6 -2.98023e-7 1 -7.99998e-6 -0.9995121 0.03123475 1.0886e-6 7.942365 -0.03123475 -0.9995121 -2.75671e-7 67.03625 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_LrigPelvis_pose_matrix-output-array" count="3" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_LrigPelvis_pose_matrix-interpolation">
+        <Name_array id="ref_body_01_skeleton_LrigPelvis_pose_matrix-interpolation-array" count="3">LINEAR LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_LrigPelvis_pose_matrix-interpolation-array" count="3" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="ref_body_01_skeleton_LrigPelvis_pose_matrix-sampler">
+        <input semantic="INPUT" source="#ref_body_01_skeleton_LrigPelvis_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#ref_body_01_skeleton_LrigPelvis_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#ref_body_01_skeleton_LrigPelvis_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#ref_body_01_skeleton_LrigPelvis_pose_matrix-sampler" target="LrigPelvis/transform"/>
+    </animation>
+    <animation id="ref_body_01_skeleton_Lrig_LEG_BL_Femur_pose_matrix">
+      <source id="ref_body_01_skeleton_Lrig_LEG_BL_Femur_pose_matrix-input">
+        <float_array id="ref_body_01_skeleton_Lrig_LEG_BL_Femur_pose_matrix-input-array" count="3">0.04166662 4.166666 8.333333</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_Lrig_LEG_BL_Femur_pose_matrix-input-array" count="3" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_Lrig_LEG_BL_Femur_pose_matrix-output">
+        <float_array id="ref_body_01_skeleton_Lrig_LEG_BL_Femur_pose_matrix-output-array" count="48">-0.6107005 -0.009700255 0.7918023 -8.718642 0.03694693 0.9984871 0.04072882 5.96962 -0.7909994 0.05412779 -0.609418 9.24131 0 0 0 1 -0.6107005 -0.009700255 0.7918023 -8.718642 0.03694693 0.9984871 0.04072882 5.96962 -0.7909994 0.05412779 -0.609418 9.24131 0 0 0 1 -0.6107005 -0.009700255 0.7918023 -8.718642 0.03694693 0.9984871 0.04072882 5.96962 -0.7909994 0.05412779 -0.609418 9.24131 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_Lrig_LEG_BL_Femur_pose_matrix-output-array" count="3" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_Lrig_LEG_BL_Femur_pose_matrix-interpolation">
+        <Name_array id="ref_body_01_skeleton_Lrig_LEG_BL_Femur_pose_matrix-interpolation-array" count="3">LINEAR LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_Lrig_LEG_BL_Femur_pose_matrix-interpolation-array" count="3" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="ref_body_01_skeleton_Lrig_LEG_BL_Femur_pose_matrix-sampler">
+        <input semantic="INPUT" source="#ref_body_01_skeleton_Lrig_LEG_BL_Femur_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#ref_body_01_skeleton_Lrig_LEG_BL_Femur_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#ref_body_01_skeleton_Lrig_LEG_BL_Femur_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#ref_body_01_skeleton_Lrig_LEG_BL_Femur_pose_matrix-sampler" target="Lrig_LEG_BL_Femur/transform"/>
+    </animation>
+    <animation id="ref_body_01_skeleton_Lrig_LEG_BL_Tibia_pose_matrix">
+      <source id="ref_body_01_skeleton_Lrig_LEG_BL_Tibia_pose_matrix-input">
+        <float_array id="ref_body_01_skeleton_Lrig_LEG_BL_Tibia_pose_matrix-input-array" count="3">0.04166662 4.166666 8.333333</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_Lrig_LEG_BL_Tibia_pose_matrix-input-array" count="3" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_Lrig_LEG_BL_Tibia_pose_matrix-output">
+        <float_array id="ref_body_01_skeleton_Lrig_LEG_BL_Tibia_pose_matrix-output-array" count="48">0.4657611 0.7128646 0.5243003 1.07288e-6 -0.8733143 0.4658948 0.142354 20.91179 -0.1427895 -0.5241817 0.8395503 0 0 0 0 1 0.4657611 0.7128646 0.5243003 1.07288e-6 -0.8733143 0.4658948 0.142354 20.91179 -0.1427895 -0.5241817 0.8395503 0 0 0 0 1 0.4657611 0.7128646 0.5243003 1.07288e-6 -0.8733143 0.4658948 0.142354 20.91179 -0.1427895 -0.5241817 0.8395503 0 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_Lrig_LEG_BL_Tibia_pose_matrix-output-array" count="3" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_Lrig_LEG_BL_Tibia_pose_matrix-interpolation">
+        <Name_array id="ref_body_01_skeleton_Lrig_LEG_BL_Tibia_pose_matrix-interpolation-array" count="3">LINEAR LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_Lrig_LEG_BL_Tibia_pose_matrix-interpolation-array" count="3" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="ref_body_01_skeleton_Lrig_LEG_BL_Tibia_pose_matrix-sampler">
+        <input semantic="INPUT" source="#ref_body_01_skeleton_Lrig_LEG_BL_Tibia_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#ref_body_01_skeleton_Lrig_LEG_BL_Tibia_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#ref_body_01_skeleton_Lrig_LEG_BL_Tibia_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#ref_body_01_skeleton_Lrig_LEG_BL_Tibia_pose_matrix-sampler" target="Lrig_LEG_BL_Tibia/transform"/>
+    </animation>
+    <animation id="ref_body_01_skeleton_Lrig_LEG_BL_LargeCannon_pose_matrix">
+      <source id="ref_body_01_skeleton_Lrig_LEG_BL_LargeCannon_pose_matrix-input">
+        <float_array id="ref_body_01_skeleton_Lrig_LEG_BL_LargeCannon_pose_matrix-input-array" count="3">0.04166662 4.166666 8.333333</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_Lrig_LEG_BL_LargeCannon_pose_matrix-input-array" count="3" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_Lrig_LEG_BL_LargeCannon_pose_matrix-output">
+        <float_array id="ref_body_01_skeleton_Lrig_LEG_BL_LargeCannon_pose_matrix-output-array" count="48">0.5934435 -0.8027876 0.05793914 0 0.8021279 0.5958261 0.03977204 11.34216 -0.06645033 0.02287197 0.9975274 0 0 0 0 1 0.5934435 -0.8027876 0.05793914 0 0.8021279 0.5958261 0.03977204 11.34216 -0.06645033 0.02287197 0.9975274 0 0 0 0 1 0.5934435 -0.8027876 0.05793914 0 0.8021279 0.5958261 0.03977204 11.34216 -0.06645033 0.02287197 0.9975274 0 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_Lrig_LEG_BL_LargeCannon_pose_matrix-output-array" count="3" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_Lrig_LEG_BL_LargeCannon_pose_matrix-interpolation">
+        <Name_array id="ref_body_01_skeleton_Lrig_LEG_BL_LargeCannon_pose_matrix-interpolation-array" count="3">LINEAR LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_Lrig_LEG_BL_LargeCannon_pose_matrix-interpolation-array" count="3" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="ref_body_01_skeleton_Lrig_LEG_BL_LargeCannon_pose_matrix-sampler">
+        <input semantic="INPUT" source="#ref_body_01_skeleton_Lrig_LEG_BL_LargeCannon_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#ref_body_01_skeleton_Lrig_LEG_BL_LargeCannon_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#ref_body_01_skeleton_Lrig_LEG_BL_LargeCannon_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#ref_body_01_skeleton_Lrig_LEG_BL_LargeCannon_pose_matrix-sampler" target="Lrig_LEG_BL_LargeCannon/transform"/>
+    </animation>
+    <animation id="ref_body_01_skeleton_Lrig_LEG_BL_PhalanxPrima_pose_matrix">
+      <source id="ref_body_01_skeleton_Lrig_LEG_BL_PhalanxPrima_pose_matrix-input">
+        <float_array id="ref_body_01_skeleton_Lrig_LEG_BL_PhalanxPrima_pose_matrix-input-array" count="3">0.04166662 4.166666 8.333333</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_Lrig_LEG_BL_PhalanxPrima_pose_matrix-input-array" count="3" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_Lrig_LEG_BL_PhalanxPrima_pose_matrix-output">
+        <float_array id="ref_body_01_skeleton_Lrig_LEG_BL_PhalanxPrima_pose_matrix-output-array" count="48">0.2310219 -0.6987421 0.6770437 7.62939e-6 0.4663136 0.6902559 0.5532615 23.40618 -0.8539206 0.1879 0.4852974 -3.8147e-6 0 0 0 1 0.2310219 -0.6987421 0.6770437 7.62939e-6 0.4663136 0.6902559 0.5532615 23.40618 -0.8539206 0.1879 0.4852974 -3.8147e-6 0 0 0 1 0.2310219 -0.6987421 0.6770437 7.62939e-6 0.4663136 0.6902559 0.5532615 23.40618 -0.8539206 0.1879 0.4852974 -3.8147e-6 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_Lrig_LEG_BL_PhalanxPrima_pose_matrix-output-array" count="3" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_Lrig_LEG_BL_PhalanxPrima_pose_matrix-interpolation">
+        <Name_array id="ref_body_01_skeleton_Lrig_LEG_BL_PhalanxPrima_pose_matrix-interpolation-array" count="3">LINEAR LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_Lrig_LEG_BL_PhalanxPrima_pose_matrix-interpolation-array" count="3" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="ref_body_01_skeleton_Lrig_LEG_BL_PhalanxPrima_pose_matrix-sampler">
+        <input semantic="INPUT" source="#ref_body_01_skeleton_Lrig_LEG_BL_PhalanxPrima_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#ref_body_01_skeleton_Lrig_LEG_BL_PhalanxPrima_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#ref_body_01_skeleton_Lrig_LEG_BL_PhalanxPrima_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#ref_body_01_skeleton_Lrig_LEG_BL_PhalanxPrima_pose_matrix-sampler" target="Lrig_LEG_BL_PhalanxPrima/transform"/>
+    </animation>
+    <animation id="ref_body_01_skeleton_Lrig_LEG_BL_RearHoof_pose_matrix">
+      <source id="ref_body_01_skeleton_Lrig_LEG_BL_RearHoof_pose_matrix-input">
+        <float_array id="ref_body_01_skeleton_Lrig_LEG_BL_RearHoof_pose_matrix-input-array" count="3">0.04166662 4.166666 8.333333</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_Lrig_LEG_BL_RearHoof_pose_matrix-input-array" count="3" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_Lrig_LEG_BL_RearHoof_pose_matrix-output">
+        <float_array id="ref_body_01_skeleton_Lrig_LEG_BL_RearHoof_pose_matrix-output-array" count="48">0.2590374 -0.397986 -0.8800604 -1.90735e-6 0.8614061 0.5073441 0.02411259 8.534353 0.436897 -0.7643356 0.4742489 -9.53674e-7 0 0 0 1 0.2590374 -0.397986 -0.8800604 -1.90735e-6 0.8614061 0.5073441 0.02411259 8.534353 0.436897 -0.7643356 0.4742489 -9.53674e-7 0 0 0 1 0.2590374 -0.397986 -0.8800604 -1.90735e-6 0.8614061 0.5073441 0.02411259 8.534353 0.436897 -0.7643356 0.4742489 -9.53674e-7 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_Lrig_LEG_BL_RearHoof_pose_matrix-output-array" count="3" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_Lrig_LEG_BL_RearHoof_pose_matrix-interpolation">
+        <Name_array id="ref_body_01_skeleton_Lrig_LEG_BL_RearHoof_pose_matrix-interpolation-array" count="3">LINEAR LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_Lrig_LEG_BL_RearHoof_pose_matrix-interpolation-array" count="3" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="ref_body_01_skeleton_Lrig_LEG_BL_RearHoof_pose_matrix-sampler">
+        <input semantic="INPUT" source="#ref_body_01_skeleton_Lrig_LEG_BL_RearHoof_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#ref_body_01_skeleton_Lrig_LEG_BL_RearHoof_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#ref_body_01_skeleton_Lrig_LEG_BL_RearHoof_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#ref_body_01_skeleton_Lrig_LEG_BL_RearHoof_pose_matrix-sampler" target="Lrig_LEG_BL_RearHoof/transform"/>
+    </animation>
+    <animation id="ref_body_01_skeleton_Lrig_LEG_BR_Femur_pose_matrix">
+      <source id="ref_body_01_skeleton_Lrig_LEG_BR_Femur_pose_matrix-input">
+        <float_array id="ref_body_01_skeleton_Lrig_LEG_BR_Femur_pose_matrix-input-array" count="3">0.04166662 4.166666 8.333333</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_Lrig_LEG_BR_Femur_pose_matrix-input-array" count="3" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_Lrig_LEG_BR_Femur_pose_matrix-output">
+        <float_array id="ref_body_01_skeleton_Lrig_LEG_BR_Femur_pose_matrix-output-array" count="48">-0.6078689 -0.009681428 -0.7939785 -8.71865 0.03700611 0.9984939 -0.04050715 5.969639 0.7931746 -0.05400511 -0.6065949 -9.241274 0 0 0 1 -0.6078689 -0.009681428 -0.7939785 -8.71865 0.03700611 0.9984939 -0.04050715 5.969639 0.7931746 -0.05400511 -0.6065949 -9.241274 0 0 0 1 -0.6078689 -0.009681428 -0.7939785 -8.71865 0.03700611 0.9984939 -0.04050715 5.969639 0.7931746 -0.05400511 -0.6065949 -9.241274 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_Lrig_LEG_BR_Femur_pose_matrix-output-array" count="3" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_Lrig_LEG_BR_Femur_pose_matrix-interpolation">
+        <Name_array id="ref_body_01_skeleton_Lrig_LEG_BR_Femur_pose_matrix-interpolation-array" count="3">LINEAR LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_Lrig_LEG_BR_Femur_pose_matrix-interpolation-array" count="3" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="ref_body_01_skeleton_Lrig_LEG_BR_Femur_pose_matrix-sampler">
+        <input semantic="INPUT" source="#ref_body_01_skeleton_Lrig_LEG_BR_Femur_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#ref_body_01_skeleton_Lrig_LEG_BR_Femur_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#ref_body_01_skeleton_Lrig_LEG_BR_Femur_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#ref_body_01_skeleton_Lrig_LEG_BR_Femur_pose_matrix-sampler" target="Lrig_LEG_BR_Femur/transform"/>
+    </animation>
+    <animation id="ref_body_01_skeleton_Lrig_LEG_BR_Tibia_pose_matrix">
+      <source id="ref_body_01_skeleton_Lrig_LEG_BR_Tibia_pose_matrix-input">
+        <float_array id="ref_body_01_skeleton_Lrig_LEG_BR_Tibia_pose_matrix-input-array" count="3">0.04166662 4.166666 8.333333</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_Lrig_LEG_BR_Tibia_pose_matrix-input-array" count="3" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_Lrig_LEG_BR_Tibia_pose_matrix-output">
+        <float_array id="ref_body_01_skeleton_Lrig_LEG_BR_Tibia_pose_matrix-output-array" count="48">0.4652759 0.7108036 -0.5275192 -4.76837e-7 -0.8732844 0.4659265 -0.1424319 20.91255 0.1445442 0.5269445 0.8375182 3.8147e-6 0 0 0 1 0.4652759 0.7108036 -0.5275192 -4.76837e-7 -0.8732844 0.4659265 -0.1424319 20.91255 0.1445442 0.5269445 0.8375182 3.8147e-6 0 0 0 1 0.4652759 0.7108036 -0.5275192 -4.76837e-7 -0.8732844 0.4659265 -0.1424319 20.91255 0.1445442 0.5269445 0.8375182 3.8147e-6 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_Lrig_LEG_BR_Tibia_pose_matrix-output-array" count="3" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_Lrig_LEG_BR_Tibia_pose_matrix-interpolation">
+        <Name_array id="ref_body_01_skeleton_Lrig_LEG_BR_Tibia_pose_matrix-interpolation-array" count="3">LINEAR LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_Lrig_LEG_BR_Tibia_pose_matrix-interpolation-array" count="3" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="ref_body_01_skeleton_Lrig_LEG_BR_Tibia_pose_matrix-sampler">
+        <input semantic="INPUT" source="#ref_body_01_skeleton_Lrig_LEG_BR_Tibia_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#ref_body_01_skeleton_Lrig_LEG_BR_Tibia_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#ref_body_01_skeleton_Lrig_LEG_BR_Tibia_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#ref_body_01_skeleton_Lrig_LEG_BR_Tibia_pose_matrix-sampler" target="Lrig_LEG_BR_Tibia/transform"/>
+    </animation>
+    <animation id="ref_body_01_skeleton_Lrig_LEG_BR_LargeCannon_pose_matrix">
+      <source id="ref_body_01_skeleton_Lrig_LEG_BR_LargeCannon_pose_matrix-input">
+        <float_array id="ref_body_01_skeleton_Lrig_LEG_BR_LargeCannon_pose_matrix-input-array" count="3">0.04166662 4.166666 8.333333</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_Lrig_LEG_BR_LargeCannon_pose_matrix-input-array" count="3" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_Lrig_LEG_BR_LargeCannon_pose_matrix-output">
+        <float_array id="ref_body_01_skeleton_Lrig_LEG_BR_LargeCannon_pose_matrix-output-array" count="48">0.5935796 -0.8027416 -0.05717865 3.8147e-6 0.8021698 0.5958752 -0.03816298 11.34214 0.06470627 -0.02321394 0.9976341 0 0 0 0 1 0.5935796 -0.8027416 -0.05717865 3.8147e-6 0.8021698 0.5958752 -0.03816298 11.34214 0.06470627 -0.02321394 0.9976341 0 0 0 0 1 0.5935796 -0.8027416 -0.05717865 3.8147e-6 0.8021698 0.5958752 -0.03816298 11.34214 0.06470627 -0.02321394 0.9976341 0 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_Lrig_LEG_BR_LargeCannon_pose_matrix-output-array" count="3" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_Lrig_LEG_BR_LargeCannon_pose_matrix-interpolation">
+        <Name_array id="ref_body_01_skeleton_Lrig_LEG_BR_LargeCannon_pose_matrix-interpolation-array" count="3">LINEAR LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_Lrig_LEG_BR_LargeCannon_pose_matrix-interpolation-array" count="3" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="ref_body_01_skeleton_Lrig_LEG_BR_LargeCannon_pose_matrix-sampler">
+        <input semantic="INPUT" source="#ref_body_01_skeleton_Lrig_LEG_BR_LargeCannon_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#ref_body_01_skeleton_Lrig_LEG_BR_LargeCannon_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#ref_body_01_skeleton_Lrig_LEG_BR_LargeCannon_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#ref_body_01_skeleton_Lrig_LEG_BR_LargeCannon_pose_matrix-sampler" target="Lrig_LEG_BR_LargeCannon/transform"/>
+    </animation>
+    <animation id="ref_body_01_skeleton_Lrig_LEG_BR_PhalanxPrima_pose_matrix">
+      <source id="ref_body_01_skeleton_Lrig_LEG_BR_PhalanxPrima_pose_matrix-input">
+        <float_array id="ref_body_01_skeleton_Lrig_LEG_BR_PhalanxPrima_pose_matrix-input-array" count="3">0.04166662 4.166666 8.333333</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_Lrig_LEG_BR_PhalanxPrima_pose_matrix-input-array" count="3" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_Lrig_LEG_BR_PhalanxPrima_pose_matrix-output">
+        <float_array id="ref_body_01_skeleton_Lrig_LEG_BR_PhalanxPrima_pose_matrix-output-array" count="48">0.2283855 -0.698656 -0.6780266 -3.8147e-6 0.4638249 0.6903995 -0.555171 23.40616 0.8559826 -0.1876924 0.4817312 -3.8147e-6 0 0 0 1 0.2283855 -0.698656 -0.6780266 -3.8147e-6 0.4638249 0.6903995 -0.555171 23.40616 0.8559826 -0.1876924 0.4817312 -3.8147e-6 0 0 0 1 0.2283855 -0.698656 -0.6780266 -3.8147e-6 0.4638249 0.6903995 -0.555171 23.40616 0.8559826 -0.1876924 0.4817312 -3.8147e-6 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_Lrig_LEG_BR_PhalanxPrima_pose_matrix-output-array" count="3" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_Lrig_LEG_BR_PhalanxPrima_pose_matrix-interpolation">
+        <Name_array id="ref_body_01_skeleton_Lrig_LEG_BR_PhalanxPrima_pose_matrix-interpolation-array" count="3">LINEAR LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_Lrig_LEG_BR_PhalanxPrima_pose_matrix-interpolation-array" count="3" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="ref_body_01_skeleton_Lrig_LEG_BR_PhalanxPrima_pose_matrix-sampler">
+        <input semantic="INPUT" source="#ref_body_01_skeleton_Lrig_LEG_BR_PhalanxPrima_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#ref_body_01_skeleton_Lrig_LEG_BR_PhalanxPrima_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#ref_body_01_skeleton_Lrig_LEG_BR_PhalanxPrima_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#ref_body_01_skeleton_Lrig_LEG_BR_PhalanxPrima_pose_matrix-sampler" target="Lrig_LEG_BR_PhalanxPrima/transform"/>
+    </animation>
+    <animation id="ref_body_01_skeleton_Lrig_LEG_BR_RearHoof_pose_matrix">
+      <source id="ref_body_01_skeleton_Lrig_LEG_BR_RearHoof_pose_matrix-input">
+        <float_array id="ref_body_01_skeleton_Lrig_LEG_BR_RearHoof_pose_matrix-input-array" count="3">0.04166662 4.166666 8.333333</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_Lrig_LEG_BR_RearHoof_pose_matrix-input-array" count="3" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_Lrig_LEG_BR_RearHoof_pose_matrix-output">
+        <float_array id="ref_body_01_skeleton_Lrig_LEG_BR_RearHoof_pose_matrix-output-array" count="48">0.2572974 -0.3961855 0.8813825 0 0.8613662 0.5074476 -0.02335395 8.534359 -0.4380029 0.7652022 0.4718257 1.43051e-6 0 0 0 1 0.2572974 -0.3961855 0.8813825 0 0.8613662 0.5074476 -0.02335395 8.534359 -0.4380029 0.7652022 0.4718257 1.43051e-6 0 0 0 1 0.2572974 -0.3961855 0.8813825 0 0.8613662 0.5074476 -0.02335395 8.534359 -0.4380029 0.7652022 0.4718257 1.43051e-6 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_Lrig_LEG_BR_RearHoof_pose_matrix-output-array" count="3" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_Lrig_LEG_BR_RearHoof_pose_matrix-interpolation">
+        <Name_array id="ref_body_01_skeleton_Lrig_LEG_BR_RearHoof_pose_matrix-interpolation-array" count="3">LINEAR LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_Lrig_LEG_BR_RearHoof_pose_matrix-interpolation-array" count="3" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="ref_body_01_skeleton_Lrig_LEG_BR_RearHoof_pose_matrix-sampler">
+        <input semantic="INPUT" source="#ref_body_01_skeleton_Lrig_LEG_BR_RearHoof_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#ref_body_01_skeleton_Lrig_LEG_BR_RearHoof_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#ref_body_01_skeleton_Lrig_LEG_BR_RearHoof_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#ref_body_01_skeleton_Lrig_LEG_BR_RearHoof_pose_matrix-sampler" target="Lrig_LEG_BR_RearHoof/transform"/>
+    </animation>
+    <animation id="ref_body_01_skeleton_LrigSpine1_pose_matrix">
+      <source id="ref_body_01_skeleton_LrigSpine1_pose_matrix-input">
+        <float_array id="ref_body_01_skeleton_LrigSpine1_pose_matrix-input-array" count="3">0.04166662 4.166666 8.333333</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_LrigSpine1_pose_matrix-input-array" count="3" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_LrigSpine1_pose_matrix-output">
+        <float_array id="ref_body_01_skeleton_LrigSpine1_pose_matrix-output-array" count="48">-0.143501 0.9896502 5.68463e-7 -9.53674e-7 -0.9896502 -0.1435008 -6.69336e-6 -7.62939e-6 -6.54251e-6 -1.52308e-6 1 7.94898e-10 0 0 0 1 -0.143501 0.9896502 5.68463e-7 -9.53674e-7 -0.9896502 -0.1435008 -6.69336e-6 -7.62939e-6 -6.54251e-6 -1.52308e-6 1 7.94898e-10 0 0 0 1 -0.143501 0.9896502 5.68463e-7 -9.53674e-7 -0.9896502 -0.1435008 -6.69336e-6 -7.62939e-6 -6.54251e-6 -1.52308e-6 1 7.94898e-10 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_LrigSpine1_pose_matrix-output-array" count="3" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_LrigSpine1_pose_matrix-interpolation">
+        <Name_array id="ref_body_01_skeleton_LrigSpine1_pose_matrix-interpolation-array" count="3">LINEAR LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_LrigSpine1_pose_matrix-interpolation-array" count="3" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="ref_body_01_skeleton_LrigSpine1_pose_matrix-sampler">
+        <input semantic="INPUT" source="#ref_body_01_skeleton_LrigSpine1_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#ref_body_01_skeleton_LrigSpine1_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#ref_body_01_skeleton_LrigSpine1_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#ref_body_01_skeleton_LrigSpine1_pose_matrix-sampler" target="LrigSpine1/transform"/>
+    </animation>
+    <animation id="ref_body_01_skeleton_LrigSpine2_pose_matrix">
+      <source id="ref_body_01_skeleton_LrigSpine2_pose_matrix-input">
+        <float_array id="ref_body_01_skeleton_LrigSpine2_pose_matrix-input-array" count="3">0.04166662 4.166666 8.333333</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_LrigSpine2_pose_matrix-input-array" count="3" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_LrigSpine2_pose_matrix-output">
+        <float_array id="ref_body_01_skeleton_LrigSpine2_pose_matrix-output-array" count="48">0.996769 0.08032311 -2.59728e-6 7.62939e-6 -0.0803232 0.9967689 -2.67922e-7 12.79768 2.56737e-6 4.75678e-7 1 5.82077e-11 0 0 0 1 0.9890537 0.1197641 0.08619466 7.62939e-6 -0.01218198 0.6484265 -0.7611797 12.79768 -0.1470529 0.7517976 0.6427875 5.82077e-11 0 0 0 1 0.996769 0.08032305 -2.608e-6 7.62939e-6 -0.08032314 0.9967689 -2.63378e-7 12.79768 2.57842e-6 4.7201e-7 1 5.82077e-11 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_LrigSpine2_pose_matrix-output-array" count="3" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_LrigSpine2_pose_matrix-interpolation">
+        <Name_array id="ref_body_01_skeleton_LrigSpine2_pose_matrix-interpolation-array" count="3">LINEAR LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_LrigSpine2_pose_matrix-interpolation-array" count="3" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="ref_body_01_skeleton_LrigSpine2_pose_matrix-sampler">
+        <input semantic="INPUT" source="#ref_body_01_skeleton_LrigSpine2_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#ref_body_01_skeleton_LrigSpine2_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#ref_body_01_skeleton_LrigSpine2_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#ref_body_01_skeleton_LrigSpine2_pose_matrix-sampler" target="LrigSpine2/transform"/>
+    </animation>
+    <animation id="ref_body_01_skeleton_LrigRibcage_pose_matrix">
+      <source id="ref_body_01_skeleton_LrigRibcage_pose_matrix-input">
+        <float_array id="ref_body_01_skeleton_LrigRibcage_pose_matrix-input-array" count="3">0.04166662 4.166666 8.333333</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_LrigRibcage_pose_matrix-input-array" count="3" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_LrigRibcage_pose_matrix-output">
+        <float_array id="ref_body_01_skeleton_LrigRibcage_pose_matrix-output-array" count="48">-0.1919697 -0.9814007 -3.81003e-6 -7.62939e-6 0.981401 -0.1919689 -1.50322e-6 12.79767 7.43848e-7 -4.02774e-6 1 -2.91038e-11 0 0 0 1 -0.1919697 -0.9814007 -3.81003e-6 -7.62939e-6 0.981401 -0.1919689 -1.50322e-6 12.79767 7.43848e-7 -4.02774e-6 1 -2.91038e-11 0 0 0 1 -0.1919697 -0.9814007 -3.81003e-6 -7.62939e-6 0.981401 -0.1919689 -1.50322e-6 12.79767 7.43848e-7 -4.02774e-6 1 -2.91038e-11 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_LrigRibcage_pose_matrix-output-array" count="3" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_LrigRibcage_pose_matrix-interpolation">
+        <Name_array id="ref_body_01_skeleton_LrigRibcage_pose_matrix-interpolation-array" count="3">LINEAR LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_LrigRibcage_pose_matrix-interpolation-array" count="3" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="ref_body_01_skeleton_LrigRibcage_pose_matrix-sampler">
+        <input semantic="INPUT" source="#ref_body_01_skeleton_LrigRibcage_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#ref_body_01_skeleton_LrigRibcage_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#ref_body_01_skeleton_LrigRibcage_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#ref_body_01_skeleton_LrigRibcage_pose_matrix-sampler" target="LrigRibcage/transform"/>
+    </animation>
+    <animation id="ref_body_01_skeleton_Lrig_LEG_FL_Scapula_pose_matrix">
+      <source id="ref_body_01_skeleton_Lrig_LEG_FL_Scapula_pose_matrix-input">
+        <float_array id="ref_body_01_skeleton_Lrig_LEG_FL_Scapula_pose_matrix-input-array" count="3">0.04166662 4.166666 8.333333</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_Lrig_LEG_FL_Scapula_pose_matrix-input-array" count="3" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_Lrig_LEG_FL_Scapula_pose_matrix-output">
+        <float_array id="ref_body_01_skeleton_Lrig_LEG_FL_Scapula_pose_matrix-output-array" count="48">0.9910288 0.01976837 0.1321785 -3.228124 -0.01954502 0.9998044 -0.002987382 -1.216316 -0.1322117 3.7715e-4 0.9912214 6.529407 0 0 0 1 0.9910288 0.01976837 0.1321785 -3.228124 -0.01954502 0.9998044 -0.002987382 -1.216316 -0.1322117 3.7715e-4 0.9912214 6.529407 0 0 0 1 0.9910288 0.01976837 0.1321785 -3.228124 -0.01954502 0.9998044 -0.002987382 -1.216316 -0.1322117 3.7715e-4 0.9912214 6.529407 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_Lrig_LEG_FL_Scapula_pose_matrix-output-array" count="3" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_Lrig_LEG_FL_Scapula_pose_matrix-interpolation">
+        <Name_array id="ref_body_01_skeleton_Lrig_LEG_FL_Scapula_pose_matrix-interpolation-array" count="3">LINEAR LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_Lrig_LEG_FL_Scapula_pose_matrix-interpolation-array" count="3" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="ref_body_01_skeleton_Lrig_LEG_FL_Scapula_pose_matrix-sampler">
+        <input semantic="INPUT" source="#ref_body_01_skeleton_Lrig_LEG_FL_Scapula_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#ref_body_01_skeleton_Lrig_LEG_FL_Scapula_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#ref_body_01_skeleton_Lrig_LEG_FL_Scapula_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#ref_body_01_skeleton_Lrig_LEG_FL_Scapula_pose_matrix-sampler" target="Lrig_LEG_FL_Scapula/transform"/>
+    </animation>
+    <animation id="ref_body_01_skeleton_Lrig_LEG_FL_Humerus_pose_matrix">
+      <source id="ref_body_01_skeleton_Lrig_LEG_FL_Humerus_pose_matrix-input">
+        <float_array id="ref_body_01_skeleton_Lrig_LEG_FL_Humerus_pose_matrix-input-array" count="3">0.04166662 4.166666 8.333333</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_Lrig_LEG_FL_Humerus_pose_matrix-input-array" count="3" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_Lrig_LEG_FL_Humerus_pose_matrix-output">
+        <float_array id="ref_body_01_skeleton_Lrig_LEG_FL_Humerus_pose_matrix-output-array" count="48">-0.8332828 -0.5378321 -0.1279715 1.90735e-6 -0.5138556 0.8388679 -0.1795933 20.13298 0.2039431 -0.08389466 -0.9753817 9.53674e-7 0 0 0 1 -0.8332828 -0.5378321 -0.1279715 1.90735e-6 -0.5138556 0.8388679 -0.1795933 20.13298 0.2039431 -0.08389466 -0.9753817 9.53674e-7 0 0 0 1 -0.8332828 -0.5378321 -0.1279715 1.90735e-6 -0.5138556 0.8388679 -0.1795933 20.13298 0.2039431 -0.08389466 -0.9753817 9.53674e-7 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_Lrig_LEG_FL_Humerus_pose_matrix-output-array" count="3" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_Lrig_LEG_FL_Humerus_pose_matrix-interpolation">
+        <Name_array id="ref_body_01_skeleton_Lrig_LEG_FL_Humerus_pose_matrix-interpolation-array" count="3">LINEAR LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_Lrig_LEG_FL_Humerus_pose_matrix-interpolation-array" count="3" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="ref_body_01_skeleton_Lrig_LEG_FL_Humerus_pose_matrix-sampler">
+        <input semantic="INPUT" source="#ref_body_01_skeleton_Lrig_LEG_FL_Humerus_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#ref_body_01_skeleton_Lrig_LEG_FL_Humerus_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#ref_body_01_skeleton_Lrig_LEG_FL_Humerus_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#ref_body_01_skeleton_Lrig_LEG_FL_Humerus_pose_matrix-sampler" target="Lrig_LEG_FL_Humerus/transform"/>
+    </animation>
+    <animation id="ref_body_01_skeleton_Lrig_LEG_FL_Radius_pose_matrix">
+      <source id="ref_body_01_skeleton_Lrig_LEG_FL_Radius_pose_matrix-input">
+        <float_array id="ref_body_01_skeleton_Lrig_LEG_FL_Radius_pose_matrix-input-array" count="3">0.04166662 4.166666 8.333333</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_Lrig_LEG_FL_Radius_pose_matrix-input-array" count="3" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_Lrig_LEG_FL_Radius_pose_matrix-output">
+        <float_array id="ref_body_01_skeleton_Lrig_LEG_FL_Radius_pose_matrix-output-array" count="48">0.2311396 -0.5467886 -0.8047336 1.90735e-6 0.4610379 0.7899247 -0.4043054 12.92356 0.856749 -0.2775615 0.4346733 8.34465e-7 0 0 0 1 0.2311396 -0.5467886 -0.8047336 1.90735e-6 0.4610379 0.7899247 -0.4043054 12.92356 0.856749 -0.2775615 0.4346733 8.34465e-7 0 0 0 1 0.2311396 -0.5467886 -0.8047336 1.90735e-6 0.4610379 0.7899247 -0.4043054 12.92356 0.856749 -0.2775615 0.4346733 8.34465e-7 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_Lrig_LEG_FL_Radius_pose_matrix-output-array" count="3" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_Lrig_LEG_FL_Radius_pose_matrix-interpolation">
+        <Name_array id="ref_body_01_skeleton_Lrig_LEG_FL_Radius_pose_matrix-interpolation-array" count="3">LINEAR LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_Lrig_LEG_FL_Radius_pose_matrix-interpolation-array" count="3" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="ref_body_01_skeleton_Lrig_LEG_FL_Radius_pose_matrix-sampler">
+        <input semantic="INPUT" source="#ref_body_01_skeleton_Lrig_LEG_FL_Radius_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#ref_body_01_skeleton_Lrig_LEG_FL_Radius_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#ref_body_01_skeleton_Lrig_LEG_FL_Radius_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#ref_body_01_skeleton_Lrig_LEG_FL_Radius_pose_matrix-sampler" target="Lrig_LEG_FL_Radius/transform"/>
+    </animation>
+    <animation id="ref_body_01_skeleton_Lrig_LEG_FL_Metacarpus_pose_matrix">
+      <source id="ref_body_01_skeleton_Lrig_LEG_FL_Metacarpus_pose_matrix-input">
+        <float_array id="ref_body_01_skeleton_Lrig_LEG_FL_Metacarpus_pose_matrix-input-array" count="3">0.04166662 4.166666 8.333333</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_Lrig_LEG_FL_Metacarpus_pose_matrix-input-array" count="3" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_Lrig_LEG_FL_Metacarpus_pose_matrix-output">
+        <float_array id="ref_body_01_skeleton_Lrig_LEG_FL_Metacarpus_pose_matrix-output-array" count="48">0.9036669 0.02425586 -0.4275489 0 0.006798692 0.9974561 0.07095806 14.82346 0.4281824 -0.06702903 0.901203 0 0 0 0 1 0.9036669 0.02425586 -0.4275489 0 0.006798692 0.9974561 0.07095806 14.82346 0.4281824 -0.06702903 0.901203 0 0 0 0 1 0.9036669 0.02425586 -0.4275489 0 0.006798692 0.9974561 0.07095806 14.82346 0.4281824 -0.06702903 0.901203 0 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_Lrig_LEG_FL_Metacarpus_pose_matrix-output-array" count="3" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_Lrig_LEG_FL_Metacarpus_pose_matrix-interpolation">
+        <Name_array id="ref_body_01_skeleton_Lrig_LEG_FL_Metacarpus_pose_matrix-interpolation-array" count="3">LINEAR LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_Lrig_LEG_FL_Metacarpus_pose_matrix-interpolation-array" count="3" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="ref_body_01_skeleton_Lrig_LEG_FL_Metacarpus_pose_matrix-sampler">
+        <input semantic="INPUT" source="#ref_body_01_skeleton_Lrig_LEG_FL_Metacarpus_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#ref_body_01_skeleton_Lrig_LEG_FL_Metacarpus_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#ref_body_01_skeleton_Lrig_LEG_FL_Metacarpus_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#ref_body_01_skeleton_Lrig_LEG_FL_Metacarpus_pose_matrix-sampler" target="Lrig_LEG_FL_Metacarpus/transform"/>
+    </animation>
+    <animation id="ref_body_01_skeleton_Lrig_LEG_FL_PhalangesManus_pose_matrix">
+      <source id="ref_body_01_skeleton_Lrig_LEG_FL_PhalangesManus_pose_matrix-input">
+        <float_array id="ref_body_01_skeleton_Lrig_LEG_FL_PhalangesManus_pose_matrix-input-array" count="3">0.04166662 4.166666 8.333333</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_Lrig_LEG_FL_PhalangesManus_pose_matrix-input-array" count="3" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_Lrig_LEG_FL_PhalangesManus_pose_matrix-output">
+        <float_array id="ref_body_01_skeleton_Lrig_LEG_FL_PhalangesManus_pose_matrix-output-array" count="48">0.3048363 0.009002417 0.9523625 0 0.3016586 0.9475597 -0.1055129 14.4041 -0.9033699 0.3194524 0.2861347 -4.76837e-7 0 0 0 1 0.3048363 0.009002417 0.9523625 0 0.3016586 0.9475597 -0.1055129 14.4041 -0.9033699 0.3194524 0.2861347 -4.76837e-7 0 0 0 1 0.3048363 0.009002417 0.9523625 0 0.3016586 0.9475597 -0.1055129 14.4041 -0.9033699 0.3194524 0.2861347 -4.76837e-7 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_Lrig_LEG_FL_PhalangesManus_pose_matrix-output-array" count="3" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_Lrig_LEG_FL_PhalangesManus_pose_matrix-interpolation">
+        <Name_array id="ref_body_01_skeleton_Lrig_LEG_FL_PhalangesManus_pose_matrix-interpolation-array" count="3">LINEAR LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_Lrig_LEG_FL_PhalangesManus_pose_matrix-interpolation-array" count="3" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="ref_body_01_skeleton_Lrig_LEG_FL_PhalangesManus_pose_matrix-sampler">
+        <input semantic="INPUT" source="#ref_body_01_skeleton_Lrig_LEG_FL_PhalangesManus_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#ref_body_01_skeleton_Lrig_LEG_FL_PhalangesManus_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#ref_body_01_skeleton_Lrig_LEG_FL_PhalangesManus_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#ref_body_01_skeleton_Lrig_LEG_FL_PhalangesManus_pose_matrix-sampler" target="Lrig_LEG_FL_PhalangesManus/transform"/>
+    </animation>
+    <animation id="ref_body_01_skeleton_Lrig_LEG_FL_FrontHoof_pose_matrix">
+      <source id="ref_body_01_skeleton_Lrig_LEG_FL_FrontHoof_pose_matrix-input">
+        <float_array id="ref_body_01_skeleton_Lrig_LEG_FL_FrontHoof_pose_matrix-input-array" count="3">0.04166662 4.166666 8.333333</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_Lrig_LEG_FL_FrontHoof_pose_matrix-input-array" count="3" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_Lrig_LEG_FL_FrontHoof_pose_matrix-output">
+        <float_array id="ref_body_01_skeleton_Lrig_LEG_FL_FrontHoof_pose_matrix-output-array" count="48">0.2262594 -0.9304232 -0.2883044 0 0.5348234 0.3660387 -0.7615638 8.268225 0.8141071 0.01811905 0.5804318 -9.53674e-7 0 0 0 1 0.2262594 -0.9304232 -0.2883044 0 0.5348234 0.3660387 -0.7615638 8.268225 0.8141071 0.01811905 0.5804318 -9.53674e-7 0 0 0 1 0.2262594 -0.9304232 -0.2883044 0 0.5348234 0.3660387 -0.7615638 8.268225 0.8141071 0.01811905 0.5804318 -9.53674e-7 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_Lrig_LEG_FL_FrontHoof_pose_matrix-output-array" count="3" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_Lrig_LEG_FL_FrontHoof_pose_matrix-interpolation">
+        <Name_array id="ref_body_01_skeleton_Lrig_LEG_FL_FrontHoof_pose_matrix-interpolation-array" count="3">LINEAR LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_Lrig_LEG_FL_FrontHoof_pose_matrix-interpolation-array" count="3" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="ref_body_01_skeleton_Lrig_LEG_FL_FrontHoof_pose_matrix-sampler">
+        <input semantic="INPUT" source="#ref_body_01_skeleton_Lrig_LEG_FL_FrontHoof_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#ref_body_01_skeleton_Lrig_LEG_FL_FrontHoof_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#ref_body_01_skeleton_Lrig_LEG_FL_FrontHoof_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#ref_body_01_skeleton_Lrig_LEG_FL_FrontHoof_pose_matrix-sampler" target="Lrig_LEG_FL_FrontHoof/transform"/>
+    </animation>
+    <animation id="ref_body_01_skeleton_Lrig_LEG_FR_Scapula_pose_matrix">
+      <source id="ref_body_01_skeleton_Lrig_LEG_FR_Scapula_pose_matrix-input">
+        <float_array id="ref_body_01_skeleton_Lrig_LEG_FR_Scapula_pose_matrix-input-array" count="3">0.04166662 4.166666 8.333333</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_Lrig_LEG_FR_Scapula_pose_matrix-input-array" count="3" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_Lrig_LEG_FR_Scapula_pose_matrix-output">
+        <float_array id="ref_body_01_skeleton_Lrig_LEG_FR_Scapula_pose_matrix-output-array" count="48">0.9910276 0.01977015 -0.1321875 -3.228148 -0.01954645 0.9998044 0.002990072 -1.216309 0.1322208 -3.79445e-4 0.9912202 -6.529402 0 0 0 1 0.9910276 0.01977015 -0.1321875 -3.228148 -0.01954645 0.9998044 0.002990072 -1.216309 0.1322208 -3.79445e-4 0.9912202 -6.529402 0 0 0 1 0.9910276 0.01977015 -0.1321875 -3.228148 -0.01954645 0.9998044 0.002990072 -1.216309 0.1322208 -3.79445e-4 0.9912202 -6.529402 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_Lrig_LEG_FR_Scapula_pose_matrix-output-array" count="3" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_Lrig_LEG_FR_Scapula_pose_matrix-interpolation">
+        <Name_array id="ref_body_01_skeleton_Lrig_LEG_FR_Scapula_pose_matrix-interpolation-array" count="3">LINEAR LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_Lrig_LEG_FR_Scapula_pose_matrix-interpolation-array" count="3" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="ref_body_01_skeleton_Lrig_LEG_FR_Scapula_pose_matrix-sampler">
+        <input semantic="INPUT" source="#ref_body_01_skeleton_Lrig_LEG_FR_Scapula_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#ref_body_01_skeleton_Lrig_LEG_FR_Scapula_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#ref_body_01_skeleton_Lrig_LEG_FR_Scapula_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#ref_body_01_skeleton_Lrig_LEG_FR_Scapula_pose_matrix-sampler" target="Lrig_LEG_FR_Scapula/transform"/>
+    </animation>
+    <animation id="ref_body_01_skeleton_Lrig_LEG_FR_Humerus_pose_matrix">
+      <source id="ref_body_01_skeleton_Lrig_LEG_FR_Humerus_pose_matrix-input">
+        <float_array id="ref_body_01_skeleton_Lrig_LEG_FR_Humerus_pose_matrix-input-array" count="3">0.04166662 4.166666 8.333333</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_Lrig_LEG_FR_Humerus_pose_matrix-input-array" count="3" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_Lrig_LEG_FR_Humerus_pose_matrix-output">
+        <float_array id="ref_body_01_skeleton_Lrig_LEG_FR_Humerus_pose_matrix-output-array" count="48">-0.8333544 -0.5377457 0.1278687 0 -0.5137221 0.8388921 0.1798597 20.1331 -0.2039865 0.08419764 -0.9753463 -9.53674e-7 0 0 0 1 -0.8333544 -0.5377457 0.1278687 0 -0.5137221 0.8388921 0.1798597 20.1331 -0.2039865 0.08419764 -0.9753463 -9.53674e-7 0 0 0 1 -0.8333544 -0.5377457 0.1278687 0 -0.5137221 0.8388921 0.1798597 20.1331 -0.2039865 0.08419764 -0.9753463 -9.53674e-7 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_Lrig_LEG_FR_Humerus_pose_matrix-output-array" count="3" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_Lrig_LEG_FR_Humerus_pose_matrix-interpolation">
+        <Name_array id="ref_body_01_skeleton_Lrig_LEG_FR_Humerus_pose_matrix-interpolation-array" count="3">LINEAR LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_Lrig_LEG_FR_Humerus_pose_matrix-interpolation-array" count="3" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="ref_body_01_skeleton_Lrig_LEG_FR_Humerus_pose_matrix-sampler">
+        <input semantic="INPUT" source="#ref_body_01_skeleton_Lrig_LEG_FR_Humerus_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#ref_body_01_skeleton_Lrig_LEG_FR_Humerus_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#ref_body_01_skeleton_Lrig_LEG_FR_Humerus_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#ref_body_01_skeleton_Lrig_LEG_FR_Humerus_pose_matrix-sampler" target="Lrig_LEG_FR_Humerus/transform"/>
+    </animation>
+    <animation id="ref_body_01_skeleton_Lrig_LEG_FR_Radius_pose_matrix">
+      <source id="ref_body_01_skeleton_Lrig_LEG_FR_Radius_pose_matrix-input">
+        <float_array id="ref_body_01_skeleton_Lrig_LEG_FR_Radius_pose_matrix-input-array" count="3">0.04166662 4.166666 8.333333</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_Lrig_LEG_FR_Radius_pose_matrix-input-array" count="3" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_Lrig_LEG_FR_Radius_pose_matrix-output">
+        <float_array id="ref_body_01_skeleton_Lrig_LEG_FR_Radius_pose_matrix-output-array" count="48">0.2321223 -0.5465972 0.8045811 -1.90735e-6 0.4618218 0.7899269 0.4034059 12.92356 -0.8560608 0.2779335 0.4357901 0 0 0 0 1 0.2321223 -0.5465972 0.8045811 -1.90735e-6 0.4618218 0.7899269 0.4034059 12.92356 -0.8560608 0.2779335 0.4357901 0 0 0 0 1 0.2321223 -0.5465972 0.8045811 -1.90735e-6 0.4618218 0.7899269 0.4034059 12.92356 -0.8560608 0.2779335 0.4357901 0 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_Lrig_LEG_FR_Radius_pose_matrix-output-array" count="3" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_Lrig_LEG_FR_Radius_pose_matrix-interpolation">
+        <Name_array id="ref_body_01_skeleton_Lrig_LEG_FR_Radius_pose_matrix-interpolation-array" count="3">LINEAR LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_Lrig_LEG_FR_Radius_pose_matrix-interpolation-array" count="3" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="ref_body_01_skeleton_Lrig_LEG_FR_Radius_pose_matrix-sampler">
+        <input semantic="INPUT" source="#ref_body_01_skeleton_Lrig_LEG_FR_Radius_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#ref_body_01_skeleton_Lrig_LEG_FR_Radius_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#ref_body_01_skeleton_Lrig_LEG_FR_Radius_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#ref_body_01_skeleton_Lrig_LEG_FR_Radius_pose_matrix-sampler" target="Lrig_LEG_FR_Radius/transform"/>
+    </animation>
+    <animation id="ref_body_01_skeleton_Lrig_LEG_FR_Metacarpus_pose_matrix">
+      <source id="ref_body_01_skeleton_Lrig_LEG_FR_Metacarpus_pose_matrix-input">
+        <float_array id="ref_body_01_skeleton_Lrig_LEG_FR_Metacarpus_pose_matrix-input-array" count="3">0.04166662 4.166666 8.333333</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_Lrig_LEG_FR_Metacarpus_pose_matrix-input-array" count="3" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_Lrig_LEG_FR_Metacarpus_pose_matrix-output">
+        <float_array id="ref_body_01_skeleton_Lrig_LEG_FR_Metacarpus_pose_matrix-output-array" count="48">0.9073745 0.02431026 0.4196197 0 0.005973935 0.9974794 -0.07070573 14.82339 -0.4202808 0.06666279 0.9049422 -9.53674e-7 0 0 0 1 0.9073745 0.02431026 0.4196197 0 0.005973935 0.9974794 -0.07070573 14.82339 -0.4202808 0.06666279 0.9049422 -9.53674e-7 0 0 0 1 0.9073745 0.02431026 0.4196197 0 0.005973935 0.9974794 -0.07070573 14.82339 -0.4202808 0.06666279 0.9049422 -9.53674e-7 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_Lrig_LEG_FR_Metacarpus_pose_matrix-output-array" count="3" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_Lrig_LEG_FR_Metacarpus_pose_matrix-interpolation">
+        <Name_array id="ref_body_01_skeleton_Lrig_LEG_FR_Metacarpus_pose_matrix-interpolation-array" count="3">LINEAR LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_Lrig_LEG_FR_Metacarpus_pose_matrix-interpolation-array" count="3" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="ref_body_01_skeleton_Lrig_LEG_FR_Metacarpus_pose_matrix-sampler">
+        <input semantic="INPUT" source="#ref_body_01_skeleton_Lrig_LEG_FR_Metacarpus_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#ref_body_01_skeleton_Lrig_LEG_FR_Metacarpus_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#ref_body_01_skeleton_Lrig_LEG_FR_Metacarpus_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#ref_body_01_skeleton_Lrig_LEG_FR_Metacarpus_pose_matrix-sampler" target="Lrig_LEG_FR_Metacarpus/transform"/>
+    </animation>
+    <animation id="ref_body_01_skeleton_Lrig_LEG_FR_PhalangesManus_pose_matrix">
+      <source id="ref_body_01_skeleton_Lrig_LEG_FR_PhalangesManus_pose_matrix-input">
+        <float_array id="ref_body_01_skeleton_Lrig_LEG_FR_PhalangesManus_pose_matrix-input-array" count="3">0.04166662 4.166666 8.333333</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_Lrig_LEG_FR_PhalangesManus_pose_matrix-input-array" count="3" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_Lrig_LEG_FR_PhalangesManus_pose_matrix-output">
+        <float_array id="ref_body_01_skeleton_Lrig_LEG_FR_PhalangesManus_pose_matrix-output-array" count="48">0.3139563 0.006208181 -0.9494171 0 0.3008251 0.9478063 0.1056759 14.4021 0.9005197 -0.3187861 0.2957022 0 0 0 0 1 0.3139563 0.006208181 -0.9494171 0 0.3008251 0.9478063 0.1056759 14.4021 0.9005197 -0.3187861 0.2957022 0 0 0 0 1 0.3139563 0.006208181 -0.9494171 0 0.3008251 0.9478063 0.1056759 14.4021 0.9005197 -0.3187861 0.2957022 0 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_Lrig_LEG_FR_PhalangesManus_pose_matrix-output-array" count="3" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_Lrig_LEG_FR_PhalangesManus_pose_matrix-interpolation">
+        <Name_array id="ref_body_01_skeleton_Lrig_LEG_FR_PhalangesManus_pose_matrix-interpolation-array" count="3">LINEAR LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_Lrig_LEG_FR_PhalangesManus_pose_matrix-interpolation-array" count="3" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="ref_body_01_skeleton_Lrig_LEG_FR_PhalangesManus_pose_matrix-sampler">
+        <input semantic="INPUT" source="#ref_body_01_skeleton_Lrig_LEG_FR_PhalangesManus_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#ref_body_01_skeleton_Lrig_LEG_FR_PhalangesManus_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#ref_body_01_skeleton_Lrig_LEG_FR_PhalangesManus_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#ref_body_01_skeleton_Lrig_LEG_FR_PhalangesManus_pose_matrix-sampler" target="Lrig_LEG_FR_PhalangesManus/transform"/>
+    </animation>
+    <animation id="ref_body_01_skeleton_Lrig_LEG_FR_FrontHoof_pose_matrix">
+      <source id="ref_body_01_skeleton_Lrig_LEG_FR_FrontHoof_pose_matrix-input">
+        <float_array id="ref_body_01_skeleton_Lrig_LEG_FR_FrontHoof_pose_matrix-input-array" count="3">0.04166662 4.166666 8.333333</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_Lrig_LEG_FR_FrontHoof_pose_matrix-input-array" count="3" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_Lrig_LEG_FR_FrontHoof_pose_matrix-output">
+        <float_array id="ref_body_01_skeleton_Lrig_LEG_FR_FrontHoof_pose_matrix-output-array" count="48">0.2252071 -0.9306458 0.28841 -1.90735e-6 0.5330347 0.3654726 0.7630882 8.268229 -0.8155707 -0.01812042 0.5783736 9.53674e-7 0 0 0 1 0.2252071 -0.9306458 0.28841 -1.90735e-6 0.5330347 0.3654726 0.7630882 8.268229 -0.8155707 -0.01812042 0.5783736 9.53674e-7 0 0 0 1 0.2252071 -0.9306458 0.28841 -1.90735e-6 0.5330347 0.3654726 0.7630882 8.268229 -0.8155707 -0.01812042 0.5783736 9.53674e-7 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_Lrig_LEG_FR_FrontHoof_pose_matrix-output-array" count="3" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_Lrig_LEG_FR_FrontHoof_pose_matrix-interpolation">
+        <Name_array id="ref_body_01_skeleton_Lrig_LEG_FR_FrontHoof_pose_matrix-interpolation-array" count="3">LINEAR LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_Lrig_LEG_FR_FrontHoof_pose_matrix-interpolation-array" count="3" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="ref_body_01_skeleton_Lrig_LEG_FR_FrontHoof_pose_matrix-sampler">
+        <input semantic="INPUT" source="#ref_body_01_skeleton_Lrig_LEG_FR_FrontHoof_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#ref_body_01_skeleton_Lrig_LEG_FR_FrontHoof_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#ref_body_01_skeleton_Lrig_LEG_FR_FrontHoof_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#ref_body_01_skeleton_Lrig_LEG_FR_FrontHoof_pose_matrix-sampler" target="Lrig_LEG_FR_FrontHoof/transform"/>
+    </animation>
+    <animation id="ref_body_01_skeleton_LrigNeck1_pose_matrix">
+      <source id="ref_body_01_skeleton_LrigNeck1_pose_matrix-input">
+        <float_array id="ref_body_01_skeleton_LrigNeck1_pose_matrix-input-array" count="3">0.04166662 4.166666 8.333333</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_LrigNeck1_pose_matrix-input-array" count="3" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_LrigNeck1_pose_matrix-output">
+        <float_array id="ref_body_01_skeleton_LrigNeck1_pose_matrix-output-array" count="48">-0.8642833 0.5019463 -0.03262022 1.14441e-5 -0.5011504 -0.864848 -0.0297718 7.62939e-6 -0.04315536 -0.009383639 0.9990243 3.04023e-6 0 0 0 1 -0.8642833 0.5019463 -0.03262022 1.14441e-5 -0.5011504 -0.864848 -0.0297718 7.62939e-6 -0.04315536 -0.009383639 0.9990243 3.04023e-6 0 0 0 1 -0.8642833 0.5019463 -0.03262022 1.14441e-5 -0.5011504 -0.864848 -0.0297718 7.62939e-6 -0.04315536 -0.009383639 0.9990243 3.04023e-6 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_LrigNeck1_pose_matrix-output-array" count="3" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_LrigNeck1_pose_matrix-interpolation">
+        <Name_array id="ref_body_01_skeleton_LrigNeck1_pose_matrix-interpolation-array" count="3">LINEAR LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_LrigNeck1_pose_matrix-interpolation-array" count="3" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="ref_body_01_skeleton_LrigNeck1_pose_matrix-sampler">
+        <input semantic="INPUT" source="#ref_body_01_skeleton_LrigNeck1_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#ref_body_01_skeleton_LrigNeck1_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#ref_body_01_skeleton_LrigNeck1_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#ref_body_01_skeleton_LrigNeck1_pose_matrix-sampler" target="LrigNeck1/transform"/>
+    </animation>
+    <animation id="ref_body_01_skeleton_LrigNeck2_pose_matrix">
+      <source id="ref_body_01_skeleton_LrigNeck2_pose_matrix-input">
+        <float_array id="ref_body_01_skeleton_LrigNeck2_pose_matrix-input-array" count="3">0.04166662 4.166666 8.333333</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_LrigNeck2_pose_matrix-input-array" count="3" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_LrigNeck2_pose_matrix-output">
+        <float_array id="ref_body_01_skeleton_LrigNeck2_pose_matrix-output-array" count="48">-0.08343547 0.5098057 -0.8562337 3.8147e-6 0.03762967 0.8602286 0.5085177 9.411026 0.9958023 0.01020861 -0.09095742 0 0 0 0 1 -0.08343547 0.5098057 -0.8562337 3.8147e-6 0.03762967 0.8602286 0.5085177 9.411026 0.9958023 0.01020861 -0.09095742 0 0 0 0 1 -0.08343547 0.5098057 -0.8562337 3.8147e-6 0.03762967 0.8602286 0.5085177 9.411026 0.9958023 0.01020861 -0.09095742 0 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_LrigNeck2_pose_matrix-output-array" count="3" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_LrigNeck2_pose_matrix-interpolation">
+        <Name_array id="ref_body_01_skeleton_LrigNeck2_pose_matrix-interpolation-array" count="3">LINEAR LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_LrigNeck2_pose_matrix-interpolation-array" count="3" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="ref_body_01_skeleton_LrigNeck2_pose_matrix-sampler">
+        <input semantic="INPUT" source="#ref_body_01_skeleton_LrigNeck2_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#ref_body_01_skeleton_LrigNeck2_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#ref_body_01_skeleton_LrigNeck2_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#ref_body_01_skeleton_LrigNeck2_pose_matrix-sampler" target="LrigNeck2/transform"/>
+    </animation>
+    <animation id="ref_body_01_skeleton_LrigNeck3_pose_matrix">
+      <source id="ref_body_01_skeleton_LrigNeck3_pose_matrix-input">
+        <float_array id="ref_body_01_skeleton_LrigNeck3_pose_matrix-input-array" count="3">0.04166662 4.166666 8.333333</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_LrigNeck3_pose_matrix-input-array" count="3" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_LrigNeck3_pose_matrix-output">
+        <float_array id="ref_body_01_skeleton_LrigNeck3_pose_matrix-output-array" count="48">-0.1064988 0.03819636 0.993579 0 0.811758 0.5803991 0.06469753 9.20224 -0.5742011 0.813436 -0.09281803 0 0 0 0 1 -0.1064988 0.03819636 0.993579 0 0.811758 0.5803991 0.06469753 9.20224 -0.5742011 0.813436 -0.09281803 0 0 0 0 1 -0.1064988 0.03819636 0.993579 0 0.811758 0.5803991 0.06469753 9.20224 -0.5742011 0.813436 -0.09281803 0 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_LrigNeck3_pose_matrix-output-array" count="3" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_LrigNeck3_pose_matrix-interpolation">
+        <Name_array id="ref_body_01_skeleton_LrigNeck3_pose_matrix-interpolation-array" count="3">LINEAR LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_LrigNeck3_pose_matrix-interpolation-array" count="3" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="ref_body_01_skeleton_LrigNeck3_pose_matrix-sampler">
+        <input semantic="INPUT" source="#ref_body_01_skeleton_LrigNeck3_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#ref_body_01_skeleton_LrigNeck3_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#ref_body_01_skeleton_LrigNeck3_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#ref_body_01_skeleton_LrigNeck3_pose_matrix-sampler" target="LrigNeck3/transform"/>
+    </animation>
+    <animation id="ref_body_01_skeleton_LrigScull_pose_matrix">
+      <source id="ref_body_01_skeleton_LrigScull_pose_matrix-input">
+        <float_array id="ref_body_01_skeleton_LrigScull_pose_matrix-input-array" count="3">0.04166662 4.166666 8.333333</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_LrigScull_pose_matrix-input-array" count="3" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_LrigScull_pose_matrix-output">
+        <float_array id="ref_body_01_skeleton_LrigScull_pose_matrix-output-array" count="48">0.07844293 -0.9917624 -0.1012615 3.8147e-6 0.9961836 0.08187971 -0.03023578 8.358574 0.03827798 -0.09850323 0.9944003 4.76837e-7 0 0 0 1 0.07844293 -0.9917624 -0.1012615 3.8147e-6 0.9961836 0.08187971 -0.03023578 8.358574 0.03827798 -0.09850323 0.9944003 4.76837e-7 0 0 0 1 0.07844293 -0.9917624 -0.1012615 3.8147e-6 0.9961836 0.08187971 -0.03023578 8.358574 0.03827798 -0.09850323 0.9944003 4.76837e-7 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_LrigScull_pose_matrix-output-array" count="3" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_LrigScull_pose_matrix-interpolation">
+        <Name_array id="ref_body_01_skeleton_LrigScull_pose_matrix-interpolation-array" count="3">LINEAR LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_LrigScull_pose_matrix-interpolation-array" count="3" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="ref_body_01_skeleton_LrigScull_pose_matrix-sampler">
+        <input semantic="INPUT" source="#ref_body_01_skeleton_LrigScull_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#ref_body_01_skeleton_LrigScull_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#ref_body_01_skeleton_LrigScull_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#ref_body_01_skeleton_LrigScull_pose_matrix-sampler" target="LrigScull/transform"/>
+    </animation>
+    <animation id="ref_body_01_skeleton_LrigScullBone001_pose_matrix">
+      <source id="ref_body_01_skeleton_LrigScullBone001_pose_matrix-input">
+        <float_array id="ref_body_01_skeleton_LrigScullBone001_pose_matrix-input-array" count="3">0.04166662 4.166666 8.333333</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_LrigScullBone001_pose_matrix-input-array" count="3" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_LrigScullBone001_pose_matrix-output">
+        <float_array id="ref_body_01_skeleton_LrigScullBone001_pose_matrix-output-array" count="48">0.5775386 -0.8161392 0.01913942 0 0.8162776 0.5776592 9.62723e-4 17.68683 -0.01184177 0.01506707 0.9998162 0 0 0 0 1 0.5775386 -0.8161392 0.01913942 0 0.8162776 0.5776592 9.62723e-4 17.68683 -0.01184177 0.01506707 0.9998162 0 0 0 0 1 0.5775386 -0.8161392 0.01913942 0 0.8162776 0.5776592 9.62723e-4 17.68683 -0.01184177 0.01506707 0.9998162 0 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_LrigScullBone001_pose_matrix-output-array" count="3" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_LrigScullBone001_pose_matrix-interpolation">
+        <Name_array id="ref_body_01_skeleton_LrigScullBone001_pose_matrix-interpolation-array" count="3">LINEAR LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_LrigScullBone001_pose_matrix-interpolation-array" count="3" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="ref_body_01_skeleton_LrigScullBone001_pose_matrix-sampler">
+        <input semantic="INPUT" source="#ref_body_01_skeleton_LrigScullBone001_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#ref_body_01_skeleton_LrigScullBone001_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#ref_body_01_skeleton_LrigScullBone001_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#ref_body_01_skeleton_LrigScullBone001_pose_matrix-sampler" target="LrigScullBone001/transform"/>
+    </animation>
+    <animation id="ref_body_01_skeleton_LrigTail1_pose_matrix">
+      <source id="ref_body_01_skeleton_LrigTail1_pose_matrix-input">
+        <float_array id="ref_body_01_skeleton_LrigTail1_pose_matrix-input-array" count="3">0.04166662 4.166666 8.333333</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_LrigTail1_pose_matrix-input-array" count="3" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_LrigTail1_pose_matrix-output">
+        <float_array id="ref_body_01_skeleton_LrigTail1_pose_matrix-output-array" count="48">-0.3517753 -0.9360845 1.8596e-6 -20.91518 0.9360845 -0.3517753 -7.14308e-7 -7.864754 1.32281e-6 1.48947e-6 1 3.05528e-5 0 0 0 1 -0.3517753 -0.9360845 1.8596e-6 -20.91518 0.9360845 -0.3517753 -7.14308e-7 -7.864754 1.32281e-6 1.48947e-6 1 3.05528e-5 0 0 0 1 -0.3517753 -0.9360845 1.8596e-6 -20.91518 0.9360845 -0.3517753 -7.14308e-7 -7.864754 1.32281e-6 1.48947e-6 1 3.05528e-5 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_LrigTail1_pose_matrix-output-array" count="3" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_LrigTail1_pose_matrix-interpolation">
+        <Name_array id="ref_body_01_skeleton_LrigTail1_pose_matrix-interpolation-array" count="3">LINEAR LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_LrigTail1_pose_matrix-interpolation-array" count="3" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="ref_body_01_skeleton_LrigTail1_pose_matrix-sampler">
+        <input semantic="INPUT" source="#ref_body_01_skeleton_LrigTail1_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#ref_body_01_skeleton_LrigTail1_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#ref_body_01_skeleton_LrigTail1_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#ref_body_01_skeleton_LrigTail1_pose_matrix-sampler" target="LrigTail1/transform"/>
+    </animation>
+    <animation id="ref_body_01_skeleton_LrigTail2_pose_matrix">
+      <source id="ref_body_01_skeleton_LrigTail2_pose_matrix-input">
+        <float_array id="ref_body_01_skeleton_LrigTail2_pose_matrix-input-array" count="3">0.04166662 4.166666 8.333333</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_LrigTail2_pose_matrix-input-array" count="3" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_LrigTail2_pose_matrix-output">
+        <float_array id="ref_body_01_skeleton_LrigTail2_pose_matrix-output-array" count="48">0.6485046 0.7612109 5.1188e-7 0 -0.761211 0.6485046 4.64066e-7 19.11437 2.12954e-8 -6.90597e-7 1 -9.09495e-13 0 0 0 1 0.6485046 0.7612109 5.1188e-7 0 -0.761211 0.6485046 4.64066e-7 19.11437 2.12954e-8 -6.90597e-7 1 -9.09495e-13 0 0 0 1 0.6485046 0.7612109 5.1188e-7 0 -0.761211 0.6485046 4.64066e-7 19.11437 2.12954e-8 -6.90597e-7 1 -9.09495e-13 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_LrigTail2_pose_matrix-output-array" count="3" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_LrigTail2_pose_matrix-interpolation">
+        <Name_array id="ref_body_01_skeleton_LrigTail2_pose_matrix-interpolation-array" count="3">LINEAR LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_LrigTail2_pose_matrix-interpolation-array" count="3" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="ref_body_01_skeleton_LrigTail2_pose_matrix-sampler">
+        <input semantic="INPUT" source="#ref_body_01_skeleton_LrigTail2_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#ref_body_01_skeleton_LrigTail2_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#ref_body_01_skeleton_LrigTail2_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#ref_body_01_skeleton_LrigTail2_pose_matrix-sampler" target="LrigTail2/transform"/>
+    </animation>
+    <animation id="ref_body_01_skeleton_LrigTail3_pose_matrix">
+      <source id="ref_body_01_skeleton_LrigTail3_pose_matrix-input">
+        <float_array id="ref_body_01_skeleton_LrigTail3_pose_matrix-input-array" count="3">0.04166662 4.166666 8.333333</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_LrigTail3_pose_matrix-input-array" count="3" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_LrigTail3_pose_matrix-output">
+        <float_array id="ref_body_01_skeleton_LrigTail3_pose_matrix-output-array" count="48">0.9548182 0.297191 -5.27615e-8 -7.62939e-6 -0.2971912 0.954818 3.79151e-7 19.1143 1.63058e-7 -3.4634e-7 1 9.09495e-13 0 0 0 1 0.9548182 0.297191 -5.27615e-8 -7.62939e-6 -0.2971912 0.954818 3.79151e-7 19.1143 1.63058e-7 -3.4634e-7 1 9.09495e-13 0 0 0 1 0.9548182 0.297191 -5.27615e-8 -7.62939e-6 -0.2971912 0.954818 3.79151e-7 19.1143 1.63058e-7 -3.4634e-7 1 9.09495e-13 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_LrigTail3_pose_matrix-output-array" count="3" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_LrigTail3_pose_matrix-interpolation">
+        <Name_array id="ref_body_01_skeleton_LrigTail3_pose_matrix-interpolation-array" count="3">LINEAR LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_LrigTail3_pose_matrix-interpolation-array" count="3" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="ref_body_01_skeleton_LrigTail3_pose_matrix-sampler">
+        <input semantic="INPUT" source="#ref_body_01_skeleton_LrigTail3_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#ref_body_01_skeleton_LrigTail3_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#ref_body_01_skeleton_LrigTail3_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#ref_body_01_skeleton_LrigTail3_pose_matrix-sampler" target="LrigTail3/transform"/>
+    </animation>
+    <animation id="ref_body_01_skeleton_LrigTail4_pose_matrix">
+      <source id="ref_body_01_skeleton_LrigTail4_pose_matrix-input">
+        <float_array id="ref_body_01_skeleton_LrigTail4_pose_matrix-input-array" count="3">0.04166662 4.166666 8.333333</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_LrigTail4_pose_matrix-input-array" count="3" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_LrigTail4_pose_matrix-output">
+        <float_array id="ref_body_01_skeleton_LrigTail4_pose_matrix-output-array" count="48">0.9940225 0.1091751 -2.29854e-7 -7.62939e-6 -0.1091751 0.9940226 -2.56642e-8 19.11428 2.25679e-7 5.06052e-8 1 0 0 0 0 1 0.9940225 0.1091751 -2.29854e-7 -7.62939e-6 -0.1091751 0.9940226 -2.56642e-8 19.11428 2.25679e-7 5.06052e-8 1 0 0 0 0 1 0.9940225 0.1091751 -2.29854e-7 -7.62939e-6 -0.1091751 0.9940226 -2.56642e-8 19.11428 2.25679e-7 5.06052e-8 1 0 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_LrigTail4_pose_matrix-output-array" count="3" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_LrigTail4_pose_matrix-interpolation">
+        <Name_array id="ref_body_01_skeleton_LrigTail4_pose_matrix-interpolation-array" count="3">LINEAR LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_LrigTail4_pose_matrix-interpolation-array" count="3" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="ref_body_01_skeleton_LrigTail4_pose_matrix-sampler">
+        <input semantic="INPUT" source="#ref_body_01_skeleton_LrigTail4_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#ref_body_01_skeleton_LrigTail4_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#ref_body_01_skeleton_LrigTail4_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#ref_body_01_skeleton_LrigTail4_pose_matrix-sampler" target="LrigTail4/transform"/>
+    </animation>
+    <animation id="ref_body_01_skeleton_LrigTail5_pose_matrix">
+      <source id="ref_body_01_skeleton_LrigTail5_pose_matrix-input">
+        <float_array id="ref_body_01_skeleton_LrigTail5_pose_matrix-input-array" count="3">0.04166662 4.166666 8.333333</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_LrigTail5_pose_matrix-input-array" count="3" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_LrigTail5_pose_matrix-output">
+        <float_array id="ref_body_01_skeleton_LrigTail5_pose_matrix-output-array" count="48">0.9986049 0.05280259 1.45607e-7 0 -0.05280253 0.998605 -8.06377e-8 21.08035 -1.49662e-7 7.28368e-8 1 0 0 0 0 1 0.9986049 0.05280259 1.45607e-7 0 -0.05280253 0.998605 -8.06377e-8 21.08035 -1.49662e-7 7.28368e-8 1 0 0 0 0 1 0.9986049 0.05280259 1.45607e-7 0 -0.05280253 0.998605 -8.06377e-8 21.08035 -1.49662e-7 7.28368e-8 1 0 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_LrigTail5_pose_matrix-output-array" count="3" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_LrigTail5_pose_matrix-interpolation">
+        <Name_array id="ref_body_01_skeleton_LrigTail5_pose_matrix-interpolation-array" count="3">LINEAR LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_LrigTail5_pose_matrix-interpolation-array" count="3" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="ref_body_01_skeleton_LrigTail5_pose_matrix-sampler">
+        <input semantic="INPUT" source="#ref_body_01_skeleton_LrigTail5_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#ref_body_01_skeleton_LrigTail5_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#ref_body_01_skeleton_LrigTail5_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#ref_body_01_skeleton_LrigTail5_pose_matrix-sampler" target="LrigTail5/transform"/>
+    </animation>
+    <animation id="ref_body_01_skeleton_LrigTail6_pose_matrix">
+      <source id="ref_body_01_skeleton_LrigTail6_pose_matrix-input">
+        <float_array id="ref_body_01_skeleton_LrigTail6_pose_matrix-input-array" count="3">0.04166662 4.166666 8.333333</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_LrigTail6_pose_matrix-input-array" count="3" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_LrigTail6_pose_matrix-output">
+        <float_array id="ref_body_01_skeleton_LrigTail6_pose_matrix-output-array" count="48">0.167908 -0.9858027 5.58049e-7 7.62939e-6 0.9858027 0.1679081 -3.98062e-7 25.33362 2.9871e-7 6.16964e-7 1 0 0 0 0 1 0.167908 -0.9858027 5.58049e-7 7.62939e-6 0.9858027 0.1679081 -3.98062e-7 25.33362 2.9871e-7 6.16964e-7 1 0 0 0 0 1 0.167908 -0.9858027 5.58049e-7 7.62939e-6 0.9858027 0.1679081 -3.98062e-7 25.33362 2.9871e-7 6.16964e-7 1 0 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_LrigTail6_pose_matrix-output-array" count="3" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_LrigTail6_pose_matrix-interpolation">
+        <Name_array id="ref_body_01_skeleton_LrigTail6_pose_matrix-interpolation-array" count="3">LINEAR LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_LrigTail6_pose_matrix-interpolation-array" count="3" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="ref_body_01_skeleton_LrigTail6_pose_matrix-sampler">
+        <input semantic="INPUT" source="#ref_body_01_skeleton_LrigTail6_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#ref_body_01_skeleton_LrigTail6_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#ref_body_01_skeleton_LrigTail6_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#ref_body_01_skeleton_LrigTail6_pose_matrix-sampler" target="LrigTail6/transform"/>
+    </animation>
+    <animation id="ref_body_01_skeleton_p_body_pose_matrix">
+      <source id="ref_body_01_skeleton_p_body_pose_matrix-input">
+        <float_array id="ref_body_01_skeleton_p_body_pose_matrix-input-array" count="3">0.04166662 4.166666 8.333333</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_p_body_pose_matrix-input-array" count="3" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_p_body_pose_matrix-output">
+        <float_array id="ref_body_01_skeleton_p_body_pose_matrix-output-array" count="48">1 0 0 0 0 1 0 0.01701599 0 0 1 68.42633 0 0 0 1 1 0 0 0 0 1 0 0.01701599 0 0 1 68.42633 0 0 0 1 1 0 0 0 0 1 0 0.01701599 0 0 1 68.42633 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_p_body_pose_matrix-output-array" count="3" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="ref_body_01_skeleton_p_body_pose_matrix-interpolation">
+        <Name_array id="ref_body_01_skeleton_p_body_pose_matrix-interpolation-array" count="3">LINEAR LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#ref_body_01_skeleton_p_body_pose_matrix-interpolation-array" count="3" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="ref_body_01_skeleton_p_body_pose_matrix-sampler">
+        <input semantic="INPUT" source="#ref_body_01_skeleton_p_body_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#ref_body_01_skeleton_p_body_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#ref_body_01_skeleton_p_body_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#ref_body_01_skeleton_p_body_pose_matrix-sampler" target="p_body/transform"/>
+    </animation>
+  </library_animations>
+  <library_controllers/>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="ref_body_01_skeleton" name="ref_body_01_skeleton" type="NODE">
+        <translate sid="location">0 0 0</translate>
+        <rotate sid="rotationZ">0 0 1 0</rotate>
+        <rotate sid="rotationY">0 1 0 0</rotate>
+        <rotate sid="rotationX">1 0 0 0</rotate>
+        <scale sid="scale">1 1 1</scale>
+        <node id="LrigPelvis" name="LrigPelvis" sid="LrigPelvis" type="JOINT">
+          <matrix sid="transform">1.07947e-6 -2.98023e-7 1 -7.99998e-6 -0.9995121 0.03123475 1.0886e-6 7.942365 -0.03123475 -0.9995121 -2.75671e-7 67.03625 0 0 0 1</matrix>
+          <node id="Lrig_LEG_BL_Femur" name="Lrig_LEG_BL_Femur" sid="Lrig_LEG_BL_Femur" type="JOINT">
+            <matrix sid="transform">-0.6107005 -0.009700255 0.7918023 -8.718642 0.03694693 0.9984871 0.04072882 5.96962 -0.7909994 0.05412779 -0.609418 9.24131 0 0 0 1</matrix>
+            <node id="Lrig_LEG_BL_Tibia" name="Lrig_LEG_BL_Tibia" sid="Lrig_LEG_BL_Tibia" type="JOINT">
+              <matrix sid="transform">0.4657611 0.7128646 0.5243003 1.07288e-6 -0.8733143 0.4658948 0.142354 20.91179 -0.1427895 -0.5241817 0.8395503 0 0 0 0 1</matrix>
+              <node id="Lrig_LEG_BL_LargeCannon" name="Lrig_LEG_BL_LargeCannon" sid="Lrig_LEG_BL_LargeCannon" type="JOINT">
+                <matrix sid="transform">0.5934435 -0.8027876 0.05793914 0 0.8021279 0.5958261 0.03977204 11.34216 -0.06645033 0.02287197 0.9975274 0 0 0 0 1</matrix>
+                <node id="Lrig_LEG_BL_PhalanxPrima" name="Lrig_LEG_BL_PhalanxPrima" sid="Lrig_LEG_BL_PhalanxPrima" type="JOINT">
+                  <matrix sid="transform">0.2310219 -0.6987421 0.6770437 7.62939e-6 0.4663136 0.6902559 0.5532615 23.40618 -0.8539206 0.1879 0.4852974 -3.8147e-6 0 0 0 1</matrix>
+                  <node id="Lrig_LEG_BL_RearHoof" name="Lrig_LEG_BL_RearHoof" sid="Lrig_LEG_BL_RearHoof" type="JOINT">
+                    <matrix sid="transform">0.2590374 -0.397986 -0.8800604 -1.90735e-6 0.8614061 0.5073441 0.02411259 8.534353 0.436897 -0.7643356 0.4742489 -9.53674e-7 0 0 0 1</matrix>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node id="Lrig_LEG_BR_Femur" name="Lrig_LEG_BR_Femur" sid="Lrig_LEG_BR_Femur" type="JOINT">
+            <matrix sid="transform">-0.6078689 -0.009681428 -0.7939785 -8.71865 0.03700611 0.9984939 -0.04050715 5.969639 0.7931746 -0.05400511 -0.6065949 -9.241274 0 0 0 1</matrix>
+            <node id="Lrig_LEG_BR_Tibia" name="Lrig_LEG_BR_Tibia" sid="Lrig_LEG_BR_Tibia" type="JOINT">
+              <matrix sid="transform">0.4652759 0.7108036 -0.5275192 -4.76837e-7 -0.8732844 0.4659265 -0.1424319 20.91255 0.1445442 0.5269445 0.8375182 3.8147e-6 0 0 0 1</matrix>
+              <node id="Lrig_LEG_BR_LargeCannon" name="Lrig_LEG_BR_LargeCannon" sid="Lrig_LEG_BR_LargeCannon" type="JOINT">
+                <matrix sid="transform">0.5935796 -0.8027416 -0.05717865 3.8147e-6 0.8021698 0.5958752 -0.03816298 11.34214 0.06470627 -0.02321394 0.9976341 0 0 0 0 1</matrix>
+                <node id="Lrig_LEG_BR_PhalanxPrima" name="Lrig_LEG_BR_PhalanxPrima" sid="Lrig_LEG_BR_PhalanxPrima" type="JOINT">
+                  <matrix sid="transform">0.2283855 -0.698656 -0.6780266 -3.8147e-6 0.4638249 0.6903995 -0.555171 23.40616 0.8559826 -0.1876924 0.4817312 -3.8147e-6 0 0 0 1</matrix>
+                  <node id="Lrig_LEG_BR_RearHoof" name="Lrig_LEG_BR_RearHoof" sid="Lrig_LEG_BR_RearHoof" type="JOINT">
+                    <matrix sid="transform">0.2572974 -0.3961855 0.8813825 0 0.8613662 0.5074476 -0.02335395 8.534359 -0.4380029 0.7652022 0.4718257 1.43051e-6 0 0 0 1</matrix>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node id="LrigSpine1" name="LrigSpine1" sid="LrigSpine1" type="JOINT">
+            <matrix sid="transform">-0.143501 0.9896502 5.68463e-7 -9.53674e-7 -0.9896502 -0.1435008 -6.69336e-6 -7.62939e-6 -6.54251e-6 -1.52308e-6 1 7.94898e-10 0 0 0 1</matrix>
+            <node id="LrigSpine2" name="LrigSpine2" sid="LrigSpine2" type="JOINT">
+              <matrix sid="transform">0.996769 0.08032311 -2.59728e-6 7.62939e-6 -0.0803232 0.9967689 -2.67922e-7 12.79768 2.56737e-6 4.75678e-7 1 5.82077e-11 0 0 0 1</matrix>
+              <node id="LrigRibcage" name="LrigRibcage" sid="LrigRibcage" type="JOINT">
+                <matrix sid="transform">-0.1919697 -0.9814013 -3.81003e-6 -7.62939e-6 0.9814009 -0.191969 -1.50322e-6 12.79768 7.43848e-7 -4.02774e-6 1 -2.91038e-11 0 0 0 1</matrix>
+                <node id="Lrig_LEG_FL_Scapula" name="Lrig_LEG_FL_Scapula" sid="Lrig_LEG_FL_Scapula" type="JOINT">
+                  <matrix sid="transform">0.9910288 0.0197684 0.1321785 -3.228124 -0.01954455 0.9998044 -0.00298732 -1.216324 -0.1322117 3.7715e-4 0.9912214 6.529407 0 0 0 1</matrix>
+                  <node id="Lrig_LEG_FL_Humerus" name="Lrig_LEG_FL_Humerus" sid="Lrig_LEG_FL_Humerus" type="JOINT">
+                    <matrix sid="transform">-0.8332828 -0.5378321 -0.1279716 1.90735e-6 -0.5138555 0.8388678 -0.1795932 20.13298 0.203943 -0.08389466 -0.9753816 9.53674e-7 0 0 0 1</matrix>
+                    <node id="Lrig_LEG_FL_Radius" name="Lrig_LEG_FL_Radius" sid="Lrig_LEG_FL_Radius" type="JOINT">
+                      <matrix sid="transform">0.2311395 -0.5467886 -0.804734 1.90735e-6 0.4610381 0.7899247 -0.4043049 12.92356 0.856749 -0.2775615 0.4346732 -5.36442e-7 0 0 0 1</matrix>
+                      <node id="Lrig_LEG_FL_Metacarpus" name="Lrig_LEG_FL_Metacarpus" sid="Lrig_LEG_FL_Metacarpus" type="JOINT">
+                        <matrix sid="transform">0.9036669 0.02425589 -0.4275489 9.53674e-7 0.006798677 0.9974563 0.07095828 14.82346 0.4281823 -0.06702903 0.9012029 2.38419e-7 0 0 0 1</matrix>
+                        <node id="Lrig_LEG_FL_PhalangesManus" name="Lrig_LEG_FL_PhalangesManus" sid="Lrig_LEG_FL_PhalangesManus" type="JOINT">
+                          <matrix sid="transform">0.3048362 0.009002432 0.9523623 9.53674e-7 0.3016585 0.9475597 -0.1055133 14.4041 -0.9033698 0.3194524 0.2861349 0 0 0 0 1</matrix>
+                          <node id="Lrig_LEG_FL_FrontHoof" name="Lrig_LEG_FL_FrontHoof" sid="Lrig_LEG_FL_FrontHoof" type="JOINT">
+                            <matrix sid="transform">0.2262595 -0.9304231 -0.2883042 0 0.5348234 0.3660388 -0.7615638 8.268225 0.8141071 0.01811916 0.5804319 0 0 0 0 1</matrix>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node id="Lrig_LEG_FR_Scapula" name="Lrig_LEG_FR_Scapula" sid="Lrig_LEG_FR_Scapula" type="JOINT">
+                  <matrix sid="transform">0.9910276 0.01977018 -0.1321875 -3.228148 -0.01954599 0.9998044 0.00299001 -1.216316 0.1322208 -3.79445e-4 0.9912202 -6.529402 0 0 0 1</matrix>
+                  <node id="Lrig_LEG_FR_Humerus" name="Lrig_LEG_FR_Humerus" sid="Lrig_LEG_FR_Humerus" type="JOINT">
+                    <matrix sid="transform">-0.8333543 -0.5377457 0.1278687 -1.90735e-6 -0.5137225 0.8388917 0.1798597 20.1331 -0.2039865 0.08419762 -0.9753462 0 0 0 0 1</matrix>
+                    <node id="Lrig_LEG_FR_Radius" name="Lrig_LEG_FR_Radius" sid="Lrig_LEG_FR_Radius" type="JOINT">
+                      <matrix sid="transform">0.2321223 -0.5465972 0.804581 1.90735e-6 0.4618218 0.7899269 0.4034057 12.92356 -0.8560607 0.2779335 0.4357901 4.17233e-7 0 0 0 1</matrix>
+                      <node id="Lrig_LEG_FR_Metacarpus" name="Lrig_LEG_FR_Metacarpus" sid="Lrig_LEG_FR_Metacarpus" type="JOINT">
+                        <matrix sid="transform">0.9073744 0.02431018 0.4196197 -9.53674e-7 0.005973764 0.9974794 -0.07070526 14.82339 -0.4202808 0.0666628 0.9049422 -2.38419e-7 0 0 0 1</matrix>
+                        <node id="Lrig_LEG_FR_PhalangesManus" name="Lrig_LEG_FR_PhalangesManus" sid="Lrig_LEG_FR_PhalangesManus" type="JOINT">
+                          <matrix sid="transform">0.3139563 0.006208204 -0.9494172 -9.53674e-7 0.3008252 0.9478062 0.1056757 14.4021 0.9005197 -0.3187862 0.2957022 -4.76837e-7 0 0 0 1</matrix>
+                          <node id="Lrig_LEG_FR_FrontHoof" name="Lrig_LEG_FR_FrontHoof" sid="Lrig_LEG_FR_FrontHoof" type="JOINT">
+                            <matrix sid="transform">0.2252071 -0.9306457 0.2884101 -9.53674e-7 0.5330349 0.3654726 0.7630882 8.268229 -0.8155706 -0.01812048 0.5783736 0 0 0 0 1</matrix>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node id="LrigNeck1" name="LrigNeck1" sid="LrigNeck1" type="JOINT">
+                  <matrix sid="transform">-0.8642833 0.5019463 -0.03262022 1.33514e-5 -0.5011508 -0.8648477 -0.02977181 7.62939e-6 -0.04315536 -0.009383639 0.9990243 3.04023e-6 0 0 0 1</matrix>
+                  <node id="LrigNeck2" name="LrigNeck2" sid="LrigNeck2" type="JOINT">
+                    <matrix sid="transform">-0.08343546 0.5098057 -0.8562337 1.90735e-6 0.03762967 0.8602286 0.5085178 9.411026 0.9958023 0.01020861 -0.09095742 2.38419e-7 0 0 0 1</matrix>
+                    <node id="LrigNeck3" name="LrigNeck3" sid="LrigNeck3" type="JOINT">
+                      <matrix sid="transform">-0.1064988 0.03819635 0.993579 0 0.8117581 0.5803989 0.06469755 9.20224 -0.5742012 0.8134359 -0.09281802 -1.90735e-6 0 0 0 1</matrix>
+                      <node id="LrigScull" name="LrigScull" sid="LrigScull" type="JOINT">
+                        <matrix sid="transform">0.07844314 -0.9917626 -0.1012615 7.62939e-6 0.9961837 0.08187962 -0.0302358 8.358574 0.038278 -0.09850325 0.9944003 0 0 0 0 1</matrix>
+                        <node id="LrigScullBone001" name="LrigScullBone001" sid="LrigScullBone001" type="JOINT">
+                          <matrix sid="transform">0.5775385 -0.8161391 0.01913942 0 0.8162774 0.5776591 9.62724e-4 17.68683 -0.01184177 0.01506706 0.9998162 0 0 0 0 1</matrix>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node id="LrigTail1" name="LrigTail1" sid="LrigTail1" type="JOINT">
+            <matrix sid="transform">-0.3517753 -0.9360845 1.8596e-6 -20.91518 0.9360845 -0.3517753 -7.14308e-7 -7.864754 1.32281e-6 1.48947e-6 1 3.05528e-5 0 0 0 1</matrix>
+            <node id="LrigTail2" name="LrigTail2" sid="LrigTail2" type="JOINT">
+              <matrix sid="transform">0.6485046 0.7612109 5.1188e-7 0 -0.761211 0.6485046 4.64066e-7 19.11437 2.12954e-8 -6.90597e-7 1 -9.09495e-13 0 0 0 1</matrix>
+              <node id="LrigTail3" name="LrigTail3" sid="LrigTail3" type="JOINT">
+                <matrix sid="transform">0.9548182 0.297191 -5.27615e-8 -7.62939e-6 -0.2971912 0.954818 3.79151e-7 19.1143 1.63058e-7 -3.4634e-7 1 9.09495e-13 0 0 0 1</matrix>
+                <node id="LrigTail4" name="LrigTail4" sid="LrigTail4" type="JOINT">
+                  <matrix sid="transform">0.9940225 0.1091751 -2.29854e-7 -7.62939e-6 -0.1091751 0.9940226 -2.56642e-8 19.11428 2.25679e-7 5.06052e-8 1 0 0 0 0 1</matrix>
+                  <node id="LrigTail5" name="LrigTail5" sid="LrigTail5" type="JOINT">
+                    <matrix sid="transform">0.9986049 0.05280259 1.45607e-7 0 -0.05280253 0.998605 -8.06377e-8 21.08035 -1.49662e-7 7.28368e-8 1 0 0 0 0 1</matrix>
+                    <node id="LrigTail6" name="LrigTail6" sid="LrigTail6" type="JOINT">
+                      <matrix sid="transform">0.167908 -0.9858027 5.58049e-7 7.62939e-6 0.9858027 0.1679081 -3.98062e-7 25.33362 2.9871e-7 6.16964e-7 1 0 0 0 0 1</matrix>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node id="p_body" name="p_body" sid="p_body" type="JOINT">
+          <matrix sid="transform">1 0 0 0 0 1 0 0.01701599 0 0 1 68.42633 0 0 0 1</matrix>
+        </node>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>

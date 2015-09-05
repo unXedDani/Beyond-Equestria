@@ -1,0 +1,187 @@
+DEBUG LV.1 : Logger initialized
+Fox Claw Engine by Jcam Technologies
+Engine build : 2.0.2575.125
+Engine Version : Beta
+Platform : Win32
+Loading config : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/config.xml
+DEBUG LV.1 : Found node : 
+DEBUG LV.1 : Found node : Config
+DEBUG LV.1 : Found config
+DEBUG LV.1 : Found node : setting
+DEBUG LV.1 : Found setting : CharacterBodyB
+DEBUG LV.1 : Found node : setting
+DEBUG LV.1 : Found setting : CharacterBodyG
+DEBUG LV.1 : Found node : setting
+DEBUG LV.1 : Found setting : CharacterBodyR
+DEBUG LV.1 : Found node : setting
+DEBUG LV.1 : Found setting : CharacterGender
+DEBUG LV.1 : Found node : setting
+DEBUG LV.1 : Found setting : CharacterLowerMane
+DEBUG LV.1 : Found node : setting
+DEBUG LV.1 : Found setting : CharacterManeB1
+DEBUG LV.1 : Found node : setting
+DEBUG LV.1 : Found setting : CharacterManeB2
+DEBUG LV.1 : Found node : setting
+DEBUG LV.1 : Found setting : CharacterManeG1
+DEBUG LV.1 : Found node : setting
+DEBUG LV.1 : Found setting : CharacterManeG2
+DEBUG LV.1 : Found node : setting
+DEBUG LV.1 : Found setting : CharacterManeR1
+DEBUG LV.1 : Found node : setting
+DEBUG LV.1 : Found setting : CharacterManeR2
+DEBUG LV.1 : Found node : setting
+DEBUG LV.1 : Found setting : CharacterRace
+DEBUG LV.1 : Found node : setting
+DEBUG LV.1 : Found setting : CharacterTail
+DEBUG LV.1 : Found node : setting
+DEBUG LV.1 : Found setting : CharacterUpperMane
+DEBUG LV.1 : Found node : setting
+DEBUG LV.1 : Found setting : Clipping
+DEBUG LV.1 : Found node : setting
+DEBUG LV.1 : Found setting : HasCharacter
+DEBUG LV.1 : Found node : setting
+DEBUG LV.1 : Found setting : driver
+DEBUG LV.1 : Found node : setting
+DEBUG LV.1 : Found setting : fullscreen
+DEBUG LV.1 : Found node : setting
+DEBUG LV.1 : Found setting : height
+DEBUG LV.1 : Found node : setting
+DEBUG LV.1 : Found setting : music_volume
+DEBUG LV.1 : Found node : setting
+DEBUG LV.1 : Found setting : postfx
+DEBUG LV.1 : Found node : setting
+DEBUG LV.1 : Found setting : vsync
+DEBUG LV.1 : Found node : setting
+DEBUG LV.1 : Found setting : width
+DEBUG LV.1 : Found node : Config
+CharacterBodyB : 104.55
+CharacterBodyG : 104.55
+CharacterBodyR : 104.55
+CharacterGender : 1
+CharacterLowerMane : 0
+CharacterManeB1 : 0
+CharacterManeB2 : 0
+CharacterManeG1 : 0
+CharacterManeG2 : 0
+CharacterManeR1 : 84.15
+CharacterManeR2 : 0
+CharacterRace : 2
+CharacterTail : 4
+CharacterUpperMane : 15
+Clipping : 5000
+HasCharacter : 1
+driver : 2
+fullscreen : 0
+height : 800
+music_volume : 0.6
+postfx : 1
+vsync : 1
+width : 1280
+Creating Graphics Driver
+Trying driver : 2
+1=DX9, 2=OGL, 3=SOFTWARE
+Getting driver
+Getting manager
+Getting GUI
+Creating scene
+Initiating Scene
+Initializing Physics World
+DEBUG LV.1 : Initialized Physics version : 0.1.10
+Initializing Sound Engine
+DEBUG LV.1 : Initialized Sound Engine Version : 1.5.0
+DEBUG LV.3 : Initializing post processing system
+Setting initial values
+Initializing network
+Creating new luastate
+DEBUG LV.1 : Opening libraries
+DEBUG LV.1 : Opened libraries
+Network initialized
+Loading startup script
+Creating new luastate
+DEBUG LV.1 : Opening libraries
+DEBUG LV.1 : Opened libraries
+DEBUG LV.1 : Attempting to run script : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Scripts/startup.lua
+Setting debug to : 0
+DEBUG LV.1 : Successfully ran : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Scripts/startup.lua
+Running init() on startup.lua
+DEBUG LV.2 : Running init function
+Launching Beyond Equestria 0.1.0
+DEBUG LV.1 : Initializing Camera as type : 1
+DEBUG LV.1 : Initialized Camera as type : 1
+DEBUG LV.2 : Camera initialized
+DEBUG LV.2 : Creating image
+DEBUG LV.2 : Creating button
+Creating new luastate
+DEBUG LV.1 : Opening libraries
+DEBUG LV.1 : Opened libraries
+DEBUG LV.1 : Attempting to run script : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Scripts/GUI/Menu/start.lua
+DEBUG LV.1 : Successfully ran : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Scripts/GUI/Menu/start.lua
+DEBUG LV.2 : Creating image
+DEBUG LV.2 : Creating image
+DEBUG LV.2 : Creating button
+Creating new luastate
+DEBUG LV.1 : Opening libraries
+DEBUG LV.1 : Opened libraries
+DEBUG LV.1 : Attempting to run script : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Scripts/GUI/Menu/optionsbutton.lua
+DEBUG LV.1 : Successfully ran : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Scripts/GUI/Menu/optionsbutton.lua
+DEBUG LV.2 : Creating image
+DEBUG LV.2 : Creating image
+DEBUG LV.2 : Creating button
+Creating new luastate
+DEBUG LV.1 : Opening libraries
+DEBUG LV.1 : Opened libraries
+DEBUG LV.1 : Attempting to run script : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Scripts/GUI/Menu/quit.lua
+DEBUG LV.1 : Successfully ran : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Scripts/GUI/Menu/quit.lua
+DEBUG LV.2 : Creating image
+DEBUG LV.2 : Creating image
+DEBUG LV.2 : Creating image
+DEBUG LV.2 : Creating image
+DEBUG LV.2 : Creating image
+DEBUG LV.1 : Loading sound : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Assets/Levels/menu/music/atop the trees.wav
+DEBUG LV.2 : Sound loaded
+DEBUG LV.2 : Creating editbox
+Creating new luastate
+DEBUG LV.1 : Opening libraries
+DEBUG LV.1 : Opened libraries
+DEBUG LV.1 : Attempting to run script : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Scripts/GUI/Chat/setName.lua
+DEBUG LV.1 : Successfully ran : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Scripts/GUI/Chat/setName.lua
+City at-8_-5
+City at-6_8
+City at-5_-6
+City at-5_-1
+City at-5_8
+City at-4_-10
+City at-4_-1
+City at-3_-10
+City at-3_10
+City at-2_-8
+City at-2_10
+City at2_-10
+City at2_8
+City at3_10
+City at4_1
+City at4_10
+City at5_-8
+City at5_1
+City at5_6
+City at6_-8
+City at8_5
+DEBUG LV.2 : Ran init function
+init() succeeded
+Finished initializing
+Scene created
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.2 : Added GUI to Receiver
+Framework Closed
