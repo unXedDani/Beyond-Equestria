@@ -107,7 +107,7 @@ function onClick()
 		MainScene:setMetaData("PLAYER_ACCESSORY_ID_"..acc, horn)
 		MainScene:getObject(horn):attachTo(MainScene:getObject(curBody))
 		acc = acc + 1
-	elseif MainScene:getMetaData("PLAYER_"..id.."_RACE") == 2 then
+	elseif MainScene:getMetaData("PLAYER_RACE") == 2 then
 		local wings = MainScene:addMesh(raceItemFilenames[2], 0, 0, 0, 0, 90, 0, 1, 1, 1)
 		MainScene:getObject(wings):setMaterialData(0, "diffuse_color", 255, bodyR, bodyG, bodyB)
 		MainScene:getObject(wings):attachTo(MainScene:getObject(curBody))

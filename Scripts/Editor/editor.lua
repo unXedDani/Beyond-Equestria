@@ -6,7 +6,6 @@ function promptEditor()
 	if MainScene:getMetaData("RUNNING_EDITOR") == 0 then
 		MainScene:setMetaData("RUNNING_EDITOR", 1)
 		MainScene:setMetaData("PREVTIME", MainScene:getTimeScale())
-		--MainScene:setTimeScale(1)
 		local window = MainScene:addWindow("Editor", 100, 100, 300, 500, 0, "scripts/editor/closeEditor.lua")
 		local refBut = MainScene:addButton("Refresh", "Refreshs object list", 10, 20, 190, 40, window, "scripts/editor/refresh.lua")
 		local newOb = MainScene:addListBox(10, 260, 190, 290, window, "scripts/editor/addObject.lua")

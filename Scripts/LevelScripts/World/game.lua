@@ -23,13 +23,13 @@ function gameInit()
 	--MainScene:modifyCharacter("fallspeed", 20)
 	local win = createWindow("Chat", 0, 0, 300, 210, 0, "Scripts/GUI/Chat/chatWindow.lua")
 	local mes = MainScene:addListBox(10, 30, 290, 160, win, "Scripts/GUI/Chat/messageBox.lua")
-	MainScene:getGUIObject(mes)
+	MainScene:getGUIObject(mes):setAutoscroll(1)
 	MainScene:setMetaData("CHATMESSAGEBOX", mes)
 	MainScene:addEditBox("", 10, 160, 290, 180, 1, win, "Scripts/GUI/Chat/sendMessage.lua")
 end
 anim = 0
 updateCycle = 0
-updateOn = 60
+updateOn = 1000
 firstRun = 0
 curTime = 500
 
@@ -64,7 +64,7 @@ function gameUpdate()
 		MainScene:getObject(playerCollider):getCollider():setState("ACTIVE")
 		--MainScene:getObject(playerCam):setRotation(0, cY-180, 0)
 		if anim==0 then
-			MainScene:getBoneAnimatedMesh(MainScene:getMetaData("PLAYER_BODY_ID")):setSpeed(60)
+			MainScene:getBoneAnimatedMesh(MainScene:getMetaData("PLAYER_BODY_ID")):setSpeed(30)
 			MainScene:getBoneAnimatedMesh(MainScene:getMetaData("PLAYER_BODY_ID")):setFrameLoop(1, 50)
 			MainScene:getBoneAnimatedMesh(MainScene:getMetaData("PLAYER_BODY_ID")):setAnimation("walk")
 			anim = 1
@@ -107,7 +107,7 @@ function gameUpdate()
 		curTime = 0
 	end
 	
-	updateCycle =  updateCycle + 1
+	updateCycle =  updateCycle + MainScene:deltaTime()
 	if updateCycle >= updateOn then
 		updateCycle = 0
 		

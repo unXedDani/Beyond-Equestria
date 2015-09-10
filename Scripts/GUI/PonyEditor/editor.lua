@@ -33,7 +33,7 @@ function onClick()
 		end
 		
 		--TAILS--
-		MainScene:addText("Tail", 10, 320, 40, 340, window)
+		MainScene:addText("Tail", 10, 320, 90, 340, window)
 		tailBox = MainScene:addListBox(10, 340, 190, 410, window, "Scripts/GUI/PonyEditor/tail.lua")
 		local x = MainScene:addListItem("None", tailBox)
 		for i=0, tails-1 do
@@ -53,7 +53,7 @@ function onClick()
 		MainScene:addSlider(1, 200, 210, 330, 220, window, "Scripts/GUI/PonyEditor/umanecolorB1.lua")
 		
 		--UManeColor2
-		MainScene:addText("Hair Color 2 (R, G, B)", 200, 240, 190, 260, window)
+		MainScene:addText("Hair Color 2 (R, G, B)", 200, 240, 330, 260, window)
 		MainScene:addSlider(1, 200, 260, 330, 270, window, "Scripts/GUI/PonyEditor/umanecolorR2.lua")
 		MainScene:addSlider(1, 200, 280, 330, 290, window, "Scripts/GUI/PonyEditor/umanecolorG2.lua")
 		MainScene:addSlider(1, 200, 300, 330, 310, window, "Scripts/GUI/PonyEditor/umanecolorB2.lua")

@@ -70,6 +70,7 @@ function onReceive(pack, ip)
 		local umane2G = pack:readNumber()
 		local umane2B = pack:readNumber()
 		local race = pack:readNumber()
+		
 		MainScene:setMetaString("PLAYER_"..id.."_NAME", name)
 		MainScene:setMetaData("PLAYER_"..id.."_GENDER", body)
 		MainScene:setMetaData("PLAYER_"..id.."_UPPER_MANE", uppermane)
@@ -127,7 +128,7 @@ function onReceive(pack, ip)
 	end
 	if type == CHAT_MESSAGE then
 		local message = pack:readString()
-		local tmp = MainScene:insertListItem(message,0, MainScene:getMetaData("CHATMESSAGEBOX"))
+		local tmp = MainScene:addListItem(message, MainScene:getMetaData("CHATMESSAGEBOX"))
 		MainScene:setMetaString("CHAT_MESSAGE_GUI_"..tmp, message)
 	end
 end

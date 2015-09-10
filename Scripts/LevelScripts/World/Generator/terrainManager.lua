@@ -44,7 +44,7 @@ function updateChunks(posx, posy, chunksize, terrainScale)
 		if MainScene:getMetaData("CITYCHUNK"..(chunkx-1).."_"..chunky) == 1 then
 			local models = MainScene:getMetaData("CITYCHUNKMODELS"..(chunkx-1).."_"..chunky)
 			for i=1, models do
-				MainScene:removeObject(MainScene:getMetaData("CITYCHUNKID"..i..(chunkx-1).."_"..chunky))
+				MainScene:removeObject(MainScene:getMetaData("CITYCHUNKID"..i.."_"..(chunkx-1).."_"..chunky))
 			end
 			MainScene:setMetaData("CITYCHUNK"..(chunkx-1).."_"..chunky, 0)
 		end
@@ -79,7 +79,7 @@ function updateChunks(posx, posy, chunksize, terrainScale)
 		if MainScene:getMetaData("CITYCHUNK"..(chunkx+1).."_"..chunky) == 1 then
 			local models = MainScene:getMetaData("CITYCHUNKMODELS"..(chunkx+1).."_"..chunky)
 			for i=1, models do
-				MainScene:removeObject(MainScene:getMetaData("CITYCHUNKID"..i..(chunkx+1).."_"..chunky))
+				MainScene:removeObject(MainScene:getMetaData("CITYCHUNKID"..i.."_"..(chunkx+1).."_"..chunky))
 			end
 			MainScene:setMetaData("CITYCHUNK"..(chunkx+1).."_"..chunky, 0)
 		end
@@ -114,7 +114,7 @@ function updateChunks(posx, posy, chunksize, terrainScale)
 		if MainScene:getMetaData("CITYCHUNK"..chunkx.."_"..(chunky-1)) == 1 then
 			local models = MainScene:getMetaData("CITYCHUNKMODELS"..chunkx.."_"..(chunky-1))
 			for i=1, models do
-				MainScene:removeObject(MainScene:getMetaData("CITYCHUNKID"..i..chunkx.."_"..(chunky-1)))
+				MainScene:removeObject(MainScene:getMetaData("CITYCHUNKID"..i.."_"..chunkx.."_"..(chunky-1)))
 			end
 			MainScene:setMetaData("CITYCHUNK"..chunkx.."_"..(chunky-1), 0)
 		end
@@ -149,7 +149,7 @@ function updateChunks(posx, posy, chunksize, terrainScale)
 		if MainScene:getMetaData("CITYCHUNK"..chunkx.."_"..(chunky+1)) == 1 then
 			local models = MainScene:getMetaData("CITYCHUNKMODELS"..chunkx.."_"..(chunky+1))
 			for i=1, models do
-				MainScene:removeObject(MainScene:getMetaData("CITYCHUNKID"..i..chunkx.."_"..(chunky+1)))
+				MainScene:removeObject(MainScene:getMetaData("CITYCHUNKID"..i.."_"..chunkx.."_"..(chunky+1)))
 			end
 			MainScene:setMetaData("CITYCHUNK"..chunkx.."_"..(chunky+1), 0)
 		end
@@ -213,11 +213,18 @@ function createChunk(chunkx, chunky, chunksize, terrainScale)
 		MainScene:setMetaData("CITYCHUNK"..chunkx.."_"..chunky, 1)
 		local cityBuildingModels = {}
 		cityBuildingModels = generateCity(chunkx*terrainScale*chunksize, chunky*terrainScale*chunksize, 64, 64, 16, 4)
-		MainScene:setMetaData("CITYCHUNKMODELS"..chunkx.."_"..chunky, cityBuildingModels[1]-1)
+		MainScene:setMetaData("CITYCHUNKMODELS"..chunkx.."_"..chunky, 1)
+		local cmesh = CMESH.new(MainScene, 0)
 		for i=2, cityBuildingModels[1] do
-			MainScene:setMetaData("CITYCHUNKID"..(i-1)..chunkx.."_"..chunky, cityBuildingModels[i])
-			MainScene:SNLog("Found building model", cityBuildingModels[i])
+			cmesh:addMesh(MainScene:getMesh(cityBuildingModels[i]))
+			--MainScene:setMetaData("CITYCHUNKID"..(i-1)..chunkx.."_"..chunky, cityBuildingModels[i])
+			--MainScene:SNLog("Found building model", cityBuildingModels[i])
 		end
+		local cm = MainScene:addCMesh(cmesh, 0, 0, 0, 0, 0, 0, 1, 1, 1)
+		MainScene:getMesh(cm):addCollider(MainScene, "MESH_TRIMESH", 0)
+		MainScene:getObject(cm):setMaterialFlag("normalize_normals", 1)
+		MainScene:getObject(cm):useShader(MainScene, "Shaders/buildingShader.xml")
+		MainScene:setMetaData("CITYCHUNKID".."1".."_"..chunkx.."_"..chunky, cm)
 	end
 	return terrain
 end
@@ -258,6 +265,9 @@ function generateTrees(terrain, chunkx, chunky, chunksize, terrainScale)
 	local heightFactor = MainScene:getMetaData("CHUNK_HEIGHT_FACTOR_"..chunkx.."_"..chunky)
 	if heightFactor > 2 and heightFactor < 20 then
 		local trees = 0
+		local cmnum = 1
+		local c = CMESH.new(MainScene, 1000)
+		local cmeshs = {}
 		for x=1, chunksize-1 do
 			for y=1, chunksize-1 do
 				local modX = x+(chunksize*chunkx)
@@ -292,12 +302,18 @@ function generateTrees(terrain, chunkx, chunky, chunksize, terrainScale)
 					posY = posY + offsetY
 					local treeID = MainScene:addMesh(enviroFilenames[treeType], posX, (terrain:getHeight(x, y)*5)-2, posY, 0, rotation, 0, 2, 2, 2)
 					MainScene:getObject(treeID):setMaterialFlag("gouraud_shading", 1)
-					MainScene:getObject(treeID):setMaterialFlag("mip_maps", 1)
+					MainScene:getObject(treeID):setMaterialFlag("mip_maps", 0)
+					MainScene:getObject(treeID):setMaterialData(0, "texture", MainScene, 0, "Assets/Levels/world/textures/mane.jpg")
+					MainScene:getObject(treeID):setMaterialData(1, "texture", MainScene, 0, "Assets/Levels/world/textures/mane.jpg")
+					c:addMesh(MainScene:getMesh(treeID))
+					cmeshs[cmnum] = treeID
+					cmnum = cmnum + 1
 					local e = MainScene:addEmpty(posX, terrain:getHeight(x, y)*5 + 10, posY, 0, 0, 0, 3,10, 3)
 					MainScene:getMesh(e):addCollider(MainScene, "CUBE", 0)
-					MainScene:setMetaData("TREES_ID_"..chunkx.."_"..chunky.."_"..trees+1, e)
-					MainScene:setMetaData("TREES_ID_"..chunkx.."_"..chunky.."_"..trees, treeID)
-					trees = trees + 2
+					MainScene:setMetaData("TREES_ID_"..chunkx.."_"..chunky.."_"..trees, e)
+					--MainScene:setMetaData("TREES_ID_"..chunkx.."_"..chunky.."_"..trees, treeID)
+					trees = trees + 1
+					
 				elseif createTree < -0.5 then
 					local rotation = noise2(math.abs(modX)/8001, math.abs(modY)/7000)*180
 					MainScene:SLog(rotation)
@@ -326,16 +342,35 @@ function generateTrees(terrain, chunkx, chunky, chunksize, terrainScale)
 					posY = posY + offsetY
 					local treeID = MainScene:addMesh(rockFilenames[treeType], posX, (terrain:getHeight(x, y)*5)-2, posY, 0, rotation, 0, 2, 2, 2)
 					MainScene:getObject(treeID):setMaterialFlag("gouraud_shading", 1)
-					MainScene:getObject(treeID):setMaterialFlag("mip_maps", 1)
+					MainScene:getObject(treeID):setMaterialFlag("mip_maps", 0)
+					MainScene:getObject(treeID):setMaterialData(0, "texture", MainScene, 0, "Assets/Levels/world/textures/mane.jpg")
+					c:addMesh(MainScene:getMesh(treeID))
+					cmeshs[cmnum] = treeID
+					cmnum = cmnum + 1
 					local e = MainScene:addEmpty(posX, (terrain:getHeight(x, y)*5) + 3, posY, 0, 0, 0, 3,3, 3)
 					MainScene:getMesh(e):addCollider(MainScene, "CUBE", 0)
-					MainScene:setMetaData("TREES_ID_"..chunkx.."_"..chunky.."_"..trees+1, e)
-					MainScene:setMetaData("TREES_ID_"..chunkx.."_"..chunky.."_"..trees, treeID)
-					trees = trees + 2
+					MainScene:setMetaData("TREES_ID_"..chunkx.."_"..chunky.."_"..trees, e)
+					trees = trees + 1
 				end
 			end
 		end
-		MainScene:setMetaData("TREES_IN_"..chunkx.."_"..chunky, trees-1)
+		local posX = 0
+		local posY = 0
+		local cm = MainScene:addCMesh(c, posX, 0, posY, 0, 0, 0, 1, 1, 1)
+		MainScene:getObject(cm):setMaterialFlag("normalize_normals", 1)
+		
+		--MainScene:getObject(cm):setMaterialFlag("mip_maps", 1)
+		--MainScene:getObject(cm):setMaterialFlag("ansiotropic", 1)
+		--MainScene:getObject(cm):setMaterialData(0, "texture", MainScene, 0, "Assets/Levels/world/textures/mane.jpg")
+		--MainScene:getObject(cm):setMaterialData(1, "texture", MainScene, 0, "Assets/Levels/world/textures/mane.jpg")
+		--MainScene:getObject(cm):setMaterialData(2, "texture", MainScene, 0, "Assets/Levels/world/textures/mane.jpg")
+		MainScene:getObject(cm):setMaterialFlag("gouraud_shading", 1)
+		MainScene:getObject(cm):setMaterialFlag("bilinear", 1)
+		for i=1, cmnum-1 do
+			--MainScene:removeObject(cmeshs[i])
+		end
+		MainScene:setMetaData("TREES_ID_"..chunkx.."_"..chunky.."_"..trees, cm)
+		MainScene:setMetaData("TREES_IN_"..chunkx.."_"..chunky, trees)
 	end
 end
 

@@ -15,7 +15,9 @@ largeBuildingMiddleFiles = {
 }
 largeBuildingMiddles = 4
 
-
+smallBuildingModelFiles = {
+	"Assets/Levels/World/Models/CityBuildingParts/small1.dae"
+}
 function generateCity(startx, starty, sizex, sizey, blockSize, buildingWidth)
 local models = {}
 local curIndex = 2
@@ -86,7 +88,7 @@ local curIndex = 2
 						curIndex = curIndex + 1
 					elseif x%blockSize == 0 and y%blockSize == 0 then
 						local t1 = MainScene:addMesh("Assets/Levels/world/models/CityBuildingParts/road2.dae", (x*blockSize)+startx, 0, (y*blockSize)+starty, 0, 0, 0, 8, 10, 8)
-						MainScene:getMesh(t1):addCollider(MainScene, "MESH_GIMPACT", 0)
+						--MainScene:getMesh(t1):addCollider(MainScene, "MESH_GIMPACT", 0)
 						--MainScene:getObject(t1):setMaterialTexture(MainScene, 1, "Assets/Levels/world/textures/Detail.jpg")
 						MainScene:getObject(t1):useShader(MainScene, "Shaders/buildingShader.xml")
 						models[curIndex] = t1
@@ -117,7 +119,7 @@ function createLargeBuilding(x, y, z)
 	buildingMiddle = math.floor(buildingMiddle%largeBuildingMiddles)+1
 	local t1 = MainScene:addMesh(largeBuildingBottomFiles[buildingBottom], x, 0, z, 0, rotation*90, 0, 8, 10, 8)
 	local t2 = MainScene:addMesh(largeBuildingMiddleFiles[buildingMiddle], x, 0, z, 0, rotation*90, 0, 8, 10, 8)
-	MainScene:getMesh(t1):addCollider(MainScene, "MESH_TRIMESH", 0)
+	--MainScene:getMesh(t1):addCollider(MainScene, "MESH_TRIMESH", 0)
 	MainScene:getObject(t1):setMaterial("solid")
 	MainScene:getObject(t2):setMaterial("solid")
 	MainScene:getObject(t1):setMaterialTexture(MainScene, 0, "Assets/Levels/world/textures/Building_texture.jpg")
@@ -137,7 +139,7 @@ function createSmallBuilding(x, y, z)
 	buildingBottom = buildingBottom * 10
 	buildingBottom = math.floor(buildingBottom%largeBuildingBottoms)+1
 	local t1 = MainScene:addMesh(largeBuildingBottomFiles[buildingBottom], x, 0, z, 0, rotation*90, 0, 8, 10, 8)
-	MainScene:getMesh(t1):addCollider(MainScene, "MESH_GIMPACT", 0)
+	--MainScene:getMesh(t1):addCollider(MainScene, "MESH_GIMPACT", 0)
 	MainScene:getObject(t1):setMaterialTexture(MainScene, 1, "Assets/Levels/world/textures/Detail.jpg")
 	MainScene:getObject(t1):useShader(MainScene, "Shaders/buildingShader.xml")
 	local tmp = {}
@@ -147,7 +149,7 @@ function createSmallBuilding(x, y, z)
 end
 function createRoad(x, y, z, rot)
 	local t1 = MainScene:addMesh("Assets/Levels/world/models/CityBuildingParts/road1.dae", x, 0, z, 0, rot, 0, 8, 10, 8)
-	MainScene:getMesh(t1):addCollider(MainScene, "MESH_GIMPACT", 0)
+	--MainScene:getMesh(t1):addCollider(MainScene, "MESH_GIMPACT", 0)
 	--MainScene:getObject(t1):setMaterialTexture(MainScene, 1, "Assets/Levels/world/textures/Detail.jpg")
 	MainScene:getObject(t1):useShader(MainScene, "Shaders/buildingShader.xml")
 	local tmp = {}
