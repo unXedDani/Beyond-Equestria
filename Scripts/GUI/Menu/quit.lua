@@ -4,7 +4,7 @@ function onClick()
 		p:writeNumber(2)
 		p:writeNumber(MainScene:getMetaData("PLAYER_ID"))
 		p:writeString(MainScene:getMetaString("PLAYER_NAME"))
-		MainScene:sendPacket(p, "173.62.195.104|7777")
+		MainScene:sendPacket(p, MainScene:getMetaString("SERVERCOMBINEDIP"))
 		MainScene:disconnect()
 	end
 	MainScene:quit()

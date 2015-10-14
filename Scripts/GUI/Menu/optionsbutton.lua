@@ -1,6 +1,7 @@
 System_run("Scripts/defs.lua", MainScene)
 function onClick()
-	local window = createWindow("Options", 100, 100, 500, 500, 0, "Scripts/Editor/emptyWindow.lua")
+	MainScene:setMetaData("MENUCAMERATRACK", 4)
+	local window = createWindow("Options", 100, 100, 500, 500, 0, "Scripts/GUI/Menu/optionsbutton.lua")
 	local list = MainScene:addListBox(10, 40, 390, 85, window, "Scripts/GUI/Menu/Resolution.lua")
 	MainScene:addListItem("1024x768", list)
 	MainScene:addListItem("1280x800", list)
@@ -22,4 +23,7 @@ function onClick()
 	MainScene:addText("Render Distance", 10, 220, 390, 240, window)
 	local clipping = MainScene:addSlider(1, 10, 240, 390, 250, window, "Scripts/GUI/Menu/clipping.lua")
 	
+end
+function onClose()
+	MainScene:setMetaData("MENUCAMERATRACK", 1)
 end

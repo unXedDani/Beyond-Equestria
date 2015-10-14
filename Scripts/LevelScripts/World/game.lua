@@ -5,7 +5,8 @@ function gameInit()
 	--MainScene:modifyCharacter("warp", 500, 10, 500)
 	MainScene:load("Empty.xml")
 	playerCam = MainScene:addEmpty(0, -0.7, 0, 0, 0, 0, 0.2, 0.1, 0.1)
-	playerCollider = MainScene:addEmpty(2556, 10, 8700, 0, 0, 0, 1, 2, 2)
+	--playerCollider = MainScene:addEmpty(2556, 10, 8700, 0, 0, 0, 1, 2, 2)
+	playerCollider = MainScene:addEmpty(500, 10, 500, 0, 0, 0, 1, 2, 2)
 	MainScene:getEmpty(playerCollider):addCollider(MainScene, "SPHERE", 50)
 	
 	MainScene:getObject(playerCollider):getCollider():setFriction(200)
@@ -21,6 +22,7 @@ function gameInit()
 	--MainScene:modifyCharacter("jumpheight", 5)
 	--MainScene:modifyCharacter("jumpforce", 30)
 	--MainScene:modifyCharacter("fallspeed", 20)
+	MainScene:clearGUI()
 	local win = createWindow("Chat", 0, 0, 300, 210, 0, "Scripts/GUI/Chat/chatWindow.lua")
 	local mes = MainScene:addListBox(10, 30, 290, 160, win, "Scripts/GUI/Chat/messageBox.lua")
 	MainScene:getGUIObject(mes):setAutoscroll(1)
@@ -63,11 +65,16 @@ function gameUpdate()
 	if DirX ~= 0 or DirZ ~= 0 then
 		MainScene:getObject(playerCollider):getCollider():setState("ACTIVE")
 		--MainScene:getObject(playerCam):setRotation(0, cY-180, 0)
-		if anim==0 then
-			MainScene:getBoneAnimatedMesh(MainScene:getMetaData("PLAYER_BODY_ID")):setSpeed(30)
-			MainScene:getBoneAnimatedMesh(MainScene:getMetaData("PLAYER_BODY_ID")):setFrameLoop(1, 50)
+		if anim~=1 and sprint == 0 then
+			MainScene:getBoneAnimatedMesh(MainScene:getMetaData("PLAYER_BODY_ID")):setSpeed(60)
+			MainScene:getBoneAnimatedMesh(MainScene:getMetaData("PLAYER_BODY_ID")):setFrameLoop(1, 60)
 			MainScene:getBoneAnimatedMesh(MainScene:getMetaData("PLAYER_BODY_ID")):setAnimation("walk")
 			anim = 1
+		elseif anim ~= 2 and sprint > 0 then
+			MainScene:getBoneAnimatedMesh(MainScene:getMetaData("PLAYER_BODY_ID")):setSpeed(120)
+			MainScene:getBoneAnimatedMesh(MainScene:getMetaData("PLAYER_BODY_ID")):setFrameLoop(1, 60)
+			MainScene:getBoneAnimatedMesh(MainScene:getMetaData("PLAYER_BODY_ID")):setAnimation("trot")
+			anim = 2
 		end
 		MainScene:getObject(playerCollider):setRotation(0, cY-180, 0)
 		MainScene:getObject(playerCollider):getCollider():setVelocity((DirX * (sprint+1))*15, -5, (DirZ * (sprint+1))*15)
@@ -78,7 +85,7 @@ function gameUpdate()
 		p:writeNumber(px)
 		p:writeNumber(py-2)
 		p:writeNumber(pz)
-		MainScene:sendPacket(p, "173.62.195.104|7777")
+		MainScene:sendPacket(p, MainScene:getMetaString("SERVERCOMBINEDIP"))
 		
 		local pa = MainScene:createPacket()
 		pa:writeNumber(7)
@@ -87,9 +94,9 @@ function gameUpdate()
 		pa:writeNumber(prx)
 		pa:writeNumber(pry)
 		pa:writeNumber(prz)
-		MainScene:sendPacket(pa, "173.62.195.104|7777")
+		MainScene:sendPacket(pa, MainScene:getMetaString("SERVERCOMBINEDIP"))
 	else
-		if anim == 1 then
+		if anim > 0 then
 			MainScene:getBoneAnimatedMesh(MainScene:getMetaData("PLAYER_BODY_ID")):setAnimation("idle")
 			anim = 0
 			MainScene:getBoneAnimatedMesh(MainScene:getMetaData("PLAYER_BODY_ID")):setSpeed(10)
@@ -118,7 +125,7 @@ function gameUpdate()
 		p:writeNumber(px)
 		p:writeNumber(py-2)
 		p:writeNumber(pz)
-		MainScene:sendPacket(p, "173.62.195.104|7777")
+		MainScene:sendPacket(p, MainScene:getMetaString("SERVERCOMBINEDIP"))
 		
 		local pa = MainScene:createPacket()
 		pa:writeNumber(7)
@@ -127,13 +134,13 @@ function gameUpdate()
 		pa:writeNumber(prx)
 		pa:writeNumber(pry)
 		pa:writeNumber(prz)
-		MainScene:sendPacket(pa, "173.62.195.104|7777")
+		MainScene:sendPacket(pa, MainScene:getMetaString("SERVERCOMBINEDIP"))
 	end
 	if firstRun == 0 then
 		local pack = MainScene:createPacket()
 		pack:writeNumber(1)
 		pack:writeString(MainScene:getMetaString("PLAYER_NAME"))
-		MainScene:sendPacket(pack, "173.62.195.104|7777")
+		MainScene:sendPacket(pack, MainScene:getMetaString("SERVERCOMBINEDIP"))
 		local body = MainScene:getConfigValue("CharacterGender")
 		local uppermane = MainScene:getConfigValue("CharacterUpperMane")
 		local lowermane = MainScene:getConfigValue("CharacterLowerMane")
@@ -168,7 +175,7 @@ function gameUpdate()
 		pack1:writeNumber(umane2G)
 		pack1:writeNumber(umane2B)
 		pack1:writeNumber(race)
-		MainScene:sendPacket(pack1, "173.62.195.104|7777")
+		MainScene:sendPacket(pack1, MainScene:getMetaString("SERVERCOMBINEDIP"))
 		
 		firstRun = 1
 	end

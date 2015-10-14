@@ -4,7 +4,7 @@ function onEnter(text)
 	pack:writeNumber(8)
 	pack:writeString(MainScene:getMetaString("PLAYER_NAME"))
 	pack:writeString(text)
-	MainScene:sendPacket(pack, "173.62.195.104|7777")
+	MainScene:sendPacket(pack, MainScene:getMetaString("SERVERCOMBINEDIP"))
 	current:setText("")
 end
 
