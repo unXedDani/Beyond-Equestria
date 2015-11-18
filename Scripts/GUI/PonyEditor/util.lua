@@ -83,7 +83,7 @@ function generatePlayer()
 		MainScene:removeObject(MainScene:getMetaData("PLAYER_UPPER_MANE_ID"))
 	end
 	if uppermane ~= 0 then
-		local curUMane = MainScene:addMesh(upperManeFiles[uppermane], 0, 0, 0, 0, 0, 0, 1, 1, 1)
+		local curUMane = MainScene:addBoneAnimatedMesh(upperManeFiles[uppermane], 0, 0, 0, 0, 0, 0, 1, 1, 1)
 		--MainScene:getBoneAnimatedMesh(curBody):attachToBone(MainScene:getObject(curUMane), "LrigNeck3")
 		MainScene:getObject(curUMane):attachTo(MainScene:getObject(curBody))
 		MainScene:getObject(curUMane):useShader(MainScene, "Shaders/bodyShader.xml")

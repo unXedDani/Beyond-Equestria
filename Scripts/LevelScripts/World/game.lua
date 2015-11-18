@@ -1,12 +1,20 @@
+GENTERRAIN = 1
 function gameInit()
+
 	MainScene:addCamera(2)
 	MainScene:getCamera():setClipping(1, MainScene:getConfigValue("Clipping"))
 	--MainScene:createCharacter( 2, 5, 3)
 	--MainScene:modifyCharacter("warp", 500, 10, 500)
 	MainScene:load("Empty.xml")
+	if GENTERRAIN == 0 then
+		MainScene:load("debug.xml")
+	end
 	playerCam = MainScene:addEmpty(0, -0.7, 0, 0, 0, 0, 0.2, 0.1, 0.1)
-	--playerCollider = MainScene:addEmpty(2556, 10, 8700, 0, 0, 0, 1, 2, 2)
-	playerCollider = MainScene:addEmpty(500, 10, 500, 0, 0, 0, 1, 2, 2)
+	if GENTERRAIN == 1 then
+		playerCollider = MainScene:addEmpty(4600, 10, 1530, 0, 0, 0, 1, 2, 2)
+	else
+		playerCollider = MainScene:addEmpty(0, 10, 0, 0, 0, 0, 1, 2, 2)
+	end
 	MainScene:getEmpty(playerCollider):addCollider(MainScene, "SPHERE", 50)
 	
 	MainScene:getObject(playerCollider):getCollider():setFriction(200)
@@ -110,7 +118,7 @@ function gameUpdate()
 	curTime = curTime + MainScene:deltaTime()
 	if curTime > 500 then
 		tx, ty, tz = MainScene:getObject(playerCollider):getPosition()
-		updateChunks(tx/terrainScale, tz/terrainScale, chunksize, terrainScale)
+		if GENTERRAIN == 1 then updateChunks(tx/terrainScale, tz/terrainScale, chunksize, terrainScale) end
 		curTime = 0
 	end
 	

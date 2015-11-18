@@ -23,9 +23,9 @@ postFX = 0
 mInit = 0
 function init()
 	MainScene:SLog("Launching Beyond Equestria "..version)
-	MainScene:setMetaString("SERVERIP", "173.62.195.104")
+	MainScene:setMetaString("SERVERIP", "173.49.166.165")
 	MainScene:setMetaData("SERVERPORT", 7777)
-	MainScene:setMetaString("SERVERCOMBINEDIP", "173.62.195.104|7777")
+	MainScene:setMetaString("SERVERCOMBINEDIP", "173.49.166.165|7777")
 	MainScene:addCamera(1)
 	--menuInit()
 	local width = MainScene:getConfigValue("width")
@@ -42,19 +42,6 @@ function init()
 	MainScene:setMetaData("GAMESTATECHANGED", 0)
 	MainScene:setMetaData("NETRUNNING", 0)
 	MainScene:setMetaData("NETWORKERROR", 0)
-	for chunkx = -10, 10 do
-		for chunky = -10, 10 do
-			local heightFactor = noise2((chunkx)/8000, (chunky)/8000) * 50
-			heightFactor = interpolate(heightFactor, noise2((chunkx-1)/8000, (chunky)/8000) * 50, 0.1)
-			heightFactor = interpolate(heightFactor, noise2((chunkx+1)/8000, (chunky)/8000) * 50, 0.1)
-			heightFactor = interpolate(heightFactor, noise2((chunkx)/8000, (chunky-1)/8000) * 50, 0.1)
-			heightFactor = interpolate(heightFactor, noise2((chunkx)/8000, (chunky+1)/8000) * 50, 0.1)
-			if heightFactor < 1 then heightFactor = -heightFactor end
-			if heightFactor < 2 then
-				MainScene:SLog("City at"..chunkx.."_"..chunky)
-			end
-		end
-	end
 end
 
 function update()
