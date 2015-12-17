@@ -53,10 +53,14 @@ enviroFilenames = {
 									"Assets/Levels/world/Models/Environment/tree1.dae",
 									"Assets/Levels/world/Models/Environment/tree2.dae",
 									"Assets/Levels/world/Models/Environment/tree3.dae",
-									"Assets/Levels/world/Models/Environment/tree4.dae",
+									"Assets/Levels/world/Models/Environment/tree4.dae"
 									}
-rocks = 2
+rocks = 6
 rockFilenames = {
 									"Assets/Levels/world/Models/Environment/rock1.dae",
-									"Assets/Levels/world/Models/Environment/rock2.dae"
+									"Assets/Levels/world/Models/Environment/rock2.dae",
+									"Assets/Levels/world/Models/Environment/Bush 1.dae",
+									"Assets/Levels/world/Models/Environment/Bush 2.dae",
+									"Assets/Levels/world/Models/Environment/Bush 3.dae",
+									"Assets/Levels/world/Models/Environment/Bush 4.dae"
 								}

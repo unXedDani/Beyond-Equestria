@@ -23,9 +23,9 @@ postFX = 0
 mInit = 0
 function init()
 	MainScene:SLog("Launching Beyond Equestria "..version)
-	MainScene:setMetaString("SERVERIP", "173.49.166.165")
+	MainScene:setMetaString("SERVERIP", "71.175.69.32")
 	MainScene:setMetaData("SERVERPORT", 7777)
-	MainScene:setMetaString("SERVERCOMBINEDIP", "173.49.166.165|7777")
+	MainScene:setMetaString("SERVERCOMBINEDIP", "71.175.69.32|7777")
 	MainScene:addCamera(1)
 	--menuInit()
 	local width = MainScene:getConfigValue("width")
@@ -42,6 +42,8 @@ function init()
 	MainScene:setMetaData("GAMESTATECHANGED", 0)
 	MainScene:setMetaData("NETRUNNING", 0)
 	MainScene:setMetaData("NETWORKERROR", 0)
+	MainScene:setMetaData("CONNECTED_TO_SERVER", 0)
+	MainScene:setMetaData("WORLDDEBUG", 1)
 end
 
 function update()
@@ -84,5 +86,11 @@ function render()
 	if postFX == 1 then
 		MainScene:RenderEffect(5)
 		MainScene:RenderEffect(24)
+		--MainScene:RenderEffect(29)
 	end
+	
+	if GameState == 1 then
+		gameRender()
+	end
+	
 end

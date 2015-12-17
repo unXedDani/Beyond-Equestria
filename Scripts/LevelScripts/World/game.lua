@@ -1,20 +1,22 @@
 GENTERRAIN = 1
 function gameInit()
-
+	GENTERRAIN = MainScene:getMetaData("WORLDDEBUG")
 	MainScene:addCamera(2)
 	MainScene:getCamera():setClipping(1, MainScene:getConfigValue("Clipping"))
 	--MainScene:createCharacter( 2, 5, 3)
 	--MainScene:modifyCharacter("warp", 500, 10, 500)
 	MainScene:load("Empty.xml")
-	if GENTERRAIN == 0 then
+	if GENTERRAIN == 1 then
 		MainScene:load("debug.xml")
 	end
 	playerCam = MainScene:addEmpty(0, -0.7, 0, 0, 0, 0, 0.2, 0.1, 0.1)
-	if GENTERRAIN == 1 then
+	if GENTERRAIN == 0 then
 		playerCollider = MainScene:addEmpty(4600, 10, 1530, 0, 0, 0, 1, 2, 2)
 	else
 		playerCollider = MainScene:addEmpty(0, 10, 0, 0, 0, 0, 1, 2, 2)
 	end
+	--MainScene:getObject(0):attachTo(MainScene:getObject(playerCollider))
+	--MainScene:getObject(0):setPosition(0, 10, 50)
 	MainScene:getEmpty(playerCollider):addCollider(MainScene, "SPHERE", 50)
 	
 	MainScene:getObject(playerCollider):getCollider():setFriction(200)
@@ -38,12 +40,24 @@ function gameInit()
 	MainScene:addEditBox("", 10, 160, 290, 180, 1, win, "Scripts/GUI/Chat/sendMessage.lua")
 end
 anim = 0
+lastAnim = 0
 updateCycle = 0
 updateOn = 1000
 firstRun = 0
 curTime = 500
+packBuffer = 0
 
+IDLE1 = 6
+IDLE = 0
+WALK = 1
+SPRINT = 2
+BWALK = 3
+LWALK = 4
+RWALK = 5
+
+idleTime = 0
 function gameUpdate()
+	lastAnim = anim
 	--MainScene:getObject(playerCam):setPosition(MainScene:characterData("posX"), MainScene:characterData("posY")-2, MainScene:characterData("posZ"))
 	if(MainScene:getKey(KEY_ESCAPE) == 1) then
 		initPause()
@@ -66,26 +80,56 @@ function gameUpdate()
 	if MainScene:getKey(KEY_LSHIFT) == 1 then
 		sprint = 2
 	end
-	if MainScene:getKey(KEY_SPACE) == 1 then
-		MainScene:getObject(playerCollider):getCollider():addCentralForce(0, 1000, 0)
+	
+	local ppx, ppy, ppz = MainScene:getObject(playerCollider):getPosition()
+	local xx, yy, zz = MainScene:rayCast(ppx, ppy-1, ppz, ppx, ppy-500, ppz)
+	
+	if MainScene:getKey(KEY_SPACE) == 1 and (yy-ppy) < 2 and (yy-ppy) > -2 then
+		MainScene:getObject(playerCollider):getCollider():setState("ACTIVE")
+		MainScene:getObject(playerCollider):getCollider():addCentralForce(0, 3000, 0)
 	end
+	
 	local cX, cY, cZ = MainScene:getCamera():getRotation()
 	if DirX ~= 0 or DirZ ~= 0 then
 		MainScene:getObject(playerCollider):getCollider():setState("ACTIVE")
 		--MainScene:getObject(playerCam):setRotation(0, cY-180, 0)
-		if anim~=1 and sprint == 0 then
-			MainScene:getBoneAnimatedMesh(MainScene:getMetaData("PLAYER_BODY_ID")):setSpeed(60)
-			MainScene:getBoneAnimatedMesh(MainScene:getMetaData("PLAYER_BODY_ID")):setFrameLoop(1, 60)
-			MainScene:getBoneAnimatedMesh(MainScene:getMetaData("PLAYER_BODY_ID")):setAnimation("walk")
-			anim = 1
-		elseif anim ~= 2 and sprint > 0 then
-			MainScene:getBoneAnimatedMesh(MainScene:getMetaData("PLAYER_BODY_ID")):setSpeed(120)
-			MainScene:getBoneAnimatedMesh(MainScene:getMetaData("PLAYER_BODY_ID")):setFrameLoop(1, 60)
-			MainScene:getBoneAnimatedMesh(MainScene:getMetaData("PLAYER_BODY_ID")):setAnimation("trot")
-			anim = 2
+		if DirZ == -1 and DirX == 0 and sprint == 0 then
+			anim = WALK
+		end
+		if DirZ == -1 and DirX == 0 and sprint ~= 0 then
+			anim = SPRINT
+		end
+		if DirX == 1 then
+			anim = LWALK
+		end
+		if DirX == -1 then
+			anim = RWALK
+		end
+		if DirZ == 1 then
+			anim = BWALK
 		end
 		MainScene:getObject(playerCollider):setRotation(0, cY-180, 0)
-		MainScene:getObject(playerCollider):getCollider():setVelocity((DirX * (sprint+1))*15, -5, (DirZ * (sprint+1))*15)
+		local vx, vy, vz = MainScene:getObject(playerCollider):getCollider():getVelocity()
+		MainScene:getObject(playerCollider):getCollider():setVelocity((DirX * (sprint+1))*4, vy, (DirZ * (sprint+1))*4)
+	else
+		if anim ~= IDLE and anim ~= IDLE1 then
+			anim = IDLE
+			MainScene:getObject(playerCollider):getCollider():setVelocity(0, 0, 0)
+		end
+		local trx, try, trz = MainScene:getObject(playerCollider):getRotation()
+		MainScene:getObject(playerCollider):setRotation(0, try, 0)
+	--MainScene:moveCharacter(DirX*(sprint+1), 0, DirZ*(sprint+1), 0, cY - 180, 0, 0.1)
+	end
+	curTime = curTime + MainScene:deltaTime()
+	if curTime > 500 then
+		tx, ty, tz = MainScene:getObject(playerCollider):getPosition()
+		if GENTERRAIN == 0 then updateChunks(tx/terrainScale, tz/terrainScale, chunksize, terrainScale) end
+		curTime = 0
+	end
+	local vx, vy, vz = MainScene:getObject(playerCollider):getCollider():getVelocity()
+	packBuffer = packBuffer + 1
+	if (vx ~= 0 or vy ~= 0 or vz ~= 0) and packBuffer > 10 then
+		packBuffer = 0
 		local p = MainScene:createPacket()
 		p:writeNumber(3)
 		p:writeNumber(MainScene:getMetaData("PLAYER_ID"))
@@ -103,25 +147,7 @@ function gameUpdate()
 		pa:writeNumber(pry)
 		pa:writeNumber(prz)
 		MainScene:sendPacket(pa, MainScene:getMetaString("SERVERCOMBINEDIP"))
-	else
-		if anim > 0 then
-			MainScene:getBoneAnimatedMesh(MainScene:getMetaData("PLAYER_BODY_ID")):setAnimation("idle")
-			anim = 0
-			MainScene:getBoneAnimatedMesh(MainScene:getMetaData("PLAYER_BODY_ID")):setSpeed(10)
-			MainScene:getBoneAnimatedMesh(MainScene:getMetaData("PLAYER_BODY_ID")):setFrameLoop(1, 200)
-			MainScene:getObject(playerCollider):getCollider():setVelocity(0, 0, 0)
-		end
-		local trx, try, trz = MainScene:getObject(playerCollider):getRotation()
-		MainScene:getObject(playerCollider):setRotation(0, try, 0)
-	--MainScene:moveCharacter(DirX*(sprint+1), 0, DirZ*(sprint+1), 0, cY - 180, 0, 0.1)
 	end
-	curTime = curTime + MainScene:deltaTime()
-	if curTime > 500 then
-		tx, ty, tz = MainScene:getObject(playerCollider):getPosition()
-		if GENTERRAIN == 1 then updateChunks(tx/terrainScale, tz/terrainScale, chunksize, terrainScale) end
-		curTime = 0
-	end
-	
 	updateCycle =  updateCycle + MainScene:deltaTime()
 	if updateCycle >= updateOn then
 		updateCycle = 0
@@ -187,14 +213,68 @@ function gameUpdate()
 		
 		firstRun = 1
 	end
+	
+	if anim ~= IDLE then
+		idleTime = 0
+	else
+		idleTime = idleTime + MainScene:deltaTime()
+	end
+	
+	if idleTime >= 10000 then
+		anim = IDLE1
+		idleTime = 0
+	end
+	if anim == IDLE1 then
+		local frame = MainScene:getBoneAnimatedMesh(MainScene:getMetaData("PLAYER_BODY_ID")):getFrame()
+		if frame >= 75 then
+			anim = IDLE
+		end
+	end
 end
 
 function gameRender()
-
+	if lastAnim ~= anim then
+		if anim == IDLE then
+			setPlayerAnim("idle", 10, 1, 200)
+		elseif anim == WALK then
+			setPlayerAnim("walk", 60, 1, 60)
+		elseif anim == SPRINT then
+			setPlayerAnim("trot", 120, 1, 60)
+		elseif anim == BWALK then
+			setPlayerAnim("walk", -60, 1, 60)
+		elseif anim == LWALK then
+			setPlayerAnim("lWalk", 60, 1, 60)
+		elseif anim == RWALK then
+			setPlayerAnim("rWalk", -60, 1, 60)
+		elseif anim == IDLE1 then
+			setPlayerAnim("idle1", 20, 1, 80)
+		end
+	end
 end
 
 function distance(x1, y1, x2, y2)
 	local xd = x2-x1
 	local yd = y2-y1
 	return math.sqrt(xd*xd+yd*yd)
+end
+
+function setPlayerAnim(anim, speed, frame1, frame2)
+	MainScene:getBoneAnimatedMesh(MainScene:getMetaData("PLAYER_BODY_ID")):setAnimation(anim)
+	MainScene:getBoneAnimatedMesh(MainScene:getMetaData("PLAYER_BODY_ID")):setSpeed(speed)
+	MainScene:getBoneAnimatedMesh(MainScene:getMetaData("PLAYER_BODY_ID")):setFrameLoop(frame1, frame2)
+	if(MainScene:getMetaData("PLAYER_UPPER_MANE_SPAWNED") == 1) then
+		MainScene:getBoneAnimatedMesh(MainScene:getMetaData("PLAYER_UPPER_MANE_ID")):setAnimation(anim)
+		MainScene:getBoneAnimatedMesh(MainScene:getMetaData("PLAYER_UPPER_MANE_ID")):setSpeed(speed)
+		MainScene:getBoneAnimatedMesh(MainScene:getMetaData("PLAYER_UPPER_MANE_ID")):setFrameLoop(frame1, frame2)
+	end
+	if(MainScene:getMetaData("PLAYER_LOWER_MANE_SPAWNED") == 1) then
+		MainScene:getBoneAnimatedMesh(MainScene:getMetaData("PLAYER_LOWER_MANE_ID")):setAnimation(anim)
+		MainScene:getBoneAnimatedMesh(MainScene:getMetaData("PLAYER_LOWER_MANE_ID")):setSpeed(speed)
+		MainScene:getBoneAnimatedMesh(MainScene:getMetaData("PLAYER_LOWER_MANE_ID")):setFrameLoop(frame1, frame2)
+	end
+	if(MainScene:getMetaData("PLAYER_TAIL_SPAWNED") == 1) then
+		MainScene:getBoneAnimatedMesh(MainScene:getMetaData("PLAYER_TAIL_ID")):setAnimation(anim)
+		MainScene:getBoneAnimatedMesh(MainScene:getMetaData("PLAYER_TAIL_ID")):setSpeed(speed)
+		MainScene:getBoneAnimatedMesh(MainScene:getMetaData("PLAYER_TAIL_ID")):setFrameLoop(frame1, frame2)
+	end
 end

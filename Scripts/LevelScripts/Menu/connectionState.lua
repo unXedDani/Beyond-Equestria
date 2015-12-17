@@ -13,7 +13,16 @@ function initConnectionState()
 end
 
 function updateConnectionState()
-
+	if MainScene:getMetaData("CONNECTED_TO_SERVER") == 1 then
+		MainScene:setMetaData("GAMESTATE", 1)
+		MainScene:setMetaData("GAMESTATECHANGED", 1)
+	end
+	if MainScene:getMetaData("ACCOUNT_AUTH_FAILED") == 1 then
+		MainScene:setMetaData("NETWORKERROR", 4)
+		MainScene:setMetaData("GAMESTATE", 1)
+		MainScene:setMetaData("GAMESTATECHANGED", 1)
+		MainScene:setMetaData("MENUCAMERATRACK", 1)
+	end
 end
 
 function renderConnectionState()

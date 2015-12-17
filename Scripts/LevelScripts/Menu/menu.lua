@@ -52,6 +52,8 @@ function menuInit()
 			MainScene:addText("Server Full", 10, 20, 190, 50, errorWindow)
 		elseif MainScene:getMetaData("NETWORKERROR") == 3 then
 			MainScene:addText("Lost connection to server", 10, 20, 190, 50, errorWindow)
+		elseif MainScene:getMetaData("NETWORKERROR") == 4 then
+			MainScene:addText("Invalid Account", 10, 20, 190, 50, errorWindow)
 		end
 		MainScene:setMetaData("NETWORKERROR", 0)
 	end

@@ -20,9 +20,11 @@ smallBuildingModelFiles = {
 }
 
 edgeBuildingFiles = {
-	"Assets/Levels/World/Models/CityBuildingParts/City/edge1.dae"
+	"Assets/Levels/World/Models/CityBuildingParts/City/edge1.dae",
+	"Assets/Levels/World/Models/CityBuildingParts/City/apartment1.dae",
+	"Assets/Levels/World/Models/CityBuildingParts/City/apartment2.dae"
 }
-edgeBuildings = 1
+edgeBuildings = 3
 
 cornerBuildingFiles = {
 	"Assets/Levels/World/Models/CityBuildingParts/City/corner1.dae"
@@ -186,17 +188,21 @@ function createCorner(x, y, z, ry)
 	local t1 = MainScene:addMesh(cornerBuildingFiles[1], x, 0, z, 0, ry, 0, 13, 13, 13)
 	--MainScene:getMesh(t1):addCollider(MainScene, "MESH_GIMPACT", 0)
 	MainScene:getObject(t1):setMaterialTexture(MainScene, 1, "Assets/Levels/world/textures/Detail.jpg")
-	MainScene:getObject(t1):useShader(MainScene, "Shaders/buildingShader.xml")
+	--MainScene:getObject(t1):useShader(MainScene, "Shaders/buildingShader.xml")
 	local tmp = {}
 	tmp[1] = t1
 	tmp[2] = t2
 	return tmp
 end
 function createEdge(x, y, z, ry)
-	local t1 = MainScene:addMesh(edgeBuildingFiles[1], x, 0, z, 0, ry, 0, 13, 13, 13)
+	local buildingBottom = noise2(x/9000, z/9000)+1
+	buildingBottom = buildingBottom * 10
+	buildingBottom = math.floor(buildingBottom%edgeBuildings)+1
+	local t1 = MainScene:addMesh(edgeBuildingFiles[buildingBottom], x, 0, z, 0, ry, 0, 13, 13, 13)
 	--MainScene:getMesh(t1):addCollider(MainScene, "MESH_GIMPACT", 0)
 	MainScene:getObject(t1):setMaterialTexture(MainScene, 1, "Assets/Levels/world/textures/Detail.jpg")
-	MainScene:getObject(t1):useShader(MainScene, "Shaders/buildingShader.xml")
+	MainScene:getObject(t1):setMaterialTexture(MainScene, 0, "Assets/Levels/world/textures/Building_texture.jpg")
+	--MainScene:getObject(t1):useShader(MainScene, "Shaders/buildingShader.xml")
 	local tmp = {}
 	tmp[1] = t1
 	tmp[2] = t2
@@ -207,7 +213,7 @@ function createCenter(x, y, z, ry)
 	local t1 = MainScene:addMesh(centerBuildingFiles[1], x, 0, z, 0, ry, 0, 8, 10, 8)
 	--MainScene:getMesh(t1):addCollider(MainScene, "MESH_GIMPACT", 0)
 	MainScene:getObject(t1):setMaterialTexture(MainScene, 1, "Assets/Levels/world/textures/Detail.jpg")
-	MainScene:getObject(t1):useShader(MainScene, "Shaders/buildingShader.xml")
+	--MainScene:getObject(t1):useShader(MainScene, "Shaders/buildingShader.xml")
 	local tmp = {}
 	tmp[1] = t1
 	tmp[2] = t2
