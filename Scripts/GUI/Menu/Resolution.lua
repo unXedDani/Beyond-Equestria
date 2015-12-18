@@ -1,4 +1,6 @@
 function onSelect(selection)
+end
+function onChange(selection)
 	if(selection == 0) then
 		MainScene:setConfigValue("height", 768)
 		MainScene:setConfigValue("width", 1024)
@@ -19,8 +21,4 @@ function onSelect(selection)
 		MainScene:setConfigValue("height", 1200)
 		MainScene:setConfigValue("width", 1600)
 	end
-	x, y, z = MainScene:getCamera():getPosition()
-	MainScene:saveConfig("config.xml")
-end
-function onChange(selection)
 end
