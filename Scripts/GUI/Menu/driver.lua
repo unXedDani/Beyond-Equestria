@@ -1,5 +1,6 @@
 function onSelect(selection)
 end
+
 function onChange(selection)
 	if(selection == 0) then
 		MainScene:setConfigValue("driver", 2)

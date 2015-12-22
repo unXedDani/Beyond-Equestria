@@ -3,7 +3,7 @@ Fox Claw Engine by Jcam Technologies
 Engine build : 0.0.1.8
 Engine Version : 
 Platform : Win32
-Loading config : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/config.xml
+Loading config : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/config.xml
 DEBUG LV.1 : Found node : 
 DEBUG LV.1 : Found node : Config
 DEBUG LV.1 : Found config
@@ -70,15 +70,15 @@ CharacterTail : 4
 CharacterUpperMane : 15
 Clipping : 5000
 HasCharacter : 1
-driver : 1
-fullscreen : 1
-height : 900
+driver : 2
+fullscreen : 0
+height : 768
 music_volume : 0.6
 postfx : 1
 vsync : 1
-width : 1600
+width : 1024
 Creating Graphics Driver
-Trying driver : 1
+Trying driver : 2
 1=DX9, 2=OGL, 3=SOFTWARE, 4=NULL
 Getting driver
 Getting manager
@@ -100,9 +100,9 @@ Loading startup script
 Creating new luastate
 DEBUG LV.1 : Opening libraries
 DEBUG LV.1 : Opened libraries
-DEBUG LV.1 : Attempting to run script : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Scripts/startup.lua
+DEBUG LV.1 : Attempting to run script : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Scripts/startup.lua
 Setting debug to : 0
-DEBUG LV.1 : Successfully ran : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Scripts/startup.lua
+DEBUG LV.1 : Successfully ran : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Scripts/startup.lua
 Running init() on startup.lua
 DEBUG LV.2 : Running init function
 Launching Beyond Equestria 0.1.0
@@ -123,20 +123,20 @@ DEBUG LV.2 : Within SCENECONFIG
 DEBUG LV.2 : leaving SCENECONFIG
 FOUND MESH
 DEBUG LV.2 : leaving MESH
-Loading mesh : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/assets/levels/menu/models/desk/desk.dae
+Loading mesh : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/assets/levels/menu/models/desk/desk.dae
 DEBUG LV.2 : Loaded mesh
 FOUND LIGHT
 DEBUG LV.2 : Creating light
 DEBUG LV.2 : Light created
 FOUND MESH
 DEBUG LV.2 : leaving MESH
-Loading mesh : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/assets/levels/menu/models/desk/lampbase.dae
+Loading mesh : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/assets/levels/menu/models/desk/lampbase.dae
 DEBUG LV.2 : Loaded mesh
 FOUND PARTICLE
 DEBUG LV.2 : Instantiated particle system
 DEBUG LV.2 : Created particle system
 DEBUG LV.1 : Setting particle texture for : 6
-DEBUG LV.2 : Set to : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/assets/levels/menu/textures/fire.jpg
+DEBUG LV.2 : Set to : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/assets/levels/menu/textures/fire.jpg
 DEBUG LV.2 : Texture set
 DEBUG LV.1 : Setting position of particle system : 6
 DEBUG LV.2 : Position set
@@ -158,7 +158,7 @@ FOUND PARTICLE
 DEBUG LV.2 : Instantiated particle system
 DEBUG LV.2 : Created particle system
 DEBUG LV.1 : Setting particle texture for : 7
-DEBUG LV.2 : Set to : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/assets/levels/menu/textures/dust.jpg
+DEBUG LV.2 : Set to : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/assets/levels/menu/textures/dust.jpg
 DEBUG LV.2 : Texture set
 DEBUG LV.1 : Setting position of particle system : 7
 DEBUG LV.2 : Position set
@@ -183,30 +183,30 @@ DEBUG LV.2 : Creating button
 Creating new luastate
 DEBUG LV.1 : Opening libraries
 DEBUG LV.1 : Opened libraries
-DEBUG LV.1 : Attempting to run script : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Scripts/GUI/Menu/start.lua
-DEBUG LV.1 : Successfully ran : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Scripts/GUI/Menu/start.lua
+DEBUG LV.1 : Attempting to run script : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Scripts/GUI/Menu/start.lua
+DEBUG LV.1 : Successfully ran : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Scripts/GUI/Menu/start.lua
 DEBUG LV.2 : Creating image
 DEBUG LV.2 : Creating image
 DEBUG LV.2 : Creating button
 Creating new luastate
 DEBUG LV.1 : Opening libraries
 DEBUG LV.1 : Opened libraries
-DEBUG LV.1 : Attempting to run script : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Scripts/GUI/Menu/optionsbutton.lua
-DEBUG LV.1 : Successfully ran : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Scripts/GUI/Menu/optionsbutton.lua
+DEBUG LV.1 : Attempting to run script : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Scripts/GUI/Menu/optionsbutton.lua
+DEBUG LV.1 : Successfully ran : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Scripts/GUI/Menu/optionsbutton.lua
 DEBUG LV.2 : Creating image
 DEBUG LV.2 : Creating image
 DEBUG LV.2 : Creating button
 Creating new luastate
 DEBUG LV.1 : Opening libraries
 DEBUG LV.1 : Opened libraries
-DEBUG LV.1 : Attempting to run script : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Scripts/GUI/Menu/quit.lua
-DEBUG LV.1 : Successfully ran : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Scripts/GUI/Menu/quit.lua
+DEBUG LV.1 : Attempting to run script : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Scripts/GUI/Menu/quit.lua
+DEBUG LV.1 : Successfully ran : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Scripts/GUI/Menu/quit.lua
 DEBUG LV.2 : Creating image
 DEBUG LV.2 : Creating image
 DEBUG LV.2 : Creating image
 DEBUG LV.2 : Creating image
 DEBUG LV.2 : Creating image
-DEBUG LV.1 : Loading sound : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Assets/Levels/menu/music/atop the trees.wav
+DEBUG LV.1 : Loading sound : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Assets/Levels/menu/music/atop the trees.wav
 DEBUG LV.2 : Sound loaded
 DEBUG LV.2 : Added GUI to Receiver
 DEBUG LV.2 : Added GUI to Receiver
@@ -226,69 +226,365 @@ DEBUG LV.2 : Creating window
 Creating new luastate
 DEBUG LV.1 : Opening libraries
 DEBUG LV.1 : Opened libraries
-DEBUG LV.1 : Attempting to run script : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Scripts/GUI/Menu/optionsbutton.lua
-DEBUG LV.1 : Successfully ran : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Scripts/GUI/Menu/optionsbutton.lua
+DEBUG LV.1 : Attempting to run script : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Scripts/GUI/Menu/start.lua
+DEBUG LV.1 : Successfully ran : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Scripts/GUI/Menu/start.lua
+DEBUG LV.2 : Creating image
+DEBUG LV.2 : Creating editbox
+Creating new luastate
+DEBUG LV.1 : Opening libraries
+DEBUG LV.1 : Opened libraries
+DEBUG LV.1 : Attempting to run script : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Scripts/GUI/Chat/setName.lua
+DEBUG LV.1 : Successfully ran : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Scripts/GUI/Chat/setName.lua
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.2 : Clearing GUI
+DEBUG LV.1 : Attempting to run script : Scripts/receive.lua
+DEBUG LV.1 : Successfully ran : Scripts/receive.lua
+Connecting to : 71.175.69.32
+DEBUG LV.2 : Clearing GUI
+DEBUG LV.2 : Creating window
+Creating new luastate
+DEBUG LV.1 : Opening libraries
+DEBUG LV.1 : Opened libraries
+DEBUG LV.1 : Attempting to run script : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Scripts/Editor/emptyWindow.lua
+DEBUG LV.1 : Successfully ran : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Scripts/Editor/emptyWindow.lua
+DEBUG LV.2 : Creating image
+DEBUG LV.2 : Creating text
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.1 : Failed to connect to : 71.175.69.32
+DEBUG LV.1 : Initializing Camera as type : 2
+DEBUG LV.1 : Initialized Camera as type : 2
+DEBUG LV.2 : Camera initialized
+DEBUG LV.2 : Loading level : Empty.xml
+DEBUG LV.2 : Within SCENECONFIG
+DEBUG LV.2 : leaving SCENECONFIG
+FOUND LIGHT
+DEBUG LV.2 : Creating light
+DEBUG LV.2 : Light created
+DEBUG LV.2 : Loading level : debug.xml
+DEBUG LV.2 : Within SCENECONFIG
+DEBUG LV.2 : leaving SCENECONFIG
+FOUND LIGHT
+DEBUG LV.2 : Creating light
+DEBUG LV.2 : Light created
+FOUND MESH
+DEBUG LV.2 : leaving MESH
+Loading mesh : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/assets/levels/world/models/testroom.dae
+DEBUG LV.2 : Loaded mesh
+DEBUG LV.2 : Setting collider mesh
+DEBUG LV.2 : Creating Mesh GIMPACT Collider
+DEBUG LV.2 : Creating Sphere Collider
+DEBUG LV.2 : Setting collider friction to : 200
+DEBUG LV.2 : Setting collider lDamping to : 0.1
+DEBUG LV.2 : Setting collider aDamping to : 5
+Loading Bone Animated mesh : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Assets/Levels/world/models/ponies/bodies/coltbase.ms3d
+DEBUG LV.2 : Loaded Bone Animated mesh
+Loading Bone Animation : Assets/Levels/world/models/ponies/anims/idle.ms3d
+DEBUG LV.2 : Loaded Bone Animation
+Loading Bone Animation : Assets/Levels/world/models/ponies/anims/walk_n.ms3d
+DEBUG LV.2 : Loaded Bone Animation
+Loading Bone Animation : Assets/Levels/world/models/ponies/anims/trot_n.ms3d
+DEBUG LV.2 : Loaded Bone Animation
+Loading Bone Animation : Assets/Levels/world/models/ponies/anims/straifLeft.ms3d
+DEBUG LV.2 : Loaded Bone Animation
+Loading Bone Animation : Assets/Levels/world/models/ponies/anims/straifRight.ms3d
+DEBUG LV.2 : Loaded Bone Animation
+Loading Bone Animation : Assets/Levels/world/models/ponies/anims/idle1.ms3d
+DEBUG LV.2 : Loaded Bone Animation
+Loading mesh : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Assets/Levels/world/models/ponies/Extra/wingsfolded.dae
+DEBUG LV.2 : Loaded mesh
+Loading Bone Animated mesh : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Assets/Levels/world/models/ponies/Uppermane/uppermane15.ms3d
+DEBUG LV.2 : Loaded Bone Animated mesh
+DEBUG LV.1 : Found shader
+DEBUG LV.1 : Applying shader
+Loading Bone Animation : Assets/Levels/world/models/ponies/anims/idle.ms3d
+DEBUG LV.2 : Loaded Bone Animation
+Loading Bone Animation : Assets/Levels/world/models/ponies/anims/walk_n.ms3d
+DEBUG LV.2 : Loaded Bone Animation
+Loading Bone Animation : Assets/Levels/world/models/ponies/anims/trot_n.ms3d
+DEBUG LV.2 : Loaded Bone Animation
+Loading Bone Animation : Assets/Levels/world/models/ponies/anims/straifLeft.ms3d
+DEBUG LV.2 : Loaded Bone Animation
+Loading Bone Animation : Assets/Levels/world/models/ponies/anims/straifRight.ms3d
+DEBUG LV.2 : Loaded Bone Animation
+Loading Bone Animation : Assets/Levels/world/models/ponies/anims/idle1.ms3d
+DEBUG LV.2 : Loaded Bone Animation
+Loading Bone Animated mesh : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Assets/Levels/world/models/ponies/Tails/tail4.dae
+DEBUG LV.2 : Loaded Bone Animated mesh
+DEBUG LV.1 : Found shader
+DEBUG LV.1 : Applying shader
+Loading Bone Animation : Assets/Levels/world/models/ponies/anims/idle.ms3d
+DEBUG LV.2 : Loaded Bone Animation
+Loading Bone Animation : Assets/Levels/world/models/ponies/anims/walk_n.ms3d
+DEBUG LV.2 : Loaded Bone Animation
+Loading Bone Animation : Assets/Levels/world/models/ponies/anims/trot_n.ms3d
+DEBUG LV.2 : Loaded Bone Animation
+Loading Bone Animation : Assets/Levels/world/models/ponies/anims/straifLeft.ms3d
+DEBUG LV.2 : Loaded Bone Animation
+Loading Bone Animation : Assets/Levels/world/models/ponies/anims/straifRight.ms3d
+DEBUG LV.2 : Loaded Bone Animation
+Loading Bone Animation : Assets/Levels/world/models/ponies/anims/idle1.ms3d
+DEBUG LV.2 : Loaded Bone Animation
+DEBUG LV.2 : Clearing GUI
+DEBUG LV.2 : Creating window
+Creating new luastate
+DEBUG LV.1 : Opening libraries
+DEBUG LV.1 : Opened libraries
+DEBUG LV.1 : Attempting to run script : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Scripts/GUI/Chat/chatWindow.lua
+DEBUG LV.1 : Successfully ran : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Scripts/GUI/Chat/chatWindow.lua
 DEBUG LV.2 : Creating image
 DEBUG LV.2 : Creating Listbox
 Creating new luastate
 DEBUG LV.1 : Opening libraries
 DEBUG LV.1 : Opened libraries
-DEBUG LV.1 : Attempting to run script : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Scripts/GUI/Menu/Resolution.lua
-DEBUG LV.1 : Successfully ran : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Scripts/GUI/Menu/Resolution.lua
-DEBUG LV.2 : Adding list item
-DEBUG LV.2 : Adding list item
-DEBUG LV.2 : Adding list item
-DEBUG LV.2 : Adding list item
-DEBUG LV.2 : Adding list item
+DEBUG LV.1 : Attempting to run script : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Scripts/GUI/Chat/messageBox.lua
+DEBUG LV.1 : Successfully ran : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Scripts/GUI/Chat/messageBox.lua
+DEBUG LV.2 : Creating editbox
+Creating new luastate
+DEBUG LV.1 : Opening libraries
+DEBUG LV.1 : Opened libraries
+DEBUG LV.1 : Attempting to run script : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Scripts/GUI/Chat/sendMessage.lua
+DEBUG LV.1 : Successfully ran : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Scripts/GUI/Chat/sendMessage.lua
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 1
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 2
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 3
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 4
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 5
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 6
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 7
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 8
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 9
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 10
+DEBUG LV.2 : Element not visible... deleting. : 17
+DEBUG LV.2 : Removing gui object
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 11
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 12
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 13
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 14
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 15
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 16
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 17
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 18
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 19
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 20
+DEBUG LV.2 : Creating window
+Creating new luastate
+DEBUG LV.1 : Opening libraries
+DEBUG LV.1 : Opened libraries
+DEBUG LV.1 : Attempting to run script : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Scripts/GUI/pauseWindow.lua
+DEBUG LV.1 : Successfully ran : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Scripts/GUI/pauseWindow.lua
+DEBUG LV.2 : Creating image
+DEBUG LV.2 : Creating button
+Creating new luastate
+DEBUG LV.1 : Opening libraries
+DEBUG LV.1 : Opened libraries
+DEBUG LV.1 : Attempting to run script : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Scripts/GUI/Menu/optionsbutton.lua
+DEBUG LV.1 : Successfully ran : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Scripts/GUI/Menu/optionsbutton.lua
+DEBUG LV.2 : Creating button
+Creating new luastate
+DEBUG LV.1 : Opening libraries
+DEBUG LV.1 : Opened libraries
+DEBUG LV.1 : Attempting to run script : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Scripts/GUI/Menu/quit.lua
+DEBUG LV.1 : Successfully ran : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Scripts/GUI/Menu/quit.lua
+DEBUG LV.2 : Creating button
+Creating new luastate
+DEBUG LV.1 : Opening libraries
+DEBUG LV.1 : Opened libraries
+DEBUG LV.1 : Attempting to run script : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Scripts/GUI/PonyEditor/editor.lua
+DEBUG LV.1 : Successfully ran : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Scripts/GUI/PonyEditor/editor.lua
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 21
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 22
+DEBUG LV.2 : Creating window
+Creating new luastate
+DEBUG LV.1 : Opening libraries
+DEBUG LV.1 : Opened libraries
+DEBUG LV.1 : Attempting to run script : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Scripts/GUI/PonyEditor/closeEditor.lua
+DEBUG LV.1 : Successfully ran : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Scripts/GUI/PonyEditor/closeEditor.lua
+DEBUG LV.2 : Creating image
+DEBUG LV.2 : Creating button
+Creating new luastate
+DEBUG LV.1 : Opening libraries
+DEBUG LV.1 : Opened libraries
+DEBUG LV.1 : Attempting to run script : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Scripts/GUI/PonyEditor/apply.lua
+DEBUG LV.1 : Successfully ran : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Scripts/GUI/PonyEditor/apply.lua
+DEBUG LV.2 : Creating button
+Creating new luastate
+DEBUG LV.1 : Opening libraries
+DEBUG LV.1 : Opened libraries
+DEBUG LV.1 : Attempting to run script : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Scripts/GUI/PonyEditor/save.lua
+DEBUG LV.1 : Successfully ran : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Scripts/GUI/PonyEditor/save.lua
 DEBUG LV.2 : Creating checkbox
 Creating new luastate
 DEBUG LV.1 : Opening libraries
 DEBUG LV.1 : Opened libraries
-DEBUG LV.1 : Attempting to run script : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Scripts/GUI/Menu/fullscreenbox.lua
-DEBUG LV.1 : Successfully ran : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Scripts/GUI/Menu/fullscreenbox.lua
-DEBUG LV.2 : Creating checkbox
-Creating new luastate
-DEBUG LV.1 : Opening libraries
-DEBUG LV.1 : Opened libraries
-DEBUG LV.1 : Attempting to run script : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Scripts/GUI/Menu/vsyncbox.lua
-DEBUG LV.1 : Successfully ran : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Scripts/GUI/Menu/vsyncbox.lua
-DEBUG LV.2 : Creating text
-DEBUG LV.2 : Creating slider
-Creating new luastate
-DEBUG LV.1 : Opening libraries
-DEBUG LV.1 : Opened libraries
-DEBUG LV.1 : Attempting to run script : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Scripts/GUI/Menu/volumeSlider.lua
-DEBUG LV.1 : Successfully ran : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Scripts/GUI/Menu/volumeSlider.lua
+DEBUG LV.1 : Attempting to run script : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Scripts/GUI/PonyEditor/gender.lua
+DEBUG LV.1 : Successfully ran : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Scripts/GUI/PonyEditor/gender.lua
 DEBUG LV.2 : Creating text
 DEBUG LV.2 : Creating Listbox
 Creating new luastate
 DEBUG LV.1 : Opening libraries
 DEBUG LV.1 : Opened libraries
-DEBUG LV.1 : Attempting to run script : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Scripts/GUI/Menu/driver.lua
-DEBUG LV.1 : Successfully ran : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Scripts/GUI/Menu/driver.lua
+DEBUG LV.1 : Attempting to run script : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Scripts/GUI/PonyEditor/race.lua
+DEBUG LV.1 : Successfully ran : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Scripts/GUI/PonyEditor/race.lua
 DEBUG LV.2 : Adding list item
 DEBUG LV.2 : Adding list item
 DEBUG LV.2 : Adding list item
-DEBUG LV.2 : Creating checkbox
-Creating new luastate
-DEBUG LV.1 : Opening libraries
-DEBUG LV.1 : Opened libraries
-DEBUG LV.1 : Attempting to run script : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Scripts/GUI/Menu/postbox.lua
-DEBUG LV.1 : Successfully ran : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Scripts/GUI/Menu/postbox.lua
-DEBUG LV.2 : Creating button
-Creating new luastate
-DEBUG LV.1 : Opening libraries
-DEBUG LV.1 : Opened libraries
-DEBUG LV.1 : Attempting to run script : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Scripts/GUI/Menu/apply.lua
-DEBUG LV.1 : Successfully ran : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Scripts/GUI/Menu/apply.lua
 DEBUG LV.2 : Creating text
+DEBUG LV.2 : Creating Listbox
+Creating new luastate
+DEBUG LV.1 : Opening libraries
+DEBUG LV.1 : Opened libraries
+DEBUG LV.1 : Attempting to run script : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Scripts/GUI/PonyEditor/mane.lua
+DEBUG LV.1 : Successfully ran : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Scripts/GUI/PonyEditor/mane.lua
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Creating text
+DEBUG LV.2 : Creating Listbox
+Creating new luastate
+DEBUG LV.1 : Opening libraries
+DEBUG LV.1 : Opened libraries
+DEBUG LV.1 : Attempting to run script : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Scripts/GUI/PonyEditor/lowermane.lua
+DEBUG LV.1 : Successfully ran : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Scripts/GUI/PonyEditor/lowermane.lua
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Creating text
+DEBUG LV.2 : Creating Listbox
+Creating new luastate
+DEBUG LV.1 : Opening libraries
+DEBUG LV.1 : Opened libraries
+DEBUG LV.1 : Attempting to run script : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Scripts/GUI/PonyEditor/tail.lua
+DEBUG LV.1 : Successfully ran : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Scripts/GUI/PonyEditor/tail.lua
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Adding list item
 DEBUG LV.2 : Creating text
 DEBUG LV.2 : Creating slider
 Creating new luastate
 DEBUG LV.1 : Opening libraries
 DEBUG LV.1 : Opened libraries
-DEBUG LV.1 : Attempting to run script : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Scripts/GUI/Menu/clipping.lua
-DEBUG LV.1 : Successfully ran : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Scripts/GUI/Menu/clipping.lua
+DEBUG LV.1 : Attempting to run script : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Scripts/GUI/PonyEditor/bodyColorr.lua
+DEBUG LV.1 : Successfully ran : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Scripts/GUI/PonyEditor/bodyColorr.lua
+DEBUG LV.2 : Creating slider
+Creating new luastate
+DEBUG LV.1 : Opening libraries
+DEBUG LV.1 : Opened libraries
+DEBUG LV.1 : Attempting to run script : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Scripts/GUI/PonyEditor/bodyColorg.lua
+DEBUG LV.1 : Successfully ran : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Scripts/GUI/PonyEditor/bodyColorg.lua
+DEBUG LV.2 : Creating slider
+Creating new luastate
+DEBUG LV.1 : Opening libraries
+DEBUG LV.1 : Opened libraries
+DEBUG LV.1 : Attempting to run script : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Scripts/GUI/PonyEditor/bodyColorb.lua
+DEBUG LV.1 : Successfully ran : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Scripts/GUI/PonyEditor/bodyColorb.lua
+DEBUG LV.2 : Creating text
+DEBUG LV.2 : Creating slider
+Creating new luastate
+DEBUG LV.1 : Opening libraries
+DEBUG LV.1 : Opened libraries
+DEBUG LV.1 : Attempting to run script : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Scripts/GUI/PonyEditor/umanecolorR1.lua
+DEBUG LV.1 : Successfully ran : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Scripts/GUI/PonyEditor/umanecolorR1.lua
+DEBUG LV.2 : Creating slider
+Creating new luastate
+DEBUG LV.1 : Opening libraries
+DEBUG LV.1 : Opened libraries
+DEBUG LV.1 : Attempting to run script : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Scripts/GUI/PonyEditor/umanecolorG1.lua
+DEBUG LV.1 : Successfully ran : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Scripts/GUI/PonyEditor/umanecolorG1.lua
+DEBUG LV.2 : Creating slider
+Creating new luastate
+DEBUG LV.1 : Opening libraries
+DEBUG LV.1 : Opened libraries
+DEBUG LV.1 : Attempting to run script : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Scripts/GUI/PonyEditor/umanecolorB1.lua
+DEBUG LV.1 : Successfully ran : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Scripts/GUI/PonyEditor/umanecolorB1.lua
+DEBUG LV.2 : Creating text
+DEBUG LV.2 : Creating slider
+Creating new luastate
+DEBUG LV.1 : Opening libraries
+DEBUG LV.1 : Opened libraries
+DEBUG LV.1 : Attempting to run script : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Scripts/GUI/PonyEditor/umanecolorR2.lua
+DEBUG LV.1 : Successfully ran : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Scripts/GUI/PonyEditor/umanecolorR2.lua
+DEBUG LV.2 : Creating slider
+Creating new luastate
+DEBUG LV.1 : Opening libraries
+DEBUG LV.1 : Opened libraries
+DEBUG LV.1 : Attempting to run script : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Scripts/GUI/PonyEditor/umanecolorG2.lua
+DEBUG LV.1 : Successfully ran : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Scripts/GUI/PonyEditor/umanecolorG2.lua
+DEBUG LV.2 : Creating slider
+Creating new luastate
+DEBUG LV.1 : Opening libraries
+DEBUG LV.1 : Opened libraries
+DEBUG LV.1 : Attempting to run script : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Scripts/GUI/PonyEditor/umanecolorB2.lua
+DEBUG LV.1 : Successfully ran : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Scripts/GUI/PonyEditor/umanecolorB2.lua
 DEBUG LV.2 : Added GUI to Receiver
 DEBUG LV.2 : Added GUI to Receiver
 DEBUG LV.2 : Added GUI to Receiver
@@ -303,4 +599,430 @@ DEBUG LV.2 : Added GUI to Receiver
 DEBUG LV.2 : Added GUI to Receiver
 DEBUG LV.2 : Added GUI to Receiver
 DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 23
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 24
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 25
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 26
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 27
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 28
+DEBUG LV.2 : Removing gui object
+DEBUG LV.2 : Removing gui object
+DEBUG LV.2 : Removing gui object
+DEBUG LV.2 : Removing gui object
+DEBUG LV.2 : Removing gui object
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 29
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 30
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 31
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 32
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 33
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 34
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 35
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 36
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 37
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 38
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 39
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 40
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 41
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 42
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 43
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 44
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 45
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 46
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 47
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 48
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 49
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 50
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 51
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 52
+Loading Bone Animated mesh : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Assets/Levels/world/models/ponies/bodies/marebase.ms3d
+DEBUG LV.2 : Loaded Bone Animated mesh
+Loading Bone Animation : Assets/Levels/world/models/ponies/anims/idle.ms3d
+DEBUG LV.2 : Loaded Bone Animation
+Loading Bone Animation : Assets/Levels/world/models/ponies/anims/walk_n.ms3d
+DEBUG LV.2 : Loaded Bone Animation
+Loading Bone Animation : Assets/Levels/world/models/ponies/anims/trot_n.ms3d
+DEBUG LV.2 : Loaded Bone Animation
+Loading Bone Animation : Assets/Levels/world/models/ponies/anims/straifLeft.ms3d
+DEBUG LV.2 : Loaded Bone Animation
+Loading Bone Animation : Assets/Levels/world/models/ponies/anims/straifRight.ms3d
+DEBUG LV.2 : Loaded Bone Animation
+Loading Bone Animation : Assets/Levels/world/models/ponies/anims/idle1.ms3d
+DEBUG LV.2 : Loaded Bone Animation
+Loading mesh : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Assets/Levels/world/models/ponies/Extra/wingsfolded.dae
+DEBUG LV.2 : Loaded mesh
+Loading Bone Animated mesh : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Assets/Levels/world/models/ponies/Uppermane/uppermane1.ms3d
+DEBUG LV.2 : Loaded Bone Animated mesh
+DEBUG LV.1 : Found shader
+DEBUG LV.1 : Applying shader
+Loading Bone Animation : Assets/Levels/world/models/ponies/anims/idle.ms3d
+DEBUG LV.2 : Loaded Bone Animation
+Loading Bone Animation : Assets/Levels/world/models/ponies/anims/walk_n.ms3d
+DEBUG LV.2 : Loaded Bone Animation
+Loading Bone Animation : Assets/Levels/world/models/ponies/anims/trot_n.ms3d
+DEBUG LV.2 : Loaded Bone Animation
+Loading Bone Animation : Assets/Levels/world/models/ponies/anims/straifLeft.ms3d
+DEBUG LV.2 : Loaded Bone Animation
+Loading Bone Animation : Assets/Levels/world/models/ponies/anims/straifRight.ms3d
+DEBUG LV.2 : Loaded Bone Animation
+Loading Bone Animation : Assets/Levels/world/models/ponies/anims/idle1.ms3d
+DEBUG LV.2 : Loaded Bone Animation
+Loading Bone Animated mesh : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Assets/Levels/world/models/ponies/LowerMane/lowermane2.ms3d
+DEBUG LV.2 : Loaded Bone Animated mesh
+DEBUG LV.1 : Found shader
+DEBUG LV.1 : Applying shader
+Loading Bone Animation : Assets/Levels/world/models/ponies/anims/idle.ms3d
+DEBUG LV.2 : Loaded Bone Animation
+Loading Bone Animation : Assets/Levels/world/models/ponies/anims/walk_n.ms3d
+DEBUG LV.2 : Loaded Bone Animation
+Loading Bone Animation : Assets/Levels/world/models/ponies/anims/trot_n.ms3d
+DEBUG LV.2 : Loaded Bone Animation
+Loading Bone Animation : Assets/Levels/world/models/ponies/anims/straifLeft.ms3d
+DEBUG LV.2 : Loaded Bone Animation
+Loading Bone Animation : Assets/Levels/world/models/ponies/anims/straifRight.ms3d
+DEBUG LV.2 : Loaded Bone Animation
+Loading Bone Animation : Assets/Levels/world/models/ponies/anims/idle1.ms3d
+DEBUG LV.2 : Loaded Bone Animation
+Loading Bone Animated mesh : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Assets/Levels/world/models/ponies/Tails/tail1.dae
+DEBUG LV.2 : Loaded Bone Animated mesh
+DEBUG LV.1 : Found shader
+DEBUG LV.1 : Applying shader
+Loading Bone Animation : Assets/Levels/world/models/ponies/anims/idle.ms3d
+DEBUG LV.2 : Loaded Bone Animation
+Loading Bone Animation : Assets/Levels/world/models/ponies/anims/walk_n.ms3d
+DEBUG LV.2 : Loaded Bone Animation
+Loading Bone Animation : Assets/Levels/world/models/ponies/anims/trot_n.ms3d
+DEBUG LV.2 : Loaded Bone Animation
+Loading Bone Animation : Assets/Levels/world/models/ponies/anims/straifLeft.ms3d
+DEBUG LV.2 : Loaded Bone Animation
+Loading Bone Animation : Assets/Levels/world/models/ponies/anims/straifRight.ms3d
+DEBUG LV.2 : Loaded Bone Animation
+Loading Bone Animation : Assets/Levels/world/models/ponies/anims/idle1.ms3d
+DEBUG LV.2 : Loaded Bone Animation
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 53
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 54
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 55
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 56
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 57
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 58
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 59
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 60
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 61
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 62
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 63
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 64
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 65
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 66
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 67
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 68
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 69
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 70
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 71
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 72
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 73
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 74
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 75
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 76
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 77
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 78
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 79
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 80
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 81
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 82
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 83
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 84
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 85
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 86
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 87
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 88
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 89
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 90
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 91
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 92
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 93
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 94
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 95
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 96
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 97
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 98
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 99
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 100
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 101
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 102
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 103
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 104
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 105
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 106
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 107
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 108
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 109
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 110
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 111
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 112
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 113
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 114
+Loading Bone Animated mesh : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Assets/Levels/world/models/ponies/bodies/coltbase.ms3d
+DEBUG LV.2 : Loaded Bone Animated mesh
+Loading Bone Animation : Assets/Levels/world/models/ponies/anims/idle.ms3d
+DEBUG LV.2 : Loaded Bone Animation
+Loading Bone Animation : Assets/Levels/world/models/ponies/anims/walk_n.ms3d
+DEBUG LV.2 : Loaded Bone Animation
+Loading Bone Animation : Assets/Levels/world/models/ponies/anims/trot_n.ms3d
+DEBUG LV.2 : Loaded Bone Animation
+Loading Bone Animation : Assets/Levels/world/models/ponies/anims/straifLeft.ms3d
+DEBUG LV.2 : Loaded Bone Animation
+Loading Bone Animation : Assets/Levels/world/models/ponies/anims/straifRight.ms3d
+DEBUG LV.2 : Loaded Bone Animation
+Loading Bone Animation : Assets/Levels/world/models/ponies/anims/idle1.ms3d
+DEBUG LV.2 : Loaded Bone Animation
+Loading mesh : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Assets/Levels/world/models/ponies/Extra/wingsfolded.dae
+DEBUG LV.2 : Loaded mesh
+Loading Bone Animated mesh : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Assets/Levels/world/models/ponies/Uppermane/uppermane15.ms3d
+DEBUG LV.2 : Loaded Bone Animated mesh
+DEBUG LV.1 : Found shader
+DEBUG LV.1 : Applying shader
+Loading Bone Animation : Assets/Levels/world/models/ponies/anims/idle.ms3d
+DEBUG LV.2 : Loaded Bone Animation
+Loading Bone Animation : Assets/Levels/world/models/ponies/anims/walk_n.ms3d
+DEBUG LV.2 : Loaded Bone Animation
+Loading Bone Animation : Assets/Levels/world/models/ponies/anims/trot_n.ms3d
+DEBUG LV.2 : Loaded Bone Animation
+Loading Bone Animation : Assets/Levels/world/models/ponies/anims/straifLeft.ms3d
+DEBUG LV.2 : Loaded Bone Animation
+Loading Bone Animation : Assets/Levels/world/models/ponies/anims/straifRight.ms3d
+DEBUG LV.2 : Loaded Bone Animation
+Loading Bone Animation : Assets/Levels/world/models/ponies/anims/idle1.ms3d
+DEBUG LV.2 : Loaded Bone Animation
+Loading Bone Animated mesh : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Assets/Levels/world/models/ponies/Tails/tail4.dae
+DEBUG LV.2 : Loaded Bone Animated mesh
+DEBUG LV.1 : Found shader
+DEBUG LV.1 : Applying shader
+Loading Bone Animation : Assets/Levels/world/models/ponies/anims/idle.ms3d
+DEBUG LV.2 : Loaded Bone Animation
+Loading Bone Animation : Assets/Levels/world/models/ponies/anims/walk_n.ms3d
+DEBUG LV.2 : Loaded Bone Animation
+Loading Bone Animation : Assets/Levels/world/models/ponies/anims/trot_n.ms3d
+DEBUG LV.2 : Loaded Bone Animation
+Loading Bone Animation : Assets/Levels/world/models/ponies/anims/straifLeft.ms3d
+DEBUG LV.2 : Loaded Bone Animation
+Loading Bone Animation : Assets/Levels/world/models/ponies/anims/straifRight.ms3d
+DEBUG LV.2 : Loaded Bone Animation
+Loading Bone Animation : Assets/Levels/world/models/ponies/anims/idle1.ms3d
+DEBUG LV.2 : Loaded Bone Animation
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 115
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 116
+DEBUG LV.2 : Removing gui object
+DEBUG LV.2 : Removing gui object
+DEBUG LV.2 : Removing gui object
+DEBUG LV.2 : Removing gui object
+DEBUG LV.2 : Removing gui object
+DEBUG LV.2 : Removing gui object
+DEBUG LV.2 : Removing gui object
+DEBUG LV.2 : Removing gui object
+DEBUG LV.2 : Removing gui object
+DEBUG LV.2 : Removing gui object
+DEBUG LV.2 : Removing gui object
+DEBUG LV.2 : Removing gui object
+DEBUG LV.2 : Removing gui object
+DEBUG LV.2 : Removing gui object
+DEBUG LV.2 : Removing gui object
+DEBUG LV.2 : Removing gui object
+DEBUG LV.2 : Removing gui object
+DEBUG LV.2 : Removing gui object
+DEBUG LV.2 : Removing gui object
+DEBUG LV.2 : Removing gui object
+DEBUG LV.2 : Removing gui object
+DEBUG LV.2 : Removing gui object
+DEBUG LV.2 : Removing gui object
+DEBUG LV.2 : Removing gui object
+DEBUG LV.2 : Removing gui object
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 117
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 118
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 119
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 120
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 121
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 122
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 123
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 124
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 125
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 126
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 127
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 128
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 129
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 130
+DEBUG LV.2 : Creating window
+Creating new luastate
+DEBUG LV.1 : Opening libraries
+DEBUG LV.1 : Opened libraries
+DEBUG LV.1 : Attempting to run script : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Scripts/GUI/pauseWindow.lua
+DEBUG LV.1 : Successfully ran : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Scripts/GUI/pauseWindow.lua
+DEBUG LV.2 : Creating image
+DEBUG LV.2 : Creating button
+Creating new luastate
+DEBUG LV.1 : Opening libraries
+DEBUG LV.1 : Opened libraries
+DEBUG LV.1 : Attempting to run script : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Scripts/GUI/Menu/optionsbutton.lua
+DEBUG LV.1 : Successfully ran : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Scripts/GUI/Menu/optionsbutton.lua
+DEBUG LV.2 : Creating button
+Creating new luastate
+DEBUG LV.1 : Opening libraries
+DEBUG LV.1 : Opened libraries
+DEBUG LV.1 : Attempting to run script : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Scripts/GUI/Menu/quit.lua
+DEBUG LV.1 : Successfully ran : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Scripts/GUI/Menu/quit.lua
+DEBUG LV.2 : Creating button
+Creating new luastate
+DEBUG LV.1 : Opening libraries
+DEBUG LV.1 : Opened libraries
+DEBUG LV.1 : Attempting to run script : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Scripts/GUI/PonyEditor/editor.lua
+DEBUG LV.1 : Successfully ran : C:/Users/Seth Hope/Documents/GameDev/Beyond-Equestria/Scripts/GUI/PonyEditor/editor.lua
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 131
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 132
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 133
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 134
+DEBUG LV.1 : Sending packet : 71.175.69.32|7777
+DEBUG LV.1 : Success : 135
 Framework Closed
