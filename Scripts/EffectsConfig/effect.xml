@@ -191,7 +191,7 @@ EVST_VS_5_0 = 6,    EPST_PS_2_b = 6,    ETC_MIRROR_CLAMP_TO_EDGE = 6,
 
     <!-- brightpass -->
     <ShaderPostProcess name="Brightpass" vsFile="vertex.fx" vsType="0" psFile="brightpass.fx" psType="4" >
-      <PixelShaderConstant name="EffectStrength" value="0.7" />
+      <PixelShaderConstant name="EffectStrength" value="0.4" />
       <Texture index="0" textureClamp="1" />
       <Texture index="1" path="finalLum" textureClamp="1" />
       <RenderSource path="rtt1" />

@@ -84,7 +84,9 @@ function update()
 end
 function render()
 	if postFX == 1 then
-		MainScene:RenderEffect(5)
+		if MainScene:getConfigValue("bloom") == 1 then
+			MainScene:RenderEffect(5)
+		end
 		MainScene:RenderEffect(24)
 		--MainScene:RenderEffect(29)
 	end
