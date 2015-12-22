@@ -31,7 +31,7 @@ ECF_UNKNOWN =       10,
     <!-- default auxiliary buffers (auxIn, auxOut and rttDepth)-->
     <RenderTarget id="auxIn" colorFormat="10" scale="1.0" />
     <RenderTarget id="auxOut" colorFormat="10" scale="1.0" />
-    <RenderTarget id="rttDepth" colorFormat="10" scale="0.5" />
+    <RenderTarget id="rttDepth" colorFormat="4" scale="0.5" />
 
     <!-- additional render target textures adaptive bloom-->
     <RenderTarget id="rtt0" colorFormat="10" scale="0.5"/>
@@ -60,5 +60,7 @@ ECF_UNKNOWN =       10,
 		<RenderTarget id="downsampled" colorFormat="10" scale="0.5" />
 		<RenderTarget id="blurredGhost" colorFormat="10" scale="1.0" />
 		<RenderTarget id="ghost" colorFormat="10" scale="1.0" />
+		<!--GodRays -->
+		<RenderTarget id="processedDepth" colorFormat="10" scale = "0.5" />
   </Setup>
 </PostProcess>

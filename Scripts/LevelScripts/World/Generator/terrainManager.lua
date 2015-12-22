@@ -340,7 +340,7 @@ function generateTrees(terrain, chunkx, chunky, chunksize, terrainScale)
 					local offsetY = (rotation/180)*(terrainScale/2)
 					posX = posX + offsetX
 					posY = posY + offsetY
-					local treeID = MainScene:addMesh(rockFilenames[treeType], posX, (terrain:getHeight(x, y)*5)-2, posY, 0, rotation, 0, 2, 2, 2)
+					local treeID = MainScene:addMesh(rockFilenames[treeType], posX, (terrain:getHeight(x, y)*5)-2, posY, 0, rotation, 0, 2,2, 2)
 					MainScene:getObject(treeID):setMaterialFlag("gouraud_shading", 1)
 					MainScene:getObject(treeID):setMaterialFlag("mip_maps", 0)
 					MainScene:getObject(treeID):setMaterialData(0, "texture", MainScene, 0, "Assets/Levels/world/textures/mane.jpg")

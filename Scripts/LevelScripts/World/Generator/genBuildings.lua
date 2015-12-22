@@ -18,6 +18,23 @@ largeBuildingMiddles = 4
 smallBuildingModelFiles = {
 	"Assets/Levels/World/Models/CityBuildingParts/small1.dae"
 }
+
+edgeBuildingFiles = {
+	"Assets/Levels/World/Models/CityBuildingParts/City/edge1.dae",
+	"Assets/Levels/World/Models/CityBuildingParts/City/apartment1.dae",
+	"Assets/Levels/World/Models/CityBuildingParts/City/apartment2.dae"
+}
+edgeBuildings = 3
+
+cornerBuildingFiles = {
+	"Assets/Levels/World/Models/CityBuildingParts/City/corner1.dae"
+}
+cornerBuildings = 1
+
+centerBuildingFiles = {
+	"Assets/Levels/World/Models/CityBuildingParts/City/center.dae"
+}
+centerBuildings = 1
 function generateCity(startx, starty, sizex, sizey, blockSize, buildingWidth)
 local models = {}
 local curIndex = 2
@@ -25,10 +42,59 @@ local curIndex = 2
 		for y=0, sizey, buildingWidth do
 			if x>sizex then x=sizex end
 			if y>sizey then y=sizey end
-			
+			local corner = 0
 			if x%blockSize > 0 and y%blockSize > 0 then
 			
-				if x%sizex < sizex*0.3 or y%sizey < sizey*0.3 or x%sizex >sizex*0.7 or y%sizey > sizey*0.7 then
+				-- X-
+				if (x-buildingWidth)%blockSize == 0 then
+					if (y-buildingWidth)%blockSize == 0 then
+						local tmpModels = {}
+						tmpModels = createCorner((x*blockSize)+startx, 0, (y*blockSize)+starty, 180)
+						models[curIndex] = tmpModels[1]
+						curIndex = curIndex + 1
+					elseif (y+buildingWidth)%blockSize == 0 then
+						local tmpModels = {}
+						tmpModels = createCorner((x*blockSize)+startx, 0, (y*blockSize)+starty, 270)
+						models[curIndex] = tmpModels[1]
+						curIndex = curIndex + 1
+					else
+						local tmpModels = {}
+						tmpModels = createEdge((x*blockSize)+startx, 0, (y*blockSize)+starty, 180)
+						models[curIndex] = tmpModels[1]
+						curIndex = curIndex + 1
+					end
+				elseif (x+buildingWidth)%blockSize == 0 then
+				-- X+
+					if (y-buildingWidth)%blockSize == 0 then
+						local tmpModels = {}
+						tmpModels = createCorner((x*blockSize)+startx, 0, (y*blockSize)+starty, 90)
+						models[curIndex] = tmpModels[1]
+						curIndex = curIndex + 1
+					elseif (y+buildingWidth)%blockSize == 0 then
+						local tmpModels = {}
+						tmpModels = createCorner((x*blockSize)+startx, 0, (y*blockSize)+starty, 0)
+						models[curIndex] = tmpModels[1]
+						curIndex = curIndex + 1
+					else
+						local tmpModels = {}
+						tmpModels = createEdge((x*blockSize)+startx, 0, (y*blockSize)+starty, 0)
+						models[curIndex] = tmpModels[1]
+						curIndex = curIndex + 1
+					end
+				elseif (y-buildingWidth)%blockSize == 0 then
+				-- Y-
+					local tmpModels = {}
+					tmpModels = createEdge((x*blockSize)+startx, 0, (y*blockSize)+starty, 90)
+					models[curIndex] = tmpModels[1]
+					curIndex = curIndex + 1
+				elseif (y+buildingWidth)%blockSize == 0 then
+				-- Y+
+					local tmpModels = {}
+					tmpModels = createEdge((x*blockSize)+startx, 0, (y*blockSize)+starty, 270)
+					models[curIndex] = tmpModels[1]
+					curIndex = curIndex + 1
+				end
+				--[[if x%sizex < sizex*0.3 or y%sizey < sizey*0.3 or x%sizex >sizex*0.7 or y%sizey > sizey*0.7 then
 					local buildingType = (noise2(x/9000, y/9000)+1)*10
 					if buildingType > 10 then
 						local tmpModels = {}
@@ -47,38 +113,9 @@ local curIndex = 2
 					tmpModels = createSmallBuilding((x*blockSize)+startx, 0, (y*blockSize)+starty)
 					models[curIndex] = tmpModels[1]
 					curIndex = curIndex + 1
-				end
-				--[[
-				print("BLOCKSIZEMOD = "..x%blockSize)
-				if x%blockSize < (blockSize*0.3) then
-					local tmpModels = {}
-					tmpModels = createSmallBuilding((x*blockSize)+startx, 0, (y*blockSize)+starty)
-					models[curIndex] = tmpModels[1]
-					curIndex = curIndex + 1
-				elseif x%blockSize > (blockSize*0.7) then
-					local tmpModels = {}
-					tmpModels = createSmallBuilding((x*blockSize)+startx, 0, (y*blockSize)+starty)
-					models[curIndex] = tmpModels[1]
-					curIndex = curIndex + 1
-				elseif y%blockSize < (blockSize*0.3) then
-					local tmpModels = {}
-					tmpModels = createSmallBuilding((x*blockSize)+startx, 0, (y*blockSize)+starty)
-					models[curIndex] = tmpModels[1]
-					curIndex = curIndex + 1
-				elseif y%blockSize > (blockSize*0.7) then
-					local tmpModels = {}
-					tmpModels = createSmallBuilding((x*blockSize)+startx, 0, (y*blockSize)+starty)
-					models[curIndex] = tmpModels[1]
-					curIndex = curIndex + 1
-				else
-				--Generate Buildings
-				--MainScene:addMesh(SmallBuildingFiles[2], (x*blockSize)+startx, 0, (y*blockSize)+starty, 0, 0, 0, 30, 30, 30)
-					local tmpModels = {}
-					tmpModels = createLargeBuilding((x*blockSize)+startx, 0, (y*blockSize)+starty)
-					models[curIndex] = tmpModels[1]
-					models[curIndex+1] = tmpModels[2]
-					curIndex = curIndex + 2
 				end]]--
+				
+			
 			else
 				if y > 0 and y < sizey and x > 0 and x < sizex then
 					if x%blockSize == 0 and y%blockSize > 0 then
@@ -147,6 +184,42 @@ function createSmallBuilding(x, y, z)
 	tmp[2] = t2
 	return tmp
 end
+function createCorner(x, y, z, ry)
+	local t1 = MainScene:addMesh(cornerBuildingFiles[1], x, 0, z, 0, ry, 0, 13, 13, 13)
+	--MainScene:getMesh(t1):addCollider(MainScene, "MESH_GIMPACT", 0)
+	MainScene:getObject(t1):setMaterialTexture(MainScene, 1, "Assets/Levels/world/textures/Detail.jpg")
+	--MainScene:getObject(t1):useShader(MainScene, "Shaders/buildingShader.xml")
+	local tmp = {}
+	tmp[1] = t1
+	tmp[2] = t2
+	return tmp
+end
+function createEdge(x, y, z, ry)
+	local buildingBottom = noise2(x/9000, z/9000)+1
+	buildingBottom = buildingBottom * 10
+	buildingBottom = math.floor(buildingBottom%edgeBuildings)+1
+	local t1 = MainScene:addMesh(edgeBuildingFiles[buildingBottom], x, 0, z, 0, ry, 0, 13, 13, 13)
+	--MainScene:getMesh(t1):addCollider(MainScene, "MESH_GIMPACT", 0)
+	MainScene:getObject(t1):setMaterialTexture(MainScene, 1, "Assets/Levels/world/textures/Detail.jpg")
+	MainScene:getObject(t1):setMaterialTexture(MainScene, 0, "Assets/Levels/world/textures/Building_texture.jpg")
+	--MainScene:getObject(t1):useShader(MainScene, "Shaders/buildingShader.xml")
+	local tmp = {}
+	tmp[1] = t1
+	tmp[2] = t2
+	return tmp
+end
+
+function createCenter(x, y, z, ry)
+	local t1 = MainScene:addMesh(centerBuildingFiles[1], x, 0, z, 0, ry, 0, 8, 10, 8)
+	--MainScene:getMesh(t1):addCollider(MainScene, "MESH_GIMPACT", 0)
+	MainScene:getObject(t1):setMaterialTexture(MainScene, 1, "Assets/Levels/world/textures/Detail.jpg")
+	--MainScene:getObject(t1):useShader(MainScene, "Shaders/buildingShader.xml")
+	local tmp = {}
+	tmp[1] = t1
+	tmp[2] = t2
+	return tmp
+end
+
 function createRoad(x, y, z, rot)
 	local t1 = MainScene:addMesh("Assets/Levels/world/models/CityBuildingParts/road1.dae", x, 0, z, 0, rot, 0, 8, 10, 8)
 	--MainScene:getMesh(t1):addCollider(MainScene, "MESH_GIMPACT", 0)

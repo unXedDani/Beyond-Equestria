@@ -9,6 +9,8 @@ CREATE_CHARACTER = 6
 CHARACTER_ROTATION = 7
 CHAT_MESSAGE = 8
 CHARACTER_ANIMATION = 9
+LEVEL_OPTIONS = 10
+LEVEL_REQUEST = 11
 
 function onReceive(pack, ip)
 	local type = pack:readNumber()
@@ -131,13 +133,22 @@ function onReceive(pack, ip)
 		local tmp = MainScene:addListItem(message, MainScene:getMetaData("CHATMESSAGEBOX"))
 		MainScene:setMetaString("CHAT_MESSAGE_GUI_"..tmp, message)
 	end
+	if type == LEVEL_OPTIONS then
+		local debug = pack:readNumber()
+		if debug == 1 then
+			MainScene:setMetaData("WORLDDEBUG", 1)
+		else
+			MainScene:setMetaData("WORLDDEBUG", 0)
+		end
+		MainScene:setMetaData("CONNECTED_TO_SERVER", 1)
+	end
 end
 
 function onConnectFailed(ip)
-	MainScene:setMetaData("NETWORKERROR", 1)
-	MainScene:setMetaData("GAMESTATE", 0)
+	--MainScene:setMetaData("NETWORKERROR", 1)
+	MainScene:setMetaData("GAMESTATE", 1)
 	MainScene:setMetaData("GAMESTATECHANGED", 1)
-	MainScene:setMetaData("MENUCAMERATRACK", 1)
+	--MainScene:setMetaData("MENUCAMERATRACK", 1)
 end
 
 function onServerFull(ip)
@@ -148,6 +159,7 @@ function onServerFull(ip)
 end
 
 function onConnected(ip)
-	MainScene:setMetaData("GAMESTATE", 1)
-	MainScene:setMetaData("GAMESTATECHANGED", 1)
+	local l = MainScene:createPacket()
+	l:writeNumber(LEVEL_REQUEST)
+	MainScene:sendPacket(l, ip)
 end

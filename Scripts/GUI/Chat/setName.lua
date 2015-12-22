@@ -1,3 +1,4 @@
+System_run("scripts/defs.lua", MainScene)
 function onEnter(text)
 	MainScene:setMetaString("PLAYER_NAME", text)
 	MainScene:clearGUI()

@@ -603,17 +603,23 @@ EVST_VS_5_0 = 6,    EPST_PS_2_b = 6,    ETC_MIRROR_CLAMP_TO_EDGE = 6,
   </Effect>
   <!-- EPPE_EXTRA3 = 29 -->
   <Effect id="29" name="Extra3">
-    <ShaderPostProcess name="Extra3" vsFile="film.vert" vsType="0" psFile="technicolor.frag" psType="4" psUseElapsedTime="1">
+    <ShaderPostProcess name="GodRaysDepthProcess" vsFile="vertex.fx" vsType="0" psFile="processDepth.frag" psType="10" psUseElapsedTime="1">
       <Texture index="0" textureClamp="1" />
-      <RenderSource path="auxIn" />
-      <RenderTarget path="auxOut" />
+      <RenderSource path="rttDepth" />
+      <RenderTarget path="processedDepth" />
     </ShaderPostProcess>
+		<ShaderPostProcess name="GodRays" vsFile="vertex.fx" vsType="0" psFile="godrays.frag" psType="4">
+			<Texture index="0" textureClamp="1" />
+			<RenderSource path="auxIn" />
+			<Texture index="1" path="processedDepth" textureClamp="1" />
+			<RenderTarget path="auxOut" />
+		</ShaderPostProcess>
   </Effect>
   <!-- EPPE_EXTRA4 = 30 -->
   <Effect id="30" name="Extra4">
-    <ShaderPostProcess name="Extra4" vsFile="vertex.fx" vsType="1" psFile="technicolor.frag" psType="4" psUseElapsedTime="1">
+    <ShaderPostProcess name="Extra4" vsFile="vertex.fx" vsType="1" psFile="screenquad.fx" psType="4" psUseElapsedTime="1">
       <Texture index="0" textureClamp="1" />
-      <RenderSource path="auxIn" />
+      <RenderSource path="rttDepth" />
       <RenderTarget path="auxOut" />
     </ShaderPostProcess>
   </Effect>
