@@ -11,6 +11,8 @@ function gameInit()
 		MainScene:load("debug.xml")
 	end
 	playerCam = MainScene:addEmpty(0, -0.7, 0, 0, 0, 0, 0.2, 0.1, 0.1)
+	epokrepk = MainScene:addEmpty(0, -0.7, 0, 0, 0, 0, 0.2, 0.1, 0.1)
+	asfnfnfs = MainScene:addEmpty(0, -0.7, 0, 0, 0, 0, 0.2, 0.1, 0.1)
 	if GENTERRAIN == 0 then
 		playerCollider = MainScene:addEmpty(4600, 10, 1530, 0, 0, 0, 1, 2, 2)
 	else
@@ -26,9 +28,9 @@ function gameInit()
 	MainScene:getObject(playerCam):attachTo(MainScene:getObject(playerCollider))
 	MainScene:getObject(playerCam):setName("PLAYERCAMTARGET")
 	MainScene:getObject(playerCollider):setName("PLAYERCOLLIDER")
-	MainScene:getCamera():setTarget(MainScene:getObject(playerCollider))
+	MainScene:getCamera():setTarget(MainScene:getObject(epokrepk))
 	--MainScene:getCamera():setOffset(0, 2, 0)
-	MainScene:getCamera():setOffset(1.2, 5, -2)
+	--MainScene:getCamera():setOffset(0, 5, 0)
 	generatePlayer()
 	local t = MainScene:getMetaData("PLAYER_BODY_ID")
 	--MainScene:modifyCharacter("jumpheight", 5)
@@ -40,6 +42,8 @@ function gameInit()
 	MainScene:getGUIObject(mes):setAutoscroll(1)
 	MainScene:setMetaData("CHATMESSAGEBOX", mes)
 	MainScene:addEditBox("", 10, 160, 290, 180, 1, win, "Scripts/GUI/Chat/sendMessage.lua")
+
+
 end
 anim = 0
 lastAnim = 0
@@ -95,12 +99,14 @@ function gameUpdate()
 
 	local x, y, z = MainScene:getObject(playerCollider):getPosition()
 	if foijg then -- C "static" behavior.
-		foijg = foijg + 5 -- 5 degrees per frame.
+		foijg = foijg + 5/180 -- 5 degrees per frame.
 	else
 		foijg = 0
 	end
-	MainScene:getCamera():setPosition(x, y+5, z-8)
+	
 	--MainScene:getCamera():setRotation(foijg, 0, 0) -- Does nothing, should rotate the camera
+	--print(MainScene:getCamera():setTarget(MainScene:getObject(playerCollider)))
+	--MainScene:getCamera():setTarget(MainScene:getObject(playerCollider))
 
 	if DirX ~= 0 or DirZ ~= 0 then
 		MainScene:getObject(playerCollider):getCollider():setState("ACTIVE")
@@ -134,6 +140,25 @@ function gameUpdate()
 	end
 
 	--MainScene:getObject(playerCollider):setRotation(0, foijg, 0) -- you spin me right round round, (test of rotation on player)
+
+	--print(MainScene:getMousePosition())
+
+	local xrot
+	do
+		local x,y = MainScene:getMousePosition()
+		x = x - 512
+		y = y - 384
+		xrot = x*0.01
+		--MainScene:setMousePosition(512,384)
+	end
+
+	
+
+	MainScene:getObject(epokrepk):setPosition(x + math.sin(xrot)*10, y+1.8, z+ math.cos(xrot)*10)
+	MainScene:getObject(asfnfnfs):setPosition(x + -math.sin(xrot)*10, y+2, z+ -math.cos(xrot)*10)
+	local x,y,z = MainScene:getObject(asfnfnfs):getPosition()
+	MainScene:getCamera():setPosition(x, y+5, z)
+
 
 	curTime = curTime + MainScene:deltaTime()
 	if curTime > 500 then
