@@ -1,7 +1,8 @@
 GENTERRAIN = 1
 function gameInit()
 	GENTERRAIN = MainScene:getMetaData("WORLDDEBUG")
-	MainScene:addCamera(2)
+	--MainScene:addCamera(2)
+	MainScene:addCamera(1)
 	MainScene:getCamera():setClipping(1, MainScene:getConfigValue("Clipping"))
 	--MainScene:createCharacter( 2, 5, 3)
 	--MainScene:modifyCharacter("warp", 500, 10, 500)
@@ -26,7 +27,8 @@ function gameInit()
 	MainScene:getObject(playerCam):setName("PLAYERCAMTARGET")
 	MainScene:getObject(playerCollider):setName("PLAYERCOLLIDER")
 	MainScene:getCamera():setTarget(MainScene:getObject(playerCollider))
-	MainScene:getCamera():setOffset(0, 2, 0)
+	--MainScene:getCamera():setOffset(0, 2, 0)
+	MainScene:getCamera():setOffset(1.2, 5, -2)
 	generatePlayer()
 	local t = MainScene:getMetaData("PLAYER_BODY_ID")
 	--MainScene:modifyCharacter("jumpheight", 5)
@@ -90,6 +92,16 @@ function gameUpdate()
 	end
 	
 	local cX, cY, cZ = MainScene:getCamera():getRotation()
+
+	local x, y, z = MainScene:getObject(playerCollider):getPosition()
+	if foijg then -- C "static" behavior.
+		foijg = foijg + 5 -- 5 degrees per frame.
+	else
+		foijg = 0
+	end
+	MainScene:getCamera():setPosition(x, y+5, z-8)
+	--MainScene:getCamera():setRotation(foijg, 0, 0) -- Does nothing, should rotate the camera
+
 	if DirX ~= 0 or DirZ ~= 0 then
 		MainScene:getObject(playerCollider):getCollider():setState("ACTIVE")
 		--MainScene:getObject(playerCam):setRotation(0, cY-180, 0)
@@ -120,6 +132,9 @@ function gameUpdate()
 		MainScene:getObject(playerCollider):setRotation(0, try, 0)
 	--MainScene:moveCharacter(DirX*(sprint+1), 0, DirZ*(sprint+1), 0, cY - 180, 0, 0.1)
 	end
+
+	--MainScene:getObject(playerCollider):setRotation(0, foijg, 0) -- you spin me right round round, (test of rotation on player)
+
 	curTime = curTime + MainScene:deltaTime()
 	if curTime > 500 then
 		tx, ty, tz = MainScene:getObject(playerCollider):getPosition()
