@@ -74,7 +74,7 @@ function generateChunk(terrain, cX, cY, size, seed, heightFactor)
 				y1 = y+(size*cY)
 				--print(y.."+("..size.."*"..cY..")="..y1)
 			end
-			chunk[x+1][y+1] = noise2(x1/9000, y1/9000)*chunk[x+1][y+1]
+			chunk[x+1][y+1] = noise2(x1/9000, y1/9000)+chunk[x+1][y+1]
 		end
 	end
 	local passes=2
