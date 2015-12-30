@@ -1,7 +1,8 @@
 GENTERRAIN = 1
 function gameInit()
 	GENTERRAIN = MainScene:getMetaData("WORLDDEBUG")
-	MainScene:addCamera(2)
+	--MainScene:addCamera(2)
+	MainScene:addCamera(1)
 	MainScene:getCamera():setClipping(1, MainScene:getConfigValue("Clipping"))
 	--MainScene:createCharacter( 2, 5, 3)
 	--MainScene:modifyCharacter("warp", 500, 10, 500)
@@ -25,8 +26,9 @@ function gameInit()
 	MainScene:getObject(playerCam):attachTo(MainScene:getObject(playerCollider))
 	MainScene:getObject(playerCam):setName("PLAYERCAMTARGET")
 	MainScene:getObject(playerCollider):setName("PLAYERCOLLIDER")
-	MainScene:getCamera():setTarget(MainScene:getObject(playerCollider))
-	MainScene:getCamera():setOffset(0, 2, 0)
+	
+	--MainScene:getCamera():setOffset(0, 2, 0)
+	--MainScene:getCamera():setOffset(0, 5, 0)
 	generatePlayer()
 	local t = MainScene:getMetaData("PLAYER_BODY_ID")
 	--MainScene:modifyCharacter("jumpheight", 5)
@@ -38,6 +40,8 @@ function gameInit()
 	MainScene:getGUIObject(mes):setAutoscroll(1)
 	MainScene:setMetaData("CHATMESSAGEBOX", mes)
 	MainScene:addEditBox("", 10, 160, 290, 180, 1, win, "Scripts/GUI/Chat/sendMessage.lua")
+
+
 end
 anim = 0
 lastAnim = 0
@@ -89,7 +93,8 @@ function gameUpdate()
 		MainScene:getObject(playerCollider):getCollider():addCentralForce(0, 3000, 0)
 	end
 	
-	local cX, cY, cZ = MainScene:getCamera():getRotation()
+	
+
 	if DirX ~= 0 or DirZ ~= 0 then
 		MainScene:getObject(playerCollider):getCollider():setState("ACTIVE")
 		--MainScene:getObject(playerCam):setRotation(0, cY-180, 0)
@@ -108,6 +113,7 @@ function gameUpdate()
 		if DirZ == 1 then
 			anim = BWALK
 		end
+		local _, cY, _ = MainScene:getCamera():getRotation()
 		MainScene:getObject(playerCollider):setRotation(0, cY-180, 0)
 		local vx, vy, vz = MainScene:getObject(playerCollider):getCollider():getVelocity()
 		MainScene:getObject(playerCollider):getCollider():setVelocity((DirX * (sprint+1))*4, vy, (DirZ * (sprint+1))*4)
@@ -120,6 +126,65 @@ function gameUpdate()
 		MainScene:getObject(playerCollider):setRotation(0, try, 0)
 	--MainScene:moveCharacter(DirX*(sprint+1), 0, DirZ*(sprint+1), 0, cY - 180, 0, 0.1)
 	end
+
+
+	local mousePosX
+	local mousePosY
+	do
+		local x,y = MainScene:getMousePosition()
+		MainScene:getMouseControl() -- No effect
+
+		x = x - 512 -- Screen width and height
+		y = y - 384
+		mousePosX = x*0.01
+		mousePosY = y*0.01
+	end
+
+	local cameraTargetObject = MainScene:addEmpty(0, 0, 0, 0, 0, 0, 0, 0, 0)
+	MainScene:getCamera():setTarget(MainScene:getObject(cameraTargetObject))
+
+
+	local playerX, playerY, playerZ =
+		MainScene:getObject(playerCollider):getPosition()
+
+	-- Relative position of camera position and camera target around the player.
+	local cameraTargetX,cameraTargetY,cameraTargetZ =
+		playerX + math.sin(mousePosX)*14,
+		playerY + -4,
+		playerZ + math.cos(mousePosX)*14
+
+	local cameraPosX,cameraPosY,cameraPosZ = 
+		playerX + -math.sin(mousePosX)*14,
+		playerY + 5,
+		playerZ + -math.cos(mousePosX)*14
+
+	-- Set position of the camera target, determens angle of the camera.
+	MainScene:getObject(cameraTargetObject):setPosition(
+		cameraTargetX,
+		cameraTargetY+mousePosY*0.1, -- Gives some perspective
+		cameraTargetZ)
+	
+	-- Raycast from player to cameraPos. 
+	local cameraClippedX,cameraClippedY,cameraClippedZ = MainScene:rayCast(
+		playerX,
+		playerY,
+		playerZ,
+		cameraPosX,
+		cameraPosY,
+		cameraPosZ)
+
+	-- Move camera away from wall
+	cameraClippedX = cameraClippedX + math.sin(mousePosX) * 4
+	cameraClippedZ = cameraClippedZ + math.cos(mousePosX) * 4
+
+	MainScene:getCamera():setPosition(
+		cameraClippedX,
+		cameraPosY+mousePosY, -- Moves the camera around up and down
+		cameraClippedZ)
+
+	MainScene:removeObject(cameraTargetObject)
+
+
 	curTime = curTime + MainScene:deltaTime()
 	if curTime > 500 then
 		tx, ty, tz = MainScene:getObject(playerCollider):getPosition()
