@@ -11,8 +11,6 @@ function gameInit()
 		MainScene:load("debug.xml")
 	end
 	playerCam = MainScene:addEmpty(0, -0.7, 0, 0, 0, 0, 0.2, 0.1, 0.1)
-	epokrepk = MainScene:addEmpty(0, -0.7, 0, 0, 0, 0, 0.2, 0.1, 0.1)
-	asfnfnfs = MainScene:addEmpty(0, -0.7, 0, 0, 0, 0, 0.2, 0.1, 0.1)
 	if GENTERRAIN == 0 then
 		playerCollider = MainScene:addEmpty(4600, 10, 1530, 0, 0, 0, 1, 2, 2)
 	else
@@ -28,7 +26,7 @@ function gameInit()
 	MainScene:getObject(playerCam):attachTo(MainScene:getObject(playerCollider))
 	MainScene:getObject(playerCam):setName("PLAYERCAMTARGET")
 	MainScene:getObject(playerCollider):setName("PLAYERCOLLIDER")
-	MainScene:getCamera():setTarget(MainScene:getObject(epokrepk))
+	
 	--MainScene:getCamera():setOffset(0, 2, 0)
 	--MainScene:getCamera():setOffset(0, 5, 0)
 	generatePlayer()
@@ -95,18 +93,7 @@ function gameUpdate()
 		MainScene:getObject(playerCollider):getCollider():addCentralForce(0, 3000, 0)
 	end
 	
-	local cX, cY, cZ = MainScene:getCamera():getRotation()
-
-	local x, y, z = MainScene:getObject(playerCollider):getPosition()
-	if foijg then -- C "static" behavior.
-		foijg = foijg + 5/180 -- 5 degrees per frame.
-	else
-		foijg = 0
-	end
 	
-	--MainScene:getCamera():setRotation(foijg, 0, 0) -- Does nothing, should rotate the camera
-	--print(MainScene:getCamera():setTarget(MainScene:getObject(playerCollider)))
-	--MainScene:getCamera():setTarget(MainScene:getObject(playerCollider))
 
 	if DirX ~= 0 or DirZ ~= 0 then
 		MainScene:getObject(playerCollider):getCollider():setState("ACTIVE")
@@ -126,6 +113,7 @@ function gameUpdate()
 		if DirZ == 1 then
 			anim = BWALK
 		end
+		local _, cY, _ = MainScene:getCamera():getRotation()
 		MainScene:getObject(playerCollider):setRotation(0, cY-180, 0)
 		local vx, vy, vz = MainScene:getObject(playerCollider):getCollider():getVelocity()
 		MainScene:getObject(playerCollider):getCollider():setVelocity((DirX * (sprint+1))*4, vy, (DirZ * (sprint+1))*4)
@@ -139,25 +127,62 @@ function gameUpdate()
 	--MainScene:moveCharacter(DirX*(sprint+1), 0, DirZ*(sprint+1), 0, cY - 180, 0, 0.1)
 	end
 
-	--MainScene:getObject(playerCollider):setRotation(0, foijg, 0) -- you spin me right round round, (test of rotation on player)
 
-	--print(MainScene:getMousePosition())
-
-	local xrot
+	local mousePosX
+	local mousePosY
 	do
 		local x,y = MainScene:getMousePosition()
-		x = x - 512
+		MainScene:getMouseControl() -- No effect
+
+		x = x - 512 -- Screen width and height
 		y = y - 384
-		xrot = x*0.01
-		--MainScene:setMousePosition(512,384)
+		mousePosX = x*0.01
+		mousePosY = y*0.01
 	end
 
-	
+	local cameraTargetObject = MainScene:addEmpty(0, 0, 0, 0, 0, 0, 0, 0, 0)
+	MainScene:getCamera():setTarget(MainScene:getObject(cameraTargetObject))
 
-	MainScene:getObject(epokrepk):setPosition(x + math.sin(xrot)*10, y+1.8, z+ math.cos(xrot)*10)
-	MainScene:getObject(asfnfnfs):setPosition(x + -math.sin(xrot)*10, y+2, z+ -math.cos(xrot)*10)
-	local x,y,z = MainScene:getObject(asfnfnfs):getPosition()
-	MainScene:getCamera():setPosition(x, y+5, z)
+
+	local playerX, playerY, playerZ =
+		MainScene:getObject(playerCollider):getPosition()
+
+	-- Relative position of camera position and camera target around the player.
+	local cameraTargetX,cameraTargetY,cameraTargetZ =
+		playerX + math.sin(mousePosX)*14,
+		playerY + -4,
+		playerZ + math.cos(mousePosX)*14
+
+	local cameraPosX,cameraPosY,cameraPosZ = 
+		playerX + -math.sin(mousePosX)*14,
+		playerY + 5,
+		playerZ + -math.cos(mousePosX)*14
+
+	-- Set position of the camera target, determens angle of the camera.
+	MainScene:getObject(cameraTargetObject):setPosition(
+		cameraTargetX,
+		cameraTargetY+mousePosY*0.1, -- Gives some perspective
+		cameraTargetZ)
+	
+	-- Raycast from player to cameraPos. 
+	local cameraClippedX,cameraClippedY,cameraClippedZ = MainScene:rayCast(
+		playerX,
+		playerY,
+		playerZ,
+		cameraPosX,
+		cameraPosY,
+		cameraPosZ)
+
+	-- Move camera away from wall
+	cameraClippedX = cameraClippedX + math.sin(mousePosX) * 4
+	cameraClippedZ = cameraClippedZ + math.cos(mousePosX) * 4
+
+	MainScene:getCamera():setPosition(
+		cameraClippedX,
+		cameraPosY+mousePosY, -- Moves the camera around up and down
+		cameraClippedZ)
+
+	MainScene:removeObject(cameraTargetObject)
 
 
 	curTime = curTime + MainScene:deltaTime()
