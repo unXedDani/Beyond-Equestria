@@ -41,7 +41,8 @@ function gameInit()
 	MainScene:setMetaData("CHATMESSAGEBOX", mes)
 	MainScene:addEditBox("", 10, 160, 290, 180, 1, win, "Scripts/GUI/Chat/sendMessage.lua")
 
-
+	MainScene:setMouseVisibility(0)
+	MainScene:setMousePosition(0.5,0.5)
 end
 anim = 0
 lastAnim = 0
@@ -60,6 +61,13 @@ LWALK = 4
 RWALK = 5
 
 idleTime = 0
+
+-- Needed to ignore jumping mouse in MainScene:getMousePosition().
+local firstFrameAfterMenuClose = 0
+
+local mouseCameraRotationX = 0
+local mouseCameraRotationY = 0
+
 function gameUpdate()
 	lastAnim = anim
 	--MainScene:getObject(playerCam):setPosition(MainScene:characterData("posX"), MainScene:characterData("posY")-2, MainScene:characterData("posZ"))
@@ -127,18 +135,28 @@ function gameUpdate()
 	--MainScene:moveCharacter(DirX*(sprint+1), 0, DirZ*(sprint+1), 0, cY - 180, 0, 0.1)
 	end
 
+	
 
-	local mousePosX
-	local mousePosY
-	do
-		local x,y = MainScene:getMousePosition()
-		MainScene:getMouseControl() -- No effect
+	if MainScene:getMetaData("PAUSED") == 0 then
+		if firstFrameAfterMenuClose == 0 then
+			MainScene:setMousePosition(0.5,0.5)
+			firstFrameAfterMenuClose = 1
+		else
+			local x,y = MainScene:getMousePosition()
 
-		x = x - 512 -- Screen width and height
-		y = y - 384
-		mousePosX = x*0.01
-		mousePosY = y*0.01
+			x = x - MainScene:getConfigValue("width")/2 
+			y = y - MainScene:getConfigValue("height")/2
+
+			mouseCameraRotationX = mouseCameraRotationX + x*0.005
+			mouseCameraRotationY = mouseCameraRotationY + y*0.01
+			mouseCameraRotationY = math.max(mouseCameraRotationY,-1)
+			mouseCameraRotationY = math.min(mouseCameraRotationY,6) -- Clamp Y 
+			MainScene:setMousePosition(0.5,0.5)
+		end
+	else
+		firstFrameAfterMenuClose = 0
 	end
+
 
 	local cameraTargetObject = MainScene:addEmpty(0, 0, 0, 0, 0, 0, 0, 0, 0)
 	MainScene:getCamera():setTarget(MainScene:getObject(cameraTargetObject))
@@ -146,22 +164,25 @@ function gameUpdate()
 
 	local playerX, playerY, playerZ =
 		MainScene:getObject(playerCollider):getPosition()
+	
+	local cameraDistanceFromCollision = 4
+	local cameraDistanceFromPlayer = 10 + cameraDistanceFromCollision
 
 	-- Relative position of camera position and camera target around the player.
 	local cameraTargetX,cameraTargetY,cameraTargetZ =
-		playerX + math.sin(mousePosX)*14,
+		playerX + math.sin(mouseCameraRotationX)*cameraDistanceFromPlayer,
 		playerY + -4,
-		playerZ + math.cos(mousePosX)*14
+		playerZ + math.cos(mouseCameraRotationX)*cameraDistanceFromPlayer
 
 	local cameraPosX,cameraPosY,cameraPosZ = 
-		playerX + -math.sin(mousePosX)*14,
+		playerX + -math.sin(mouseCameraRotationX)*cameraDistanceFromPlayer,
 		playerY + 5,
-		playerZ + -math.cos(mousePosX)*14
+		playerZ + -math.cos(mouseCameraRotationX)*cameraDistanceFromPlayer
 
 	-- Set position of the camera target, determens angle of the camera.
 	MainScene:getObject(cameraTargetObject):setPosition(
 		cameraTargetX,
-		cameraTargetY+mousePosY*0.1, -- Gives some perspective
+		cameraTargetY+mouseCameraRotationY*0.1, -- Gives some perspective
 		cameraTargetZ)
 	
 	-- Raycast from player to cameraPos. 
@@ -174,12 +195,12 @@ function gameUpdate()
 		cameraPosZ)
 
 	-- Move camera away from wall
-	cameraClippedX = cameraClippedX + math.sin(mousePosX) * 4
-	cameraClippedZ = cameraClippedZ + math.cos(mousePosX) * 4
+	cameraClippedX = cameraClippedX + math.sin(mouseCameraRotationX) * cameraDistanceFromCollision
+	cameraClippedZ = cameraClippedZ + math.cos(mouseCameraRotationX) * cameraDistanceFromCollision
 
 	MainScene:getCamera():setPosition(
 		cameraClippedX,
-		cameraPosY+mousePosY, -- Moves the camera around up and down
+		cameraPosY+mouseCameraRotationY, -- Moves the camera around up and down
 		cameraClippedZ)
 
 	MainScene:removeObject(cameraTargetObject)

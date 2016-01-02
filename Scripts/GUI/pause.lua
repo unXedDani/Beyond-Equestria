@@ -10,4 +10,5 @@ function initPause()
 		p=1
 	end
 	MainScene:setMetaData("PAUSED", p)
+	MainScene:setMouseVisibility(1)
 end
