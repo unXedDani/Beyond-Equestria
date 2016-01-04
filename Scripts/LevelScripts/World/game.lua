@@ -21,7 +21,7 @@ function gameInit()
 	MainScene:getEmpty(playerCollider):addCollider(MainScene, "SPHERE", 50)
 	
 	MainScene:getObject(playerCollider):getCollider():setFriction(200)
-	MainScene:getObject(playerCollider):getCollider():setDamping(0.1, 5)
+	MainScene:getObject(playerCollider):getCollider():setDamping(0.3, 5)
 	MainScene:getObject(playerCollider):getCollider():setLocal(1)
 	MainScene:getObject(playerCam):attachTo(MainScene:getObject(playerCollider))
 	MainScene:getObject(playerCam):setName("PLAYERCAMTARGET")
@@ -43,6 +43,9 @@ function gameInit()
 
 	MainScene:setMouseVisibility(0)
 	MainScene:setMousePosition(0.5,0.5)
+	
+	MainScene:setMetaData("CameraDistanceFromCollider", 4)
+	MainScene:setMetaData("CameraDistanceFromPlayer", 10)
 end
 anim = 0
 lastAnim = 0
@@ -98,7 +101,7 @@ function gameUpdate()
 	
 	if MainScene:getKey(KEY_SPACE) == 1 and (yy-ppy) < 2 and (yy-ppy) > -2 then
 		MainScene:getObject(playerCollider):getCollider():setState("ACTIVE")
-		MainScene:getObject(playerCollider):getCollider():addCentralForce(0, 3000, 0)
+		MainScene:getObject(playerCollider):getCollider():addCentralForce(0, 2000, 0)
 	end
 	
 	
@@ -165,8 +168,8 @@ function gameUpdate()
 	local playerX, playerY, playerZ =
 		MainScene:getObject(playerCollider):getPosition()
 	
-	local cameraDistanceFromCollision = 4
-	local cameraDistanceFromPlayer = 10 + cameraDistanceFromCollision
+	local cameraDistanceFromCollision = MainScene:getMetaData("CameraDistanceFromCollider")
+	local cameraDistanceFromPlayer = MainScene:getMetaData("CameraDistanceFromPlayer") + cameraDistanceFromCollision
 
 	-- Relative position of camera position and camera target around the player.
 	local cameraTargetX,cameraTargetY,cameraTargetZ =
@@ -323,7 +326,7 @@ function gameRender()
 		if anim == IDLE then
 			setPlayerAnim("idle", 10, 1, 200)
 		elseif anim == WALK then
-			setPlayerAnim("walk", 60, 1, 60)
+			setPlayerAnim("walk", 60, 1, 50)
 		elseif anim == SPRINT then
 			setPlayerAnim("trot", 120, 1, 60)
 		elseif anim == BWALK then
