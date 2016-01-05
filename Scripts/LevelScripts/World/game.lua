@@ -64,6 +64,7 @@ idleTime = 0
 
 -- Needed to ignore jumping mouse in MainScene:getMousePosition().
 local firstFrameAfterMenuClose = 0
+local mousePositionBuffer = {0,0,0,0,0,0} -- xy xy xy
 
 local mouseCameraRotationX = 0
 local mouseCameraRotationY = 0
@@ -138,11 +139,32 @@ function gameUpdate()
 	
 
 	if MainScene:getMetaData("PAUSED") == 0 then
-		if firstFrameAfterMenuClose == 0 then
+		local x,y = MainScene:getMousePosition()
+
+		-- If the three last frames have the exact same input, ignore input.
+		-- Used to avoid camera drift.
+		mousePositionBuffer[5], mousePositionBuffer[6] =
+			mousePositionBuffer[3], mousePositionBuffer[4]
+		mousePositionBuffer[3], mousePositionBuffer[4] =
+			mousePositionBuffer[1], mousePositionBuffer[2]
+		mousePositionBuffer[1], mousePositionBuffer[2] = x,y
+
+		local mouseAvoidDrift = false
+		if mousePositionBuffer[1] == mousePositionBuffer[3] and
+			mousePositionBuffer[1] == mousePositionBuffer[5] and 
+			mousePositionBuffer[2] == mousePositionBuffer[4] and
+			mousePositionBuffer[2] == mousePositionBuffer[6] then
+
+			mouseAvoidDrift = true
+		end
+
+
+
+		if firstFrameAfterMenuClose == 0 or mouseAvoidDrift then
 			MainScene:setMousePosition(0.5,0.5)
 			firstFrameAfterMenuClose = 1
 		else
-			local x,y = MainScene:getMousePosition()
+			
 
 			x = x - MainScene:getConfigValue("width")/2 
 			y = y - MainScene:getConfigValue("height")/2
