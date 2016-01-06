@@ -1,24 +1,8 @@
 function onSelect(selection)
 end
 function onChange(selection)
-	if(selection == 0) then
-		MainScene:setConfigValue("height", 768)
-		MainScene:setConfigValue("width", 1024)
-	end	
-	if(selection == 1) then
-		MainScene:setConfigValue("height", 800)
-		MainScene:setConfigValue("width", 1280)
-	end
-	if(selection == 2) then
-		MainScene:setConfigValue("height", 900)
-		MainScene:setConfigValue("width", 1440)
-	end
-	if(selection == 3) then
-		MainScene:setConfigValue("height", 900)
-		MainScene:setConfigValue("width", 1600)
-	end
-	if(selection == 4) then
-		MainScene:setConfigValue("height", 1200)
-		MainScene:setConfigValue("width", 1600)
-	end
+	local widths = {800, 1024, 1280, 1600, 1024, 1280, 1366, 1600, 1920, 1280, 1440, 1680, 1920}
+	local heights = {600, 768, 960, 1200, 576, 720, 768, 900, 1080, 800, 900, 1050, 1200}
+	MainScene:setConfigValue("height", heights[selection+1])
+	MainScene:setConfigValue("width", widths[selection+1])
 end

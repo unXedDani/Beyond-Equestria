@@ -95,7 +95,18 @@ function gameUpdate()
 	if MainScene:getKey(KEY_LSHIFT) == 1 then
 		sprint = 2
 	end
-	
+	if MainScene:getKey(KEY_KEY_Q) == 1 then
+		local d = MainScene:getMetaData("CameraDistanceFromPlayer")
+		d=d-0.2
+		if d < MainScene:getMetaData("CameraDistanceFromCollider") then d = MainScene:getMetaData("CameraDistanceFromCollider") end
+		MainScene:setMetaData("CameraDistanceFromPlayer", d)
+	end
+	if MainScene:getKey(KEY_KEY_Z) == 1 then
+		local d = MainScene:getMetaData("CameraDistanceFromPlayer")
+		d=d+0.2
+		if d > 30 then d = 30 end
+		MainScene:setMetaData("CameraDistanceFromPlayer", d)
+	end
 	local ppx, ppy, ppz = MainScene:getObject(playerCollider):getPosition()
 	local xx, yy, zz = MainScene:rayCast(ppx, ppy-1, ppz, ppx, ppy-500, ppz)
 	
@@ -366,4 +377,11 @@ function setPlayerAnim(anim, speed, frame1, frame2)
 		MainScene:getBoneAnimatedMesh(MainScene:getMetaData("PLAYER_TAIL_ID")):setSpeed(speed)
 		MainScene:getBoneAnimatedMesh(MainScene:getMetaData("PLAYER_TAIL_ID")):setFrameLoop(frame1, frame2)
 	end
+	local pack = MainScene:createPacket()
+	pack:writeNumber(9)
+	pack:writeNumber(MainScene:getMetaData("PLAYER_ID"))
+	pack:writeString(anim)
+	pack:writeNumber(frame1)
+	pack:writeNumber(frame2)
+	pack:writeNumber(speed)
 end

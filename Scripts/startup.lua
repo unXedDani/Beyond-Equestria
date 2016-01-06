@@ -43,7 +43,7 @@ function init()
 	MainScene:setMetaData("NETRUNNING", 0)
 	MainScene:setMetaData("NETWORKERROR", 0)
 	MainScene:setMetaData("CONNECTED_TO_SERVER", 0)
-	MainScene:setMetaData("WORLDDEBUG", 1)
+	MainScene:setMetaData("WORLDDEBUG", 0)
 end
 
 function update()

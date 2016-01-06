@@ -1,33 +1,12 @@
-largeBuildingBottomFiles = {
-	"Assets/Levels/World/Models/CityBuildingParts/base1.dae",
-	"Assets/Levels/World/Models/CityBuildingParts/base2.dae",
-	"Assets/Levels/World/Models/CityBuildingParts/base3.dae",
-	"Assets/Levels/World/Models/CityBuildingParts/base4.dae",
-	"Assets/Levels/World/Models/CityBuildingParts/base5.dae"
-}
-largeBuildingBottoms = 5
-
-largeBuildingMiddleFiles = {
-	"Assets/Levels/World/Models/CityBuildingParts/middle1.dae",
-	"Assets/Levels/World/Models/CityBuildingParts/middle2.dae",
-	"Assets/Levels/World/Models/CityBuildingParts/middle3.dae",
-	"Assets/Levels/World/Models/CityBuildingParts/middle4.dae"
-}
-largeBuildingMiddles = 4
-
-smallBuildingModelFiles = {
-	"Assets/Levels/World/Models/CityBuildingParts/small1.dae"
-}
-
 edgeBuildingFiles = {
-	"Assets/Levels/World/Models/CityBuildingParts/City/edge1.dae",
 	"Assets/Levels/World/Models/CityBuildingParts/City/apartment1.dae",
-	"Assets/Levels/World/Models/CityBuildingParts/City/apartment2.dae"
+	"Assets/Levels/World/Models/CityBuildingParts/City/apartment2.dae",
+	"Assets/Levels/World/Models/CityBuildingParts/City/apartment3.dae"
 }
 edgeBuildings = 3
 
 cornerBuildingFiles = {
-	"Assets/Levels/World/Models/CityBuildingParts/City/corner1.dae"
+	"Assets/Levels/World/Models/CityBuildingParts/City/cornerapartment.dae"
 }
 cornerBuildings = 1
 
@@ -35,6 +14,8 @@ centerBuildingFiles = {
 	"Assets/Levels/World/Models/CityBuildingParts/City/center.dae"
 }
 centerBuildings = 1
+
+
 function generateCity(startx, starty, sizex, sizey, blockSize, buildingWidth)
 local models = {}
 local curIndex = 2
@@ -229,6 +210,8 @@ function createRoad(x, y, z, rot)
 	tmp[1] = t1
 	return tmp
 end
+
+
 function bxor(a,b)
   local r = 0
   for i = 0, 31 do

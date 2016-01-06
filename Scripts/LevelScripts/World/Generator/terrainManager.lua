@@ -222,8 +222,8 @@ function createChunk(chunkx, chunky, chunksize, terrainScale)
 		end
 		local cm = MainScene:addCMesh(cmesh, 0, 0, 0, 0, 0, 0, 1, 1, 1)
 		MainScene:getMesh(cm):addCollider(MainScene, "MESH_TRIMESH", 0)
-		MainScene:getObject(cm):setMaterialFlag("normalize_normals", 1)
-		MainScene:getObject(cm):useShader(MainScene, "Shaders/buildingShader.xml")
+		--MainScene:getObject(cm):setMaterialFlag("normalize_normals", 1)
+		--MainScene:getObject(cm):useShader(MainScene, "Shaders/buildingShader.xml")
 		MainScene:setMetaData("CITYCHUNKID".."1".."_"..chunkx.."_"..chunky, cm)
 	end
 	return terrain
