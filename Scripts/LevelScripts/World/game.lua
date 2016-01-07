@@ -26,6 +26,7 @@ function gameInit()
 	MainScene:getObject(playerCam):attachTo(MainScene:getObject(playerCollider))
 	MainScene:getObject(playerCam):setName("PLAYERCAMTARGET")
 	MainScene:getObject(playerCollider):setName("PLAYERCOLLIDER")
+	MainScene:setMetaData("PLAYER_COLLIDER", playerCollider)
 	
 	--MainScene:getCamera():setOffset(0, 2, 0)
 	--MainScene:getCamera():setOffset(0, 5, 0)
@@ -406,4 +407,5 @@ function setPlayerAnim(anim, speed, frame1, frame2)
 	pack:writeNumber(frame1)
 	pack:writeNumber(frame2)
 	pack:writeNumber(speed)
+	MainScene:broadcastPacket(pack)
 end

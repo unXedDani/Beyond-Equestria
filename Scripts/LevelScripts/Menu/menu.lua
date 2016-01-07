@@ -108,16 +108,16 @@ function menuUpdate()
 		updateTime = math.random()/2
 		rotModX = math.random()/750
 		rotModZ = math.random()/800
+		MainScene:getParticle(6):setDirection(rotModX, 0.004, rotModZ)
+		MainScene:getParticle(7):setDirection(rotModX, 0.001, rotModZ)
+		MainScene:getParticle(8):setDirection(rotModX, 0.002, rotModZ)
 	else
 		curTime = curTime + (MainScene:deltaTime()/1000)
 	end
-	MainScene:getParticle(6):setDirection(rotModX, 0.004, rotModZ)
-	MainScene:getParticle(7):setDirection(rotModX, 0.001, rotModZ)
-	MainScene:getParticle(8):setDirection(rotModX, 0.002, rotModZ)
 end
 
 function menuRender()
-
+	MainScene:RenderEffect(4)
 end
 
 function addRandomHorseModel(x, y, z, rx, ry, rz)

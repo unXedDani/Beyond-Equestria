@@ -90,7 +90,9 @@ function render()
 		MainScene:RenderEffect(24)
 		--MainScene:RenderEffect(29)
 	end
-	
+	if GameState == 0 then
+		menuRender()
+	end
 	if GameState == 1 then
 		gameRender()
 	end
