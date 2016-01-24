@@ -30,7 +30,8 @@ function onClick()
 	MainScene:addText("Restart game to apply options", 40, 370, 300, 390, window)
 	MainScene:addText("Render Distance", 10, 220, 390, 240, window)
 	local clipping = MainScene:addSlider(1, 10, 240, 390, 250, window, "Scripts/GUI/Menu/clipping.lua")
-	local bloom = MainScene:addCheckbox(10, 260, 190, 280, MainScene:getConfigValue("bloom"), "Bloom", window, "scripts/GUI/Menu/bloom.lua")
+	local bloom = MainScene:addCheckbox(10, 260, 100, 280, MainScene:getConfigValue("bloom"), "Bloom", window, "scripts/GUI/Menu/bloom.lua")
+	local dof = MainScene:addCheckbox(100, 260, 190, 280, MainScene:getConfigValue("poster"), "poster", window, "scripts/GUI/Menu/dof.lua")
 	
 end
 function onClose()

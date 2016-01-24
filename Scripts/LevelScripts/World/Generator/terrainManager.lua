@@ -225,7 +225,7 @@ function createChunk(chunkx, chunky, chunksize, terrainScale)
 		MainScene:getMesh(cm):addCollider(MainScene, "MESH_TRIMESH", 0)
 		--MainScene:getObject(cm):setMaterialFlag("normalize_normals", 1)
 		for m=0, MainScene:getObject(cm):getMaterialCount() do
-			MainScene:getObject(cm):useShaderOnMaterial(MainScene, "Shaders/buildingShaderSolid.xml", m)
+			--MainScene:getObject(cm):useShaderOnMaterial(MainScene, "Shaders/buildingShaderSolid.xml", m)
 		end
 		MainScene:SLog("MATERIAL COUNT: ", MainScene:getObject(cm):getMaterialCount())
 		MainScene:setMetaData("CITYCHUNKID".."1".."_"..chunkx.."_"..chunky, cm)

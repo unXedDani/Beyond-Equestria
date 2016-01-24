@@ -9,11 +9,15 @@ uniform float Gamma;
 void main()
 {
 	vec4 texCol = texture2D(texture0, gl_TexCoord[0].xy);
-	vec3 col0 = texCol.rgb;
+	/*vec3 col0 = vec3(texCol.r, texCol.g, texCol.b);
 	col0 = vec3(pow(float(col0), Gamma));
 	col0 = col0*NumColors;
 	col0 = floor(col0);
 	col0 = col0/NumColors;
-	col0 = vec3(pow(float(col0), 1.0f/Gamma));
-	gl_FragColor = vec4(col0, texCol.a);
+	col0 = vec3(pow(float(col0), 1.0f/Gamma));*/
+	texCol = texCol + texCol/Gamma;
+	texCol = texCol * NumColors;
+	texCol = floor(texCol);
+	texCol = texCol/NumColors;
+	gl_FragColor = texCol;
 }

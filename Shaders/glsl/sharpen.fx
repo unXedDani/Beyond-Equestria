@@ -2,7 +2,7 @@
 uniform sampler2D texture0; //sceneBuffer
 uniform float BufferWidth;
 uniform float BufferHeight;
-
+uniform float brightpass;
 void main ()
 {
 	vec2 texSize = vec2(1.0/BufferWidth, 1.0/BufferHeight);
@@ -20,6 +20,7 @@ void main ()
 
 	for(int i=0; i<8; i++)
 		finalCol -= texture2D(texture0, gl_TexCoord[0].xy+texSize*texSamples[i]);
-
+	
+	finalCol = finalCol + (finalCol*brightpass)
 	gl_FragColor = finalCol;
 }

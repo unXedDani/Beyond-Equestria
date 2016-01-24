@@ -9,12 +9,13 @@ edgeBuildingDoorY = {2, 2, 2}
 edgeBuildingDoorZ = {0, 0, 0}
 
 cornerBuildingFiles = {
-	"Assets/Levels/World/Models/CityBuildingParts/City/cornerapartment.dae"
+	"Assets/Levels/World/Models/CityBuildingParts/City/cornerapartment.dae",
+	"Assets/Levels/World/Models/CityBuildingParts/City/cornerapartment1.dae"
 }
-cornerBuildings = 1
-cornerBuildingDoorX = {10.5}
-cornerBuildingDoorY = {2}
-cornerBuildingDoorZ = {10.5}
+cornerBuildings = 2
+cornerBuildingDoorX = {10.5, 10.5}
+cornerBuildingDoorY = {2, 2}
+cornerBuildingDoorZ = {10.5, 10.5}
 centerBuildingFiles = {
 	"Assets/Levels/World/Models/CityBuildingParts/City/center.dae"
 }
@@ -157,8 +158,6 @@ end
 function createSmallBuilding(x, y, z)
 	local buildingBottom = noise2(x/9000, z/9000)+1
 	local rotation = noise2(x/9000, 3*z/9000)+1
-	rotation = rotation * 10
-	rotation = math.floor(rotation%4)+1
 	buildingBottom = buildingBottom * 10
 	buildingBottom = math.floor(buildingBottom%largeBuildingBottoms)+1
 	local t1 = MainScene:addMesh(largeBuildingBottomFiles[buildingBottom], x, 0, z, 0, rotation*90, 0, 8, 10, 8)
@@ -171,15 +170,33 @@ function createSmallBuilding(x, y, z)
 	return tmp
 end
 function createCorner(x, y, z, ry)
-	local t1 = MainScene:addMesh(cornerBuildingFiles[1], x, 0, z, 0, ry, 0, 1, 1, 1)
+local buildingBottom = noise2(x/9000, z/9000)+1
+	buildingBottom = buildingBottom * 10
+	buildingBottom = math.floor(buildingBottom%cornerBuildings)+1
+	local t1 = MainScene:addMesh(cornerBuildingFiles[buildingBottom], x, 0, z, 0, ry, 0, 1, 1, 1)
 	--MainScene:getMesh(t1):addCollider(MainScene, "MESH_GIMPACT", 0)
 	for i=0, MainScene:getObject(t1):getMaterialCount() do
-		MainScene:getObject(t1):setMaterialData(i, "texture", MainScene, 0, "Assets/Levels/world/textures/mane.jpg")
+		MainScene:getObject(t1):setMaterialData(i, "texture", MainScene, 0, "Assets/Levels/world/textures/buildingWhite.png")
 	end
-	MainScene:getObject(t1):setMaterialTexture(MainScene, 0, "Assets/Levels/world/textures/mane.jpg")
 	--MainScene:getObject(t1):useShader(MainScene, "Shaders/buildingShader.xml")
-	local e = MainScene:addEmpty(cornerBuildingDoorX[1]+x, cornerBuildingDoorX[1], cornerBuildingDoorX[1]+z, 0, 0, 0, 1, 1, 1)
+	local modx, mody
+	if ry == 0 then
+		modx = cornerBuildingDoorX[buildingBottom]
+		mody = cornerBuildingDoorZ[buildingBottom]
+	elseif ry == 90 then
+		modx = cornerBuildingDoorZ[buildingBottom]
+		mody = -cornerBuildingDoorX[buildingBottom]
+	elseif ry == 180 then
+		modx = -cornerBuildingDoorX[buildingBottom]
+		mody = -cornerBuildingDoorZ[buildingBottom]
+	elseif ry == 270 then
+		modx = -cornerBuildingDoorZ[buildingBottom]
+		mody = cornerBuildingDoorX[buildingBottom]
+	end
+	
+	local e = MainScene:addEmpty(modx+x, cornerBuildingDoorX[buildingBottom], mody+z, 0, 0, 0, 1, 1, 1)
 	MainScene:getObject(e):setMetaData("BUILDING_TYPE", 1)
+	MainScene:getObject(e):addScript(MainScene, "Scripts/LevelScripts/World/Buildings/DoorScript.lua")
 	local tmp = {}
 	tmp[1] = t1
 	tmp[2] = e
@@ -193,10 +210,23 @@ function createEdge(x, y, z, ry)
 	for i=0, MainScene:getObject(t1):getMaterialCount() do
 		MainScene:getObject(t1):setMaterialData(i, "texture", MainScene, 0, "Assets/Levels/world/textures/buildingWhite.png")
 	end
-	local modx, modz
-	modx = x+edgeBuildingDoorX[buildingBottom]+math.sin(ry)
-	modz = z+edgeBuildingDoorZ[buildingBottom]+math.cos(ry)
-	local e = MainScene:addEmpty(modx+x, edgeBuildingDoorY[buildingBottom], modz+z, 0, 0, 0, 1, 1, 1)
+	
+	local modx, mody
+	if ry == 0 then
+		modx = edgeBuildingDoorX[1]
+		mody = edgeBuildingDoorZ[1]
+	elseif ry == 90 then
+		modx = edgeBuildingDoorZ[1]
+		mody = -edgeBuildingDoorX[1]
+	elseif ry == 180 then
+		modx = -edgeBuildingDoorX[1]
+		mody = -edgeBuildingDoorZ[1]
+	elseif ry == 270 then
+		modx = -edgeBuildingDoorZ[1]
+		mody = edgeBuildingDoorX[1]
+	end
+	
+	local e = MainScene:addEmpty(modx+x, edgeBuildingDoorY[buildingBottom], mody+z, 0, 0, 0, 1, 1, 1)
 	MainScene:getObject(e):setMetaData("BUILDING_TYPE", 2)
 	MainScene:getObject(e):addScript(MainScene, "Scripts/LevelScripts/World/Buildings/DoorScript.lua")
 	local tmp = {}

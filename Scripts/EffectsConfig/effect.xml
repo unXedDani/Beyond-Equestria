@@ -191,7 +191,7 @@ EVST_VS_5_0 = 6,    EPST_PS_2_b = 6,    ETC_MIRROR_CLAMP_TO_EDGE = 6,
 
     <!-- brightpass -->
     <ShaderPostProcess name="Brightpass" vsFile="vertex.fx" vsType="0" psFile="brightpass.fx" psType="4" >
-      <PixelShaderConstant name="EffectStrength" value="0.4" />
+      <PixelShaderConstant name="EffectStrength" value="0.2" />
       <Texture index="0" textureClamp="1" />
       <Texture index="1" path="finalLum" textureClamp="1" />
       <RenderSource path="rtt1" />
@@ -298,7 +298,7 @@ EVST_VS_5_0 = 6,    EPST_PS_2_b = 6,    ETC_MIRROR_CLAMP_TO_EDGE = 6,
   <!-- EPPE_MOTION_BLUR = 6 -->
   <Effect id="6" name="Motion Blur">
     <ShaderPostProcess name="Motion Blur" vsFile="vertex.fx" vsType="0" psFile="motionblur.fx" psType="4" >
-      <PixelShaderConstant name="EffectStrength" value="0.5" />
+      <PixelShaderConstant name="EffectStrength" value="5.0" />
       <Texture index="0" textureClamp="1" />
       <Texture index="1" path="prevBuffer" textureClamp="1" />
       <RenderSource path="auxIn" />
@@ -340,8 +340,8 @@ EVST_VS_5_0 = 6,    EPST_PS_2_b = 6,    ETC_MIRROR_CLAMP_TO_EDGE = 6,
   <!-- EPPE_POSTERIZE = 9 -->
   <Effect id="9" name="Posterize">
     <ShaderPostProcess name="Posterize" vsFile="vertex.fx" vsType="0" psFile="posterize.fx" psType="4" >
-      <PixelShaderConstant name="NumColors" value="5.0" />
-      <PixelShaderConstant name="Gamma" value="0.5" />
+      <PixelShaderConstant name="NumColors" value="4.0" />
+      <PixelShaderConstant name="Gamma" value="0.9" />
       <Texture index="0" textureClamp="1" />
       <RenderSource path="auxIn" />
       <RenderTarget path="auxOut" />
@@ -352,6 +352,7 @@ EVST_VS_5_0 = 6,    EPST_PS_2_b = 6,    ETC_MIRROR_CLAMP_TO_EDGE = 6,
   <Effect id="10" name="Sharpen Edges">
     <ShaderPostProcess name="Sharpen" vsFile="vertex.fx" vsType="0" psFile="sharpen.fx" psType="4" psUseBufferWidth="1" psUseBufferHeight="1" >
       <UseBufferWidth/>
+	  <PixelShaderConstant name="brightpass" value="1.0" />
       <Texture index="0" textureClamp="1" />
       <RenderSource path="auxIn" />
       <RenderTarget path="auxOut" />
@@ -361,7 +362,7 @@ EVST_VS_5_0 = 6,    EPST_PS_2_b = 6,    ETC_MIRROR_CLAMP_TO_EDGE = 6,
   <!-- EPPE_EMBOSSED = 11 -->
   <Effect id="11" name="Embossed">
     <ShaderPostProcess name="Embossed" vsFile="vertex.fx" vsType="0" psFile="embossed.fx" psType="4" psUseBufferWidth="1" psUseBufferHeight="1" >
-      <PixelShaderConstant name="Contrast" value="2.0" />
+      <PixelShaderConstant name="Contrast" value="1.0" />
       <Texture index="0" textureClamp="1" />
       <RenderSource path="auxIn" />
       <RenderTarget path="auxOut" />
