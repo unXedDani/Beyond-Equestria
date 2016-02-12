@@ -341,7 +341,7 @@ EVST_VS_5_0 = 6,    EPST_PS_2_b = 6,    ETC_MIRROR_CLAMP_TO_EDGE = 6,
   <Effect id="9" name="Posterize">
     <ShaderPostProcess name="Posterize" vsFile="vertex.fx" vsType="0" psFile="posterize.fx" psType="4" >
       <PixelShaderConstant name="NumColors" value="4.0" />
-      <PixelShaderConstant name="Gamma" value="0.9" />
+      <PixelShaderConstant name="Gamma" value="0.7" />
       <Texture index="0" textureClamp="1" />
       <RenderSource path="auxIn" />
       <RenderTarget path="auxOut" />

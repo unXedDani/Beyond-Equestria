@@ -8,7 +8,10 @@ uniform float Gamma;
 float4 main(float2 texCoord : TEXCOORD0) : COLOR
 {
 	float4 texCol = tex2D(SceneBuffer, texCoord);
-	float3 col0 = texCol.rgb;
+	float3 col0;
+	col0.r = texCol.r;
+	col0.g = texCol.g;
+	col0.b = texCol.b;
 	col0 = pow(col0, Gamma);
 	col0 = col0*NumColors;
 	col0 = floor(col0);

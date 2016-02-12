@@ -12,7 +12,7 @@ function gameInit()
 	end
 	playerCam = MainScene:addEmpty(0, -0.7, 0, 0, 0, 0, 0.2, 0.1, 0.1)
 	if GENTERRAIN == 0 then
-		playerCollider = MainScene:addEmpty(4600, 10, 1530, 0, 0, 0, 1, 2, 2)
+		playerCollider = MainScene:addEmpty(500, 500, 500, 0, 0, 0, 1, 2, 2)
 	else
 		playerCollider = MainScene:addEmpty(0, 10, 0, 0, 0, 0, 1, 2, 2)
 	end
@@ -98,7 +98,7 @@ function gameUpdate()
 		DirX = -1.0
 	end
 	if MainScene:getKey(KEY_LSHIFT) == 1 then
-		sprint = 2
+		sprint = 4
 	end
 	if MainScene:getKey(KEY_KEY_Q) == 1 then
 		local d = MainScene:getMetaData("CameraDistanceFromPlayer")
@@ -380,6 +380,7 @@ function gameRender()
 			MainScene:RenderEffect(9)
 			MainScene:RenderEffect(10)
 		end
+		
 end
 
 function distance(x1, y1, x2, y2)
