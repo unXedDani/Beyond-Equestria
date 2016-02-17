@@ -11,8 +11,8 @@ System_run("scripts/GUI/pause.lua", MainScene)
 MainScene:setDebug(2)
 MainScene:setPhysicsDebug(0)
 
-chunksize = 32
-terrainScale = 5
+chunksize = 64
+terrainScale = 16
 playerCam = 0
 testx = 0
 testy = 0

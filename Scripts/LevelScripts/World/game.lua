@@ -98,7 +98,7 @@ function gameUpdate()
 		DirX = -1.0
 	end
 	if MainScene:getKey(KEY_LSHIFT) == 1 then
-		sprint = 4
+		sprint = 10
 	end
 	if MainScene:getKey(KEY_KEY_Q) == 1 then
 		local d = MainScene:getMetaData("CameraDistanceFromPlayer")
@@ -214,7 +214,7 @@ function gameUpdate()
 
 	local cameraPosX,cameraPosY,cameraPosZ = 
 		playerX + -math.sin(mouseCameraRotationX)*cameraDistanceFromPlayer,
-		playerY + 5,
+		playerY + 10,
 		playerZ + -math.cos(mouseCameraRotationX)*cameraDistanceFromPlayer
 
 	-- Set position of the camera target, determens angle of the camera.

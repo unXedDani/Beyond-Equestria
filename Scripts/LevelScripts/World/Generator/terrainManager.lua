@@ -14,7 +14,13 @@ function updateChunks(posx, posy, chunksize, terrainScale)
 	if MainScene:getMetaData("CHUNK"..chunkx.."_"..chunky) ~= 1 then
 		for x=-1, 1 do
 			for y=-1, 1 do
-				createChunk(chunkx+x, chunky+y, chunksize, terrainScale)
+				local c = createChunk(chunkx+x, chunky+y, chunksize, terrainScale)
+				local waterPlane = MainScene:addMesh("Assets/Levels/world/models/plane.dae", (chunkx+x)*(chunksize*terrainScale), -64, (chunky+y)*(chunksize*terrainScale), 0, 0, 0, terrainScale, 1, terrainScale)
+				MainScene:getObject(waterPlane):setMaterialData(0, "texture", MainScene, 0, "Assets/Levels/world/textures/water.jpg")
+				MainScene:getObject(waterPlane):setMaterialData(0, "texture", MainScene, 1, "Assets/Levels/world/textures/skybox/hills_up.tga")
+				MainScene:getObject(waterPlane):setMaterialData(0, "scale_texture", 0.1, 0.1, 0.1)
+				MainScene:getObject(waterPlane):useShader(MainScene, "Shaders/waterShader.xml")
+				MainScene:setMetaData("Water"..chunkx+x.."_"..chunky+y, waterPlane)
 			end
 		end
 		--updateChunk(t)
@@ -34,7 +40,15 @@ function updateChunks(posx, posy, chunksize, terrainScale)
 		end
 		for x=-1, 1 do
 			for y=-1, 1 do
-				createChunk(chunkx+x, chunky+y, chunksize, terrainScale)
+				local c = createChunk(chunkx+x, chunky+y, chunksize, terrainScale)
+				if c ~= nil then
+					local waterPlane = MainScene:addMesh("Assets/Levels/world/models/plane.dae", (chunkx+x)*(chunksize*terrainScale)+(8*terrainScale), -64, (chunky+y)*(chunksize*terrainScale)+(8*terrainScale), 0, 0, 0, terrainScale/2, 1, terrainScale/2)
+					MainScene:getObject(waterPlane):setMaterialData(0, "texture", MainScene, 0, "Assets/Levels/world/textures/water.jpg")
+					MainScene:getObject(waterPlane):setMaterialData(0, "texture", MainScene, 1, "Assets/Levels/world/textures/skybox/hills_up.tga")
+					MainScene:getObject(waterPlane):setMaterialData(0, "scale_texture", 0.1, 0.1, 0.1)
+					MainScene:getObject(waterPlane):useShader(MainScene, "Shaders/waterShader.xml")
+					MainScene:setMetaData("Water"..chunkx+x.."_"..chunky+y, waterPlane)
+				end
 			end
 		end
 	end
@@ -262,6 +276,10 @@ function removeChunk(chunkx, chunky)
 	if MainScene:getMetaData("CHUNK"..chunkx.."_"..chunky) == 1 then
 		MainScene:removeObject(MainScene:getMetaData("CHUNKID"..chunkx.."_"..chunky))
 		MainScene:setMetaData("CHUNK"..chunkx.."_"..chunky, 0)
+		if (MainScene:getMetaData("Water"..chunkx.."_"..chunky) ~= 0) then
+		MainScene:removeObject(MainScene:getMetaData("Water"..chunkx.."_"..chunky))
+		end
+		removeTrees(chunkx, chunky)
 	end
 end
 function createChunka(chunkx, chunky, chunksize, terrainScale)
@@ -438,10 +456,4 @@ function removeTrees(chunkx, chunky)
 		MainScene:removeObject(MainScene:getMetaData("TREES_ID_"..chunkx.."_"..chunky.."_"..i))
 	end
 	MainScene:setMetaData("TREES_IN_"..chunkx.."_"..chunky, 0)
-end
-
-function noise2(x, y)
-	local n = x + y * 57
-	n = bxor((n * 2^13), n);
-	return ( 1.0 - ( (n * (n * n * 15731 + 789221) + 1376312589) % 2147483648) / 1073741824.0)
 end
