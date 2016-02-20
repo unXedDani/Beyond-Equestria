@@ -3,7 +3,7 @@ Fox Claw Engine by Jcam Technologies
 Engine build : 0.0.3.18
 Engine Version : 
 Platform : Win32
-Loading config : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/config.xml
+Loading config : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/config.xml
 DEBUG LV.1 : Found node : 
 DEBUG LV.1 : Found node : Config
 DEBUG LV.1 : Found config
@@ -106,9 +106,9 @@ Loading startup script
 Creating new luastate
 DEBUG LV.1 : Opening libraries
 DEBUG LV.1 : Opened libraries
-DEBUG LV.1 : Attempting to run script : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Scripts/startup.lua
+DEBUG LV.1 : Attempting to run script : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/Scripts/startup.lua
 Setting debug to : 0
-DEBUG LV.1 : Successfully ran : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Scripts/startup.lua
+DEBUG LV.1 : Successfully ran : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/Scripts/startup.lua
 Running init() on startup.lua
 DEBUG LV.2 : Running init function
 Launching Beyond Equestria 0.1.0
@@ -129,20 +129,20 @@ DEBUG LV.2 : Within SCENECONFIG
 DEBUG LV.2 : leaving SCENECONFIG
 FOUND MESH
 DEBUG LV.2 : leaving MESH
-Loading mesh : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/assets/levels/menu/models/desk/desk.dae
+Loading mesh : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/assets/levels/menu/models/desk/desk.dae
 DEBUG LV.2 : Loaded mesh
 FOUND LIGHT
 DEBUG LV.2 : Creating light
 DEBUG LV.2 : Light created
 FOUND MESH
 DEBUG LV.2 : leaving MESH
-Loading mesh : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/assets/levels/menu/models/desk/lampbase.dae
+Loading mesh : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/assets/levels/menu/models/desk/lampbase.dae
 DEBUG LV.2 : Loaded mesh
 FOUND PARTICLE
 DEBUG LV.2 : Instantiated particle system
 DEBUG LV.2 : Created particle system
 DEBUG LV.1 : Setting particle texture for : 6
-DEBUG LV.2 : Set to : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/assets/levels/menu/textures/fire.jpg
+DEBUG LV.2 : Set to : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/assets/levels/menu/textures/fire.jpg
 DEBUG LV.2 : Texture set
 DEBUG LV.1 : Setting position of particle system : 6
 DEBUG LV.2 : Position set
@@ -164,7 +164,7 @@ FOUND PARTICLE
 DEBUG LV.2 : Instantiated particle system
 DEBUG LV.2 : Created particle system
 DEBUG LV.1 : Setting particle texture for : 7
-DEBUG LV.2 : Set to : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/assets/levels/menu/textures/dust.jpg
+DEBUG LV.2 : Set to : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/assets/levels/menu/textures/dust.jpg
 DEBUG LV.2 : Texture set
 DEBUG LV.1 : Setting position of particle system : 7
 DEBUG LV.2 : Position set
@@ -186,7 +186,7 @@ FOUND PARTICLE
 DEBUG LV.2 : Instantiated particle system
 DEBUG LV.2 : Created particle system
 DEBUG LV.1 : Setting particle texture for : 8
-DEBUG LV.2 : Set to : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/assets/levels/menu/textures/fire1.jpg
+DEBUG LV.2 : Set to : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/assets/levels/menu/textures/fire1.jpg
 DEBUG LV.2 : Texture set
 DEBUG LV.1 : Setting position of particle system : 8
 DEBUG LV.2 : Position set
@@ -208,7 +208,7 @@ FOUND PARTICLE
 DEBUG LV.2 : Instantiated particle system
 DEBUG LV.2 : Created particle system
 DEBUG LV.1 : Setting particle texture for : 10
-DEBUG LV.2 : Set to : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/assets/levels/menu/textures/dust1.png
+DEBUG LV.2 : Set to : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/assets/levels/menu/textures/dust1.png
 DEBUG LV.2 : Texture set
 DEBUG LV.1 : Setting position of particle system : 10
 DEBUG LV.2 : Position set
@@ -233,30 +233,30 @@ DEBUG LV.2 : Creating button
 Creating new luastate
 DEBUG LV.1 : Opening libraries
 DEBUG LV.1 : Opened libraries
-DEBUG LV.1 : Attempting to run script : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Scripts/GUI/Menu/start.lua
-DEBUG LV.1 : Successfully ran : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Scripts/GUI/Menu/start.lua
+DEBUG LV.1 : Attempting to run script : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/Scripts/GUI/Menu/start.lua
+DEBUG LV.1 : Successfully ran : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/Scripts/GUI/Menu/start.lua
 DEBUG LV.2 : Creating image
 DEBUG LV.2 : Creating image
 DEBUG LV.2 : Creating button
 Creating new luastate
 DEBUG LV.1 : Opening libraries
 DEBUG LV.1 : Opened libraries
-DEBUG LV.1 : Attempting to run script : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Scripts/GUI/Menu/optionsbutton.lua
-DEBUG LV.1 : Successfully ran : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Scripts/GUI/Menu/optionsbutton.lua
+DEBUG LV.1 : Attempting to run script : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/Scripts/GUI/Menu/optionsbutton.lua
+DEBUG LV.1 : Successfully ran : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/Scripts/GUI/Menu/optionsbutton.lua
 DEBUG LV.2 : Creating image
 DEBUG LV.2 : Creating image
 DEBUG LV.2 : Creating button
 Creating new luastate
 DEBUG LV.1 : Opening libraries
 DEBUG LV.1 : Opened libraries
-DEBUG LV.1 : Attempting to run script : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Scripts/GUI/Menu/quit.lua
-DEBUG LV.1 : Successfully ran : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Scripts/GUI/Menu/quit.lua
+DEBUG LV.1 : Attempting to run script : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/Scripts/GUI/Menu/quit.lua
+DEBUG LV.1 : Successfully ran : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/Scripts/GUI/Menu/quit.lua
 DEBUG LV.2 : Creating image
 DEBUG LV.2 : Creating image
 DEBUG LV.2 : Creating image
 DEBUG LV.2 : Creating image
 DEBUG LV.2 : Creating image
-DEBUG LV.1 : Loading sound : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Assets/Levels/menu/music/atop the trees.wav
+DEBUG LV.1 : Loading sound : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/Assets/Levels/menu/music/atop the trees.wav
 DEBUG LV.2 : Sound loaded
 DEBUG LV.1 : Setting direction of : 6
 DEBUG LV.2 : Direction set
@@ -276,8 +276,30 @@ DEBUG LV.2 : Added GUI to Receiver
 DEBUG LV.2 : Added GUI to Receiver
 DEBUG LV.2 : Added GUI to Receiver
 DEBUG LV.2 : Added GUI to Receiver
-DEBUG LV.2 : Element not visible... deleting. : 1
-DEBUG LV.2 : Removing gui object
+DEBUG LV.1 : Setting direction of : 6
+DEBUG LV.2 : Direction set
+DEBUG LV.1 : Setting direction of : 7
+DEBUG LV.2 : Direction set
+DEBUG LV.1 : Setting direction of : 8
+DEBUG LV.2 : Direction set
+DEBUG LV.1 : Setting direction of : 6
+DEBUG LV.2 : Direction set
+DEBUG LV.1 : Setting direction of : 7
+DEBUG LV.2 : Direction set
+DEBUG LV.1 : Setting direction of : 8
+DEBUG LV.2 : Direction set
+DEBUG LV.1 : Setting direction of : 6
+DEBUG LV.2 : Direction set
+DEBUG LV.1 : Setting direction of : 7
+DEBUG LV.2 : Direction set
+DEBUG LV.1 : Setting direction of : 8
+DEBUG LV.2 : Direction set
+DEBUG LV.1 : Setting direction of : 6
+DEBUG LV.2 : Direction set
+DEBUG LV.1 : Setting direction of : 7
+DEBUG LV.2 : Direction set
+DEBUG LV.1 : Setting direction of : 8
+DEBUG LV.2 : Direction set
 DEBUG LV.1 : Setting direction of : 6
 DEBUG LV.2 : Direction set
 DEBUG LV.1 : Setting direction of : 7
@@ -300,24 +322,18 @@ DEBUG LV.2 : Creating window
 Creating new luastate
 DEBUG LV.1 : Opening libraries
 DEBUG LV.1 : Opened libraries
-DEBUG LV.1 : Attempting to run script : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Scripts/GUI/Menu/start.lua
-DEBUG LV.1 : Successfully ran : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Scripts/GUI/Menu/start.lua
+DEBUG LV.1 : Attempting to run script : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/Scripts/GUI/Menu/start.lua
+DEBUG LV.1 : Successfully ran : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/Scripts/GUI/Menu/start.lua
 DEBUG LV.2 : Creating image
 DEBUG LV.2 : Creating editbox
 Creating new luastate
 DEBUG LV.1 : Opening libraries
 DEBUG LV.1 : Opened libraries
-DEBUG LV.1 : Attempting to run script : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Scripts/GUI/Chat/setName.lua
-DEBUG LV.1 : Successfully ran : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Scripts/GUI/Chat/setName.lua
+DEBUG LV.1 : Attempting to run script : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/Scripts/GUI/Chat/setName.lua
+DEBUG LV.1 : Successfully ran : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/Scripts/GUI/Chat/setName.lua
 DEBUG LV.2 : Added GUI to Receiver
 DEBUG LV.2 : Added GUI to Receiver
 DEBUG LV.2 : Added GUI to Receiver
-DEBUG LV.1 : Setting direction of : 6
-DEBUG LV.2 : Direction set
-DEBUG LV.1 : Setting direction of : 7
-DEBUG LV.2 : Direction set
-DEBUG LV.1 : Setting direction of : 8
-DEBUG LV.2 : Direction set
 DEBUG LV.1 : Setting direction of : 6
 DEBUG LV.2 : Direction set
 DEBUG LV.1 : Setting direction of : 7
@@ -334,18 +350,6 @@ DEBUG LV.2 : Clearing GUI
 DEBUG LV.1 : Attempting to run script : Scripts/receive.lua
 DEBUG LV.1 : Successfully ran : Scripts/receive.lua
 Connecting to : 192.168.1.3
-DEBUG LV.1 : Setting direction of : 6
-DEBUG LV.2 : Direction set
-DEBUG LV.1 : Setting direction of : 7
-DEBUG LV.2 : Direction set
-DEBUG LV.1 : Setting direction of : 8
-DEBUG LV.2 : Direction set
-DEBUG LV.1 : Setting direction of : 6
-DEBUG LV.2 : Direction set
-DEBUG LV.1 : Setting direction of : 7
-DEBUG LV.2 : Direction set
-DEBUG LV.1 : Setting direction of : 8
-DEBUG LV.2 : Direction set
 DEBUG LV.2 : Element not visible... deleting. : 17
 DEBUG LV.2 : Removing gui object
 DEBUG LV.1 : Setting direction of : 6
@@ -372,21 +376,33 @@ DEBUG LV.1 : Setting direction of : 7
 DEBUG LV.2 : Direction set
 DEBUG LV.1 : Setting direction of : 8
 DEBUG LV.2 : Direction set
+DEBUG LV.1 : Setting direction of : 6
+DEBUG LV.2 : Direction set
+DEBUG LV.1 : Setting direction of : 7
+DEBUG LV.2 : Direction set
+DEBUG LV.1 : Setting direction of : 8
+DEBUG LV.2 : Direction set
+DEBUG LV.1 : Setting direction of : 6
+DEBUG LV.2 : Direction set
+DEBUG LV.1 : Setting direction of : 7
+DEBUG LV.2 : Direction set
+DEBUG LV.1 : Setting direction of : 8
+DEBUG LV.2 : Direction set
 DEBUG LV.2 : Clearing GUI
 DEBUG LV.2 : Creating window
 Creating new luastate
 DEBUG LV.1 : Opening libraries
 DEBUG LV.1 : Opened libraries
-DEBUG LV.1 : Attempting to run script : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Scripts/Editor/emptyWindow.lua
-DEBUG LV.1 : Successfully ran : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Scripts/Editor/emptyWindow.lua
+DEBUG LV.1 : Attempting to run script : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/Scripts/Editor/emptyWindow.lua
+DEBUG LV.1 : Successfully ran : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/Scripts/Editor/emptyWindow.lua
 DEBUG LV.2 : Creating image
 DEBUG LV.2 : Creating text
 DEBUG LV.2 : Added GUI to Receiver
 DEBUG LV.2 : Added GUI to Receiver
 DEBUG LV.2 : Added GUI to Receiver
 DEBUG LV.1 : Failed to connect to : 192.168.1.3
-DEBUG LV.1 : Initializing Camera as type : 1
-DEBUG LV.1 : Initialized Camera as type : 1
+DEBUG LV.1 : Initializing Camera as type : 2
+DEBUG LV.1 : Initialized Camera as type : 2
 DEBUG LV.2 : Camera initialized
 DEBUG LV.2 : Loading level : Empty.xml
 DEBUG LV.2 : Within SCENECONFIG
@@ -398,7 +414,7 @@ DEBUG LV.2 : Creating Sphere Collider
 DEBUG LV.2 : Setting collider friction to : 200
 DEBUG LV.2 : Setting collider lDamping to : 0.3
 DEBUG LV.2 : Setting collider aDamping to : 5
-Loading Bone Animated mesh : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Assets/Levels/world/models/ponies/bodies/coltbase.ms3d
+Loading Bone Animated mesh : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/Assets/Levels/world/models/ponies/bodies/coltbase.ms3d
 DEBUG LV.2 : Loaded Bone Animated mesh
 Loading Bone Animation : Assets/Levels/world/models/ponies/anims/idle.ms3d
 DEBUG LV.2 : Loaded Bone Animation
@@ -412,9 +428,9 @@ Loading Bone Animation : Assets/Levels/world/models/ponies/anims/straifRight.ms3
 DEBUG LV.2 : Loaded Bone Animation
 Loading Bone Animation : Assets/Levels/world/models/ponies/anims/idle1.ms3d
 DEBUG LV.2 : Loaded Bone Animation
-Loading mesh : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Assets/Levels/world/models/ponies/Extra/wingsfolded.dae
+Loading mesh : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/Assets/Levels/world/models/ponies/Extra/wingsfolded.dae
 DEBUG LV.2 : Loaded mesh
-Loading Bone Animated mesh : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Assets/Levels/world/models/ponies/Uppermane/uppermane15.ms3d
+Loading Bone Animated mesh : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/Assets/Levels/world/models/ponies/Uppermane/uppermane15.ms3d
 DEBUG LV.2 : Loaded Bone Animated mesh
 DEBUG LV.1 : Found shader
 DEBUG LV.1 : Applying shader
@@ -430,7 +446,7 @@ Loading Bone Animation : Assets/Levels/world/models/ponies/anims/straifRight.ms3
 DEBUG LV.2 : Loaded Bone Animation
 Loading Bone Animation : Assets/Levels/world/models/ponies/anims/idle1.ms3d
 DEBUG LV.2 : Loaded Bone Animation
-Loading Bone Animated mesh : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Assets/Levels/world/models/ponies/Tails/tail3.dae
+Loading Bone Animated mesh : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/Assets/Levels/world/models/ponies/Tails/tail3.dae
 DEBUG LV.2 : Loaded Bone Animated mesh
 DEBUG LV.1 : Found shader
 DEBUG LV.1 : Applying shader
@@ -451,21 +467,21 @@ DEBUG LV.2 : Creating window
 Creating new luastate
 DEBUG LV.1 : Opening libraries
 DEBUG LV.1 : Opened libraries
-DEBUG LV.1 : Attempting to run script : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Scripts/GUI/Chat/chatWindow.lua
-DEBUG LV.1 : Successfully ran : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Scripts/GUI/Chat/chatWindow.lua
+DEBUG LV.1 : Attempting to run script : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/Scripts/GUI/Chat/chatWindow.lua
+DEBUG LV.1 : Successfully ran : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/Scripts/GUI/Chat/chatWindow.lua
 DEBUG LV.2 : Creating image
 DEBUG LV.2 : Creating Listbox
 Creating new luastate
 DEBUG LV.1 : Opening libraries
 DEBUG LV.1 : Opened libraries
-DEBUG LV.1 : Attempting to run script : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Scripts/GUI/Chat/messageBox.lua
-DEBUG LV.1 : Successfully ran : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Scripts/GUI/Chat/messageBox.lua
+DEBUG LV.1 : Attempting to run script : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/Scripts/GUI/Chat/messageBox.lua
+DEBUG LV.1 : Successfully ran : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/Scripts/GUI/Chat/messageBox.lua
 DEBUG LV.2 : Creating editbox
 Creating new luastate
 DEBUG LV.1 : Opening libraries
 DEBUG LV.1 : Opened libraries
-DEBUG LV.1 : Attempting to run script : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Scripts/GUI/Chat/sendMessage.lua
-DEBUG LV.1 : Successfully ran : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Scripts/GUI/Chat/sendMessage.lua
+DEBUG LV.1 : Attempting to run script : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/Scripts/GUI/Chat/sendMessage.lua
+DEBUG LV.1 : Successfully ran : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/Scripts/GUI/Chat/sendMessage.lua
 Loading chunk: -1_-1
 DEBUG LV.2 : making empty heightmap
 DEBUG LV.2 : making empty heightmap
@@ -478,7 +494,7 @@ TERRAINLOG0.5
 DEBUG LV.2 : Setting collider mesh
 DEBUG LV.2 : Creating mesh TRIMESH collider
 DEBUG LV.2 : Setting collider friction to : 100
-Loading mesh : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Assets/Levels/world/models/plane.dae
+Loading mesh : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/Assets/Levels/world/models/plane.dae
 DEBUG LV.2 : Loaded mesh
 DEBUG LV.1 : Found shader
 DEBUG LV.1 : Found vsConstant : waveWidth
@@ -497,7 +513,7 @@ TERRAINLOG0.5
 DEBUG LV.2 : Setting collider mesh
 DEBUG LV.2 : Creating mesh TRIMESH collider
 DEBUG LV.2 : Setting collider friction to : 100
-Loading mesh : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Assets/Levels/world/models/plane.dae
+Loading mesh : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/Assets/Levels/world/models/plane.dae
 DEBUG LV.2 : Loaded mesh
 DEBUG LV.1 : Found shader
 DEBUG LV.1 : Found vsConstant : waveWidth
@@ -516,7 +532,7 @@ TERRAINLOG0.5
 DEBUG LV.2 : Setting collider mesh
 DEBUG LV.2 : Creating mesh TRIMESH collider
 DEBUG LV.2 : Setting collider friction to : 100
-Loading mesh : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Assets/Levels/world/models/plane.dae
+Loading mesh : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/Assets/Levels/world/models/plane.dae
 DEBUG LV.2 : Loaded mesh
 DEBUG LV.1 : Found shader
 DEBUG LV.1 : Found vsConstant : waveWidth
@@ -535,7 +551,7 @@ TERRAINLOG0.5
 DEBUG LV.2 : Setting collider mesh
 DEBUG LV.2 : Creating mesh TRIMESH collider
 DEBUG LV.2 : Setting collider friction to : 100
-Loading mesh : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Assets/Levels/world/models/plane.dae
+Loading mesh : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/Assets/Levels/world/models/plane.dae
 DEBUG LV.2 : Loaded mesh
 DEBUG LV.1 : Found shader
 DEBUG LV.1 : Found vsConstant : waveWidth
@@ -554,7 +570,7 @@ TERRAINLOG0.5
 DEBUG LV.2 : Setting collider mesh
 DEBUG LV.2 : Creating mesh TRIMESH collider
 DEBUG LV.2 : Setting collider friction to : 100
-Loading mesh : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Assets/Levels/world/models/plane.dae
+Loading mesh : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/Assets/Levels/world/models/plane.dae
 DEBUG LV.2 : Loaded mesh
 DEBUG LV.1 : Found shader
 DEBUG LV.1 : Found vsConstant : waveWidth
@@ -573,7 +589,7 @@ TERRAINLOG0.5
 DEBUG LV.2 : Setting collider mesh
 DEBUG LV.2 : Creating mesh TRIMESH collider
 DEBUG LV.2 : Setting collider friction to : 100
-Loading mesh : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Assets/Levels/world/models/plane.dae
+Loading mesh : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/Assets/Levels/world/models/plane.dae
 DEBUG LV.2 : Loaded mesh
 DEBUG LV.1 : Found shader
 DEBUG LV.1 : Found vsConstant : waveWidth
@@ -592,7 +608,7 @@ TERRAINLOG0.5
 DEBUG LV.2 : Setting collider mesh
 DEBUG LV.2 : Creating mesh TRIMESH collider
 DEBUG LV.2 : Setting collider friction to : 100
-Loading mesh : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Assets/Levels/world/models/plane.dae
+Loading mesh : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/Assets/Levels/world/models/plane.dae
 DEBUG LV.2 : Loaded mesh
 DEBUG LV.1 : Found shader
 DEBUG LV.1 : Found vsConstant : waveWidth
@@ -611,7 +627,7 @@ TERRAINLOG0.5
 DEBUG LV.2 : Setting collider mesh
 DEBUG LV.2 : Creating mesh TRIMESH collider
 DEBUG LV.2 : Setting collider friction to : 100
-Loading mesh : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Assets/Levels/world/models/plane.dae
+Loading mesh : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/Assets/Levels/world/models/plane.dae
 DEBUG LV.2 : Loaded mesh
 DEBUG LV.1 : Found shader
 DEBUG LV.1 : Found vsConstant : waveWidth
@@ -630,7 +646,7 @@ TERRAINLOG0.5
 DEBUG LV.2 : Setting collider mesh
 DEBUG LV.2 : Creating mesh TRIMESH collider
 DEBUG LV.2 : Setting collider friction to : 100
-Loading mesh : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Assets/Levels/world/models/plane.dae
+Loading mesh : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/Assets/Levels/world/models/plane.dae
 DEBUG LV.2 : Loaded mesh
 DEBUG LV.1 : Found shader
 DEBUG LV.1 : Found vsConstant : waveWidth
@@ -677,739 +693,382 @@ DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 17
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 18
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 19
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 20
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 21
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 22
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 23
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 24
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 25
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 26
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 27
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 28
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 29
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 30
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 31
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 32
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 33
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 34
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 35
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 36
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 37
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 38
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 39
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 40
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 41
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 42
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 43
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 44
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 45
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 46
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 47
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 48
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 49
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 50
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 51
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 52
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 53
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 54
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 55
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 56
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 57
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 58
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 59
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 60
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 61
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 62
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 63
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 64
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 65
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 66
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 67
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 68
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 69
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 70
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 71
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 72
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 73
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 74
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 75
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 76
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 77
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 78
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 79
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 80
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 81
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 82
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 83
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 84
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 85
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 86
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 87
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 88
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 89
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 90
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 91
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 92
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 93
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 94
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 95
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 96
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 97
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 98
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 99
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 100
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 101
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 102
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 103
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 104
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 105
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 106
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 107
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 108
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 109
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 110
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 111
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 112
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 113
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 114
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 115
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 116
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 117
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 118
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 119
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 120
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 121
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 122
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 123
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 124
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 125
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 126
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 127
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 128
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 129
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 130
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 131
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 132
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 133
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 134
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 135
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 136
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 137
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 138
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 139
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 140
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 141
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 142
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 143
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 144
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 145
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 146
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 147
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 148
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 149
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 150
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 151
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 152
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 153
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 154
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 155
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 156
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 157
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 158
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 159
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 160
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 161
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 162
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 163
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 164
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 165
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 166
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 167
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 168
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 169
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 170
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 171
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 172
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 173
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 174
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 175
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 176
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 177
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 178
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 179
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 180
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 181
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 182
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 183
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 184
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 185
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 186
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 187
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 188
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 189
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 190
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 191
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 192
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 193
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 194
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 195
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 196
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 197
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 198
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 199
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 200
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 201
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 202
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 203
-DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 204
-DEBUG LV.2 : DROPPING MESH
-DEBUG LV.2 : DROPPING MESH
-DEBUG LV.2 : DROPPING MESH
-Loading chunk: -1_2
-DEBUG LV.2 : making empty heightmap
-DEBUG LV.2 : making empty heightmap
-TERRAINLOG16
-TERRAINLOG8
-TERRAINLOG4
-TERRAINLOG2
-TERRAINLOG1
-TERRAINLOG0.5
-DEBUG LV.2 : Setting collider mesh
-DEBUG LV.2 : Creating mesh TRIMESH collider
-DEBUG LV.2 : Setting collider friction to : 100
-Loading mesh : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Assets/Levels/world/models/plane.dae
-DEBUG LV.2 : Loaded mesh
-DEBUG LV.1 : Found shader
-DEBUG LV.1 : Found vsConstant : waveWidth
-DEBUG LV.1 : Found vsConstant : waveHeight
-DEBUG LV.1 : Found fsConstant : opacity
-DEBUG LV.1 : Applying shader
-Loading chunk: 0_2
-DEBUG LV.2 : making empty heightmap
-DEBUG LV.2 : making empty heightmap
-TERRAINLOG16
-TERRAINLOG8
-TERRAINLOG4
-TERRAINLOG2
-TERRAINLOG1
-TERRAINLOG0.5
-DEBUG LV.2 : Setting collider mesh
-DEBUG LV.2 : Creating mesh TRIMESH collider
-DEBUG LV.2 : Setting collider friction to : 100
-Loading mesh : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Assets/Levels/world/models/plane.dae
-DEBUG LV.2 : Loaded mesh
-DEBUG LV.1 : Found shader
-DEBUG LV.1 : Found vsConstant : waveWidth
-DEBUG LV.1 : Found vsConstant : waveHeight
-DEBUG LV.1 : Found fsConstant : opacity
-DEBUG LV.1 : Applying shader
-Loading chunk: 1_2
-DEBUG LV.2 : making empty heightmap
-DEBUG LV.2 : making empty heightmap
-TERRAINLOG16
-TERRAINLOG8
-TERRAINLOG4
-TERRAINLOG2
-TERRAINLOG1
-TERRAINLOG0.5
-DEBUG LV.2 : Setting collider mesh
-DEBUG LV.2 : Creating mesh TRIMESH collider
-DEBUG LV.2 : Setting collider friction to : 100
-Loading mesh : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Assets/Levels/world/models/plane.dae
-DEBUG LV.2 : Loaded mesh
-DEBUG LV.1 : Found shader
-DEBUG LV.1 : Found vsConstant : waveWidth
-DEBUG LV.1 : Found vsConstant : waveHeight
-DEBUG LV.1 : Found fsConstant : opacity
-DEBUG LV.1 : Applying shader
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 205
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 206
-DEBUG LV.2 : Creating window
-Creating new luastate
-DEBUG LV.1 : Opening libraries
-DEBUG LV.1 : Opened libraries
-DEBUG LV.1 : Attempting to run script : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Scripts/GUI/pauseWindow.lua
-DEBUG LV.1 : Successfully ran : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Scripts/GUI/pauseWindow.lua
-DEBUG LV.2 : Creating image
-DEBUG LV.2 : Creating button
-Creating new luastate
-DEBUG LV.1 : Opening libraries
-DEBUG LV.1 : Opened libraries
-DEBUG LV.1 : Attempting to run script : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Scripts/GUI/Menu/optionsbutton.lua
-DEBUG LV.1 : Successfully ran : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Scripts/GUI/Menu/optionsbutton.lua
-DEBUG LV.2 : Creating image
-DEBUG LV.2 : Creating text
-DEBUG LV.2 : Creating button
-Creating new luastate
-DEBUG LV.1 : Opening libraries
-DEBUG LV.1 : Opened libraries
-DEBUG LV.1 : Attempting to run script : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Scripts/GUI/Menu/quit.lua
-DEBUG LV.1 : Successfully ran : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Scripts/GUI/Menu/quit.lua
-DEBUG LV.2 : Creating image
-DEBUG LV.2 : Creating text
-DEBUG LV.2 : Creating button
-Creating new luastate
-DEBUG LV.1 : Opening libraries
-DEBUG LV.1 : Opened libraries
-DEBUG LV.1 : Attempting to run script : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Scripts/GUI/PonyEditor/editor.lua
-DEBUG LV.1 : Successfully ran : C:/Users/Seth/Desktop/Game Dev/FoxClaw Experiments/Beyond Equestria/Scripts/GUI/PonyEditor/editor.lua
-DEBUG LV.2 : Creating image
-DEBUG LV.2 : Creating text
-DEBUG LV.2 : Added GUI to Receiver
-DEBUG LV.2 : Added GUI to Receiver
-DEBUG LV.2 : Added GUI to Receiver
-DEBUG LV.2 : Added GUI to Receiver
-DEBUG LV.2 : Added GUI to Receiver
-DEBUG LV.2 : Added GUI to Receiver
-DEBUG LV.2 : Added GUI to Receiver
-DEBUG LV.2 : Added GUI to Receiver
-DEBUG LV.2 : Added GUI to Receiver
-DEBUG LV.2 : Added GUI to Receiver
-DEBUG LV.2 : Added GUI to Receiver
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 207
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
@@ -1470,76 +1129,122 @@ DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 235
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 236
+DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 237
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 238
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 239
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 240
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 241
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 242
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 243
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 244
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 245
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 246
+DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 247
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 248
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 249
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 250
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 251
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 252
+DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 253
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 254
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 255
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 256
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 257
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 258
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 259
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 260
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 261
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 262
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 263
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 264
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 265
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 266
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 267
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 268
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 269
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 270
+DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 271
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 272
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
@@ -1586,26 +1291,1422 @@ DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 293
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 294
+DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 295
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 296
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 297
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 298
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 299
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 300
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 301
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 302
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 303
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 304
 DEBUG LV.1 : Sending packet : 192.168.1.3|7777
 DEBUG LV.1 : Success : 305
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 306
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 307
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 308
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 309
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 310
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 311
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 312
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 313
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 314
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 315
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 316
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 317
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 318
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 319
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 320
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 321
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 322
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 323
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 324
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 325
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 326
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 327
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 328
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 329
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 330
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 331
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 332
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 333
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 334
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 335
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 336
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 337
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 338
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 339
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 340
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 341
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 342
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 343
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 344
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 345
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 346
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 347
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 348
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 349
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 350
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 351
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 352
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 353
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 354
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 355
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 356
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 357
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 358
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 359
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 360
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 361
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 362
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 363
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 364
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 365
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 366
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 367
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 368
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 369
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 370
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 371
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 372
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 373
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 374
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 375
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 376
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 377
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 378
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 379
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 380
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 381
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 382
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 383
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 384
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 385
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 386
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 387
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 388
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 389
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 390
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 391
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 392
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 393
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 394
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 395
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 396
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 397
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 398
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 399
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 400
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 401
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 402
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 403
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 404
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 405
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 406
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 407
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 408
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 409
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 410
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 411
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 412
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 413
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 414
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 415
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 416
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 417
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 418
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 419
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 420
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 421
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 422
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 423
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 424
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 425
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 426
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 427
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 428
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 429
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 430
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 431
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 432
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 433
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 434
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 435
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 436
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 437
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 438
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 439
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 440
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 441
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 442
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 443
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 444
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 445
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 446
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 447
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 448
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 449
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 450
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 451
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 452
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 453
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 454
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 455
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 456
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 457
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 458
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 459
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 460
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 461
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 462
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 463
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 464
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 465
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 466
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 467
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 468
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 469
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 470
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 471
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 472
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 473
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 474
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 475
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 476
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 477
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 478
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 479
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 480
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 481
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 482
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 483
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 484
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 485
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 486
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 487
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 488
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 489
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 490
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 491
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 492
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 493
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 494
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 495
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 496
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 497
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 498
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 499
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 500
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 501
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 502
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 503
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 504
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 505
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 506
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 507
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 508
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 509
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 510
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 511
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 512
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 513
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 514
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 515
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 516
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 517
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 518
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 519
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 520
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 521
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 522
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 523
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 524
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 525
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 526
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 527
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 528
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 529
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 530
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 531
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 532
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 533
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 534
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 535
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 536
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 537
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 538
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 539
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 540
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 541
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 542
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 543
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 544
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 545
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 546
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 547
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : DROPPING MESH
+Loading chunk: -2_-1
+DEBUG LV.2 : making empty heightmap
+DEBUG LV.2 : making empty heightmap
+TERRAINLOG16
+TERRAINLOG8
+TERRAINLOG4
+TERRAINLOG2
+TERRAINLOG1
+TERRAINLOG0.5
+DEBUG LV.2 : Setting collider mesh
+DEBUG LV.2 : Creating mesh TRIMESH collider
+DEBUG LV.2 : Setting collider friction to : 100
+Loading mesh : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/Assets/Levels/world/models/plane.dae
+DEBUG LV.2 : Loaded mesh
+DEBUG LV.1 : Found shader
+DEBUG LV.1 : Found vsConstant : waveWidth
+DEBUG LV.1 : Found vsConstant : waveHeight
+DEBUG LV.1 : Found fsConstant : opacity
+DEBUG LV.1 : Applying shader
+Loading chunk: -2_0
+DEBUG LV.2 : making empty heightmap
+DEBUG LV.2 : making empty heightmap
+TERRAINLOG16
+TERRAINLOG8
+TERRAINLOG4
+TERRAINLOG2
+TERRAINLOG1
+TERRAINLOG0.5
+DEBUG LV.2 : Setting collider mesh
+DEBUG LV.2 : Creating mesh TRIMESH collider
+DEBUG LV.2 : Setting collider friction to : 100
+Loading mesh : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/Assets/Levels/world/models/plane.dae
+DEBUG LV.2 : Loaded mesh
+DEBUG LV.1 : Found shader
+DEBUG LV.1 : Found vsConstant : waveWidth
+DEBUG LV.1 : Found vsConstant : waveHeight
+DEBUG LV.1 : Found fsConstant : opacity
+DEBUG LV.1 : Applying shader
+Loading chunk: -2_1
+DEBUG LV.2 : making empty heightmap
+DEBUG LV.2 : making empty heightmap
+TERRAINLOG16
+TERRAINLOG8
+TERRAINLOG4
+TERRAINLOG2
+TERRAINLOG1
+TERRAINLOG0.5
+DEBUG LV.2 : Setting collider mesh
+DEBUG LV.2 : Creating mesh TRIMESH collider
+DEBUG LV.2 : Setting collider friction to : 100
+Loading mesh : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/Assets/Levels/world/models/plane.dae
+DEBUG LV.2 : Loaded mesh
+DEBUG LV.1 : Found shader
+DEBUG LV.1 : Found vsConstant : waveWidth
+DEBUG LV.1 : Found vsConstant : waveHeight
+DEBUG LV.1 : Found fsConstant : opacity
+DEBUG LV.1 : Applying shader
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 548
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 549
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 550
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 551
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 552
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 553
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 554
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 555
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 556
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 557
+DEBUG LV.2 : Setting collider velocity
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 558
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 559
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 560
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 561
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 562
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 563
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 564
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 565
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 566
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 567
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 568
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 569
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 570
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 571
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 572
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 573
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 574
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 575
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 576
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 577
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 578
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 579
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 580
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 581
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 582
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 583
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 584
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 585
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 586
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 587
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 588
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 589
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 590
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 591
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 592
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 593
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 594
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 595
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 596
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 597
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 598
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 599
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 600
+DEBUG LV.2 : Creating window
+Creating new luastate
+DEBUG LV.1 : Opening libraries
+DEBUG LV.1 : Opened libraries
+DEBUG LV.1 : Attempting to run script : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/scripts/editor/closeEditor.lua
+DEBUG LV.1 : Successfully ran : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/scripts/editor/closeEditor.lua
+DEBUG LV.2 : Creating button
+Creating new luastate
+DEBUG LV.1 : Opening libraries
+DEBUG LV.1 : Opened libraries
+DEBUG LV.1 : Attempting to run script : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/scripts/editor/refresh.lua
+DEBUG LV.1 : Successfully ran : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/scripts/editor/refresh.lua
+DEBUG LV.2 : Creating Listbox
+Creating new luastate
+DEBUG LV.1 : Opening libraries
+DEBUG LV.1 : Opened libraries
+DEBUG LV.1 : Attempting to run script : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/scripts/editor/addObject.lua
+DEBUG LV.1 : Successfully ran : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/scripts/editor/addObject.lua
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Creating button
+Creating new luastate
+DEBUG LV.1 : Opening libraries
+DEBUG LV.1 : Opened libraries
+DEBUG LV.1 : Attempting to run script : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/scripts/editor/OpenConsole.lua
+DEBUG LV.1 : Successfully ran : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/scripts/editor/OpenConsole.lua
+DEBUG LV.2 : Creating editbox
+Creating new luastate
+DEBUG LV.1 : Opening libraries
+DEBUG LV.1 : Opened libraries
+DEBUG LV.1 : Attempting to run script : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/scripts/editor/loadLevel.lua
+DEBUG LV.1 : Successfully ran : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/scripts/editor/loadLevel.lua
+DEBUG LV.2 : Creating editbox
+Creating new luastate
+DEBUG LV.1 : Opening libraries
+DEBUG LV.1 : Opened libraries
+DEBUG LV.1 : Attempting to run script : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/scripts/editor/saveLevel.lua
+DEBUG LV.1 : Successfully ran : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/scripts/editor/saveLevel.lua
+DEBUG LV.2 : Creating Listbox
+Creating new luastate
+DEBUG LV.1 : Opening libraries
+DEBUG LV.1 : Opened libraries
+DEBUG LV.1 : Attempting to run script : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/scripts/editor/listObjects.lua
+DEBUG LV.1 : Successfully ran : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/scripts/editor/listObjects.lua
+Objects : 30
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Adding list item
+Object doesn't exist. ID : 21
+Object doesn't exist. ID : 22
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Adding list item
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 601
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 602
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 603
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 604
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 605
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 606
+DEBUG LV.2 : Creating window
+Creating new luastate
+DEBUG LV.1 : Opening libraries
+DEBUG LV.1 : Opened libraries
+DEBUG LV.1 : Attempting to run script : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/scripts/editor/closeObjectWindow.lua
+DEBUG LV.1 : Successfully ran : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/scripts/editor/closeObjectWindow.lua
+DEBUG LV.2 : Creating text
+DEBUG LV.2 : Creating editbox
+Creating new luastate
+DEBUG LV.1 : Opening libraries
+DEBUG LV.1 : Opened libraries
+DEBUG LV.1 : Attempting to run script : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/scripts/editor/modifyName.lua
+DEBUG LV.1 : Successfully ran : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/scripts/editor/modifyName.lua
+DEBUG LV.2 : Creating text
+DEBUG LV.2 : Creating editbox
+Creating new luastate
+DEBUG LV.1 : Opening libraries
+DEBUG LV.1 : Opened libraries
+DEBUG LV.1 : Attempting to run script : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/scripts/editor/modifyX.lua
+DEBUG LV.1 : Successfully ran : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/scripts/editor/modifyX.lua
+DEBUG LV.2 : Creating editbox
+Creating new luastate
+DEBUG LV.1 : Opening libraries
+DEBUG LV.1 : Opened libraries
+DEBUG LV.1 : Attempting to run script : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/scripts/editor/modifyY.lua
+DEBUG LV.1 : Successfully ran : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/scripts/editor/modifyY.lua
+DEBUG LV.2 : Creating editbox
+Creating new luastate
+DEBUG LV.1 : Opening libraries
+DEBUG LV.1 : Opened libraries
+DEBUG LV.1 : Attempting to run script : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/scripts/editor/modifyZ.lua
+DEBUG LV.1 : Successfully ran : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/scripts/editor/modifyZ.lua
+DEBUG LV.2 : Creating text
+DEBUG LV.2 : Creating editbox
+Creating new luastate
+DEBUG LV.1 : Opening libraries
+DEBUG LV.1 : Opened libraries
+DEBUG LV.1 : Attempting to run script : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/scripts/editor/modifyRX.lua
+DEBUG LV.1 : Successfully ran : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/scripts/editor/modifyRX.lua
+DEBUG LV.2 : Creating editbox
+Creating new luastate
+DEBUG LV.1 : Opening libraries
+DEBUG LV.1 : Opened libraries
+DEBUG LV.1 : Attempting to run script : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/scripts/editor/modifyRY.lua
+DEBUG LV.1 : Successfully ran : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/scripts/editor/modifyRY.lua
+DEBUG LV.2 : Creating editbox
+Creating new luastate
+DEBUG LV.1 : Opening libraries
+DEBUG LV.1 : Opened libraries
+DEBUG LV.1 : Attempting to run script : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/scripts/editor/modifyRZ.lua
+DEBUG LV.1 : Successfully ran : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/scripts/editor/modifyRZ.lua
+DEBUG LV.2 : Creating text
+DEBUG LV.2 : Creating editbox
+Creating new luastate
+DEBUG LV.1 : Opening libraries
+DEBUG LV.1 : Opened libraries
+DEBUG LV.1 : Attempting to run script : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/scripts/editor/modifySX.lua
+DEBUG LV.1 : Successfully ran : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/scripts/editor/modifySX.lua
+DEBUG LV.2 : Creating editbox
+Creating new luastate
+DEBUG LV.1 : Opening libraries
+DEBUG LV.1 : Opened libraries
+DEBUG LV.1 : Attempting to run script : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/scripts/editor/modifySY.lua
+DEBUG LV.1 : Successfully ran : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/scripts/editor/modifySY.lua
+DEBUG LV.2 : Creating editbox
+Creating new luastate
+DEBUG LV.1 : Opening libraries
+DEBUG LV.1 : Opened libraries
+DEBUG LV.1 : Attempting to run script : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/scripts/editor/modifySZ.lua
+DEBUG LV.1 : Successfully ran : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/scripts/editor/modifySZ.lua
+Object doesn't exist. ID : 21
+Object doesn't exist. ID : 22
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 607
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 608
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 609
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 610
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 611
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 612
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 613
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 614
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 615
+DEBUG LV.2 : Removing gui object
+DEBUG LV.2 : Removing gui object
+DEBUG LV.2 : Removing gui object
+DEBUG LV.2 : Removing gui object
+DEBUG LV.2 : Removing gui object
+DEBUG LV.2 : Removing gui object
+DEBUG LV.2 : Removing gui object
+DEBUG LV.2 : Removing gui object
+DEBUG LV.2 : Removing gui object
+DEBUG LV.2 : Removing gui object
+DEBUG LV.2 : Removing gui object
+DEBUG LV.2 : Removing gui object
+DEBUG LV.2 : Removing gui object
+DEBUG LV.2 : Removing gui object
+DEBUG LV.2 : Removing gui object
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 616
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 617
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 618
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 619
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 620
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 621
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 622
+DEBUG LV.2 : Creating window
+Creating new luastate
+DEBUG LV.1 : Opening libraries
+DEBUG LV.1 : Opened libraries
+DEBUG LV.1 : Attempting to run script : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/scripts/editor/closeConsole.lua
+DEBUG LV.1 : Successfully ran : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/scripts/editor/closeConsole.lua
+DEBUG LV.2 : Creating editbox
+Creating new luastate
+DEBUG LV.1 : Opening libraries
+DEBUG LV.1 : Opened libraries
+DEBUG LV.1 : Attempting to run script : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/scripts/editor/liveConsole.lua
+DEBUG LV.1 : Successfully ran : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/scripts/editor/liveConsole.lua
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 623
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 624
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 625
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 626
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 627
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 628
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 629
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 630
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 631
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 632
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 633
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 634
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 635
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 636
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 637
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 638
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 639
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 640
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 641
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 642
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 643
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 644
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 645
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 646
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 647
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 648
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 649
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 650
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 651
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 652
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 653
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 654
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 655
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 656
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 657
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 658
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 659
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 660
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 661
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 662
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 663
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 664
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 665
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 666
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 667
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 668
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 669
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 670
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 671
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 672
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 673
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 674
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 675
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 676
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 677
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 678
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 679
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 680
+Ran  : MainScene:setMetaData("CameraToggleState", 1)
+DEBUG LV.1 : Initializing Camera as type : 1
+DEBUG LV.1 : Initialized Camera as type : 1
+DEBUG LV.2 : Camera initialized
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 681
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 682
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 683
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 684
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 685
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 686
+DEBUG LV.2 : Creating window
+Creating new luastate
+DEBUG LV.1 : Opening libraries
+DEBUG LV.1 : Opened libraries
+DEBUG LV.1 : Attempting to run script : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/Scripts/GUI/pauseWindow.lua
+DEBUG LV.1 : Successfully ran : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/Scripts/GUI/pauseWindow.lua
+DEBUG LV.2 : Creating image
+DEBUG LV.2 : Creating button
+Creating new luastate
+DEBUG LV.1 : Opening libraries
+DEBUG LV.1 : Opened libraries
+DEBUG LV.1 : Attempting to run script : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/Scripts/GUI/Menu/optionsbutton.lua
+DEBUG LV.1 : Successfully ran : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/Scripts/GUI/Menu/optionsbutton.lua
+DEBUG LV.2 : Creating image
+DEBUG LV.2 : Creating text
+DEBUG LV.2 : Creating button
+Creating new luastate
+DEBUG LV.1 : Opening libraries
+DEBUG LV.1 : Opened libraries
+DEBUG LV.1 : Attempting to run script : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/Scripts/GUI/Menu/quit.lua
+DEBUG LV.1 : Successfully ran : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/Scripts/GUI/Menu/quit.lua
+DEBUG LV.2 : Creating image
+DEBUG LV.2 : Creating text
+DEBUG LV.2 : Creating button
+Creating new luastate
+DEBUG LV.1 : Opening libraries
+DEBUG LV.1 : Opened libraries
+DEBUG LV.1 : Attempting to run script : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/Scripts/GUI/PonyEditor/editor.lua
+DEBUG LV.1 : Successfully ran : C:/Users/Evine/Documents/GitHub/Beyond-Equestria/Scripts/GUI/PonyEditor/editor.lua
+DEBUG LV.2 : Creating image
+DEBUG LV.2 : Creating text
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.2 : Added GUI to Receiver
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 687
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 688
+DEBUG LV.1 : Sending packet : 192.168.1.3|7777
+DEBUG LV.1 : Success : 689
 Framework Closed
