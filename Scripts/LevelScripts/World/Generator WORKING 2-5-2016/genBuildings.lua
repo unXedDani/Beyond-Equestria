@@ -269,3 +269,9 @@ function bxor(a,b)
   end
   return r
 end
+
+function noise2(x, y)
+	local n = x + y * 57
+	n = bxor((n * 2^13), n);
+	return ( 1.0 - ( (n * (n * n * 15731 + 789221) + 1376312589) % 2147483648) / 1073741824.0)
+end

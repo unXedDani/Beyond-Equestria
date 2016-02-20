@@ -17,26 +17,38 @@ function onReceive(pack, ip)
 	if type == DISCONNECT then
 		local id = pack:readNumber()
 		MainScene:SNLog("Player has disconnected", id)
-		MainScene:removeObject(MainScene:getMetaData("PLAYER_"..id.."_NAMETAG"))
+		if MainScene:getMetaData("PLAYER_"..id.."_NAMETAG") ~= 0 then
+			MainScene:removeObject(MainScene:getMetaData("PLAYER_"..id.."_NAMETAG"))
+		end
 		if(MainScene:getMetaData("PLAYER_"..id.."_BODY_SPAWNED") == 1) then
-			MainScene:removeObject(MainScene:getMetaData("PLAYER_"..id.."_BODY_ID"))
-			MainScene:setMetaData("PLAYER_"..id.."_BODY_SPAWNED", 0) 
+			if MainScene:getMetaData("PLAYER_"..id.."_BODY_ID") ~= 0 then
+				MainScene:removeObject(MainScene:getMetaData("PLAYER_"..id.."_BODY_ID"))
+				MainScene:setMetaData("PLAYER_"..id.."_BODY_SPAWNED", 0) 
+			end
 		end
 		if(MainScene:getMetaData("PLAYER_"..id.."_UPPER_MANE_SPAWNED") == 1) then
-			MainScene:removeObject(MainScene:getMetaData("PLAYER_"..id.."_UPPER_MANE_ID"))
-			MainScene:setMetaData("PLAYER_"..id.."_UPPER_MANE_SPAWNED", 0)
+			if MainScene:getMetaData("PLAYER_"..id.."_UPPER_MANE_ID") ~= 0 then
+				MainScene:removeObject(MainScene:getMetaData("PLAYER_"..id.."_UPPER_MANE_ID"))
+				MainScene:setMetaData("PLAYER_"..id.."_UPPER_MANE_SPAWNED", 0)
+			end
 		end
 		if(MainScene:getMetaData("PLAYER_"..id.."_LOWER_MANE_SPAWNED") == 1) then
-			MainScene:removeObject(MainScene:getMetaData("PLAYER_"..id.."_LOWER_MANE_ID"))
-			MainScene:setMetaData("PLAYER_"..id.."_LOWER_MANE_SPAWNED", 0)
+			if MainScene:getMetaData("PLAYER_"..id.."_LOWER_MANE_ID") ~= 0 then
+				MainScene:removeObject(MainScene:getMetaData("PLAYER_"..id.."_LOWER_MANE_ID"))
+				MainScene:setMetaData("PLAYER_"..id.."_LOWER_MANE_SPAWNED", 0)
+			end
 		end
 		if(MainScene:getMetaData("PLAYER_"..id.."_TAIL_SPAWNED") == 1) then
-			MainScene:removeObject(MainScene:getMetaData("PLAYER_"..id.."_TAIL_ID"))
-			MainScene:setMetaData("PLAYER_"..id.."_TAIL_SPAWNED", 0)
+			if MainScene:getMetaData("PLAYER_"..id.."_TAIL_ID") ~= 0 then
+				MainScene:removeObject(MainScene:getMetaData("PLAYER_"..id.."_TAIL_ID"))
+				MainScene:setMetaData("PLAYER_"..id.."_TAIL_SPAWNED", 0)
+			end
 		end
 		if(MainScene:getMetaData("PLAYER_"..id.."_ACCESSORIES_SPAWNED") > 0) then
 			for i=0, MainScene:getMetaData("PLAYER_"..id.."_ACCESSORIES_SPAWNED")-1 do
-				MainScene:removeObject(MainScene:getMetaData("PLAYER_"..id.."_ACCESSORY_ID_"..i))
+				if MainScene:getMetaData("PLAYER_"..id.."_ACCESSORY_ID_"..i) ~= 0 then
+					MainScene:removeObject(MainScene:getMetaData("PLAYER_"..id.."_ACCESSORY_ID_"..i))
+				end
 			end
 		end
 		if MainScene:getMetaData("PLAYER_"..id.."_BASE_ID") == 0 then
@@ -113,14 +125,18 @@ function onReceive(pack, ip)
 	end
 	if type == CHARACTER_ANIMATION then
 		local id = pack:readNumber()
-		local anim = pack:readNumber()
+		local anim = pack:readString()
 		local frame1 = pack:readNumber()
 		local frame2 = pack:readNumber()
 		local framerate = pack:readNumber()
-		if MainScene:getObject(MainScene:getMetaData("PLAYER_"..id.."_BASE_ID")):getName() == nil then
+		if MainScene:getObject(MainScene:getMetaData("PLAYER_"..id.."_BASE_ID")) == nil then
+			MainScene:SLog("FAILED TO FIND PLAYER: "..id)
 			return
 		end
-		setCharacterAnim(id, anim, framerate, frame1, frame2)
+		MainScene:SLog("SET ANIM TO: "..anim.." for "..id)
+		if id ~= MainScene:getMetaData("PLAYER_ID") then
+			setCharacterAnim(id, anim, framerate, frame1, frame2)
+		end
 	end
 	if type == CHARACTER_ROTATION then
 		local id = pack:readNumber()
@@ -176,22 +192,24 @@ function onConnected(ip)
 end
 
 function setCharacterAnim(id, anim, speed, frame1, frame2)
-	MainScene:getBoneAnimatedMesh(MainScene:getMetaData("PLAYER_"..id.."_BODY_ID")):setAnimation(anim)
-	MainScene:getBoneAnimatedMesh(MainScene:getMetaData("PLAYER_"..id.."_BODY_ID")):setSpeed(speed)
-	MainScene:getBoneAnimatedMesh(MainScene:getMetaData("PLAYER_"..id.."_BODY_ID")):setFrameLoop(frame1, frame2)
-	if(MainScene:getMetaData("PLAYER_"..id.."_UPPER_MANE_SPAWNED") == 1) then
+	if MainScene:getMetaData("PLAYER_"..id.."_BODY_ID") ~= 0 then
+		MainScene:getBoneAnimatedMesh(MainScene:getMetaData("PLAYER_"..id.."_BODY_ID")):setAnimation(anim)
+		MainScene:getBoneAnimatedMesh(MainScene:getMetaData("PLAYER_"..id.."_BODY_ID")):setSpeed(speed)
+		MainScene:getBoneAnimatedMesh(MainScene:getMetaData("PLAYER_"..id.."_BODY_ID")):setFrameLoop(frame1, frame2)
+	end
+	if(MainScene:getMetaData("PLAYER_"..id.."_UPPER_MANE_SPAWNED") == 1) and MainScene:getMetaData("PLAYER_"..id.."_UPPER_MANE_ID") ~= 0 then
 		MainScene:getBoneAnimatedMesh(MainScene:getMetaData("PLAYER_"..id.."_UPPER_MANE_ID")):setAnimation(anim)
 		MainScene:getBoneAnimatedMesh(MainScene:getMetaData("PLAYER_"..id.."_UPPER_MANE_ID")):setSpeed(speed)
 		MainScene:getBoneAnimatedMesh(MainScene:getMetaData("PLAYER_"..id.."_UPPER_MANE_ID")):setFrameLoop(frame1, frame2)
 	end
-	if(MainScene:getMetaData("PLAYER_"..id.."_LOWER_MANE_SPAWNED") == 1) then
+	if(MainScene:getMetaData("PLAYER_"..id.."_LOWER_MANE_SPAWNED") == 1) and MainScene:getMetaData("PLAYER_"..id.."_LOWER_MANE_ID") ~= 0 then
 		MainScene:getBoneAnimatedMesh(MainScene:getMetaData("PLAYER_"..id.."_LOWER_MANE_ID")):setAnimation(anim)
 		MainScene:getBoneAnimatedMesh(MainScene:getMetaData("PLAYER_"..id.."_LOWER_MANE_ID")):setSpeed(speed)
 		MainScene:getBoneAnimatedMesh(MainScene:getMetaData("PLAYER_"..id.."_LOWER_MANE_ID")):setFrameLoop(frame1, frame2)
 	end
-	if(MainScene:getMetaData("PLAYER_"..id.."_TAIL_SPAWNED") == 1) then
+	--[[if(MainScene:getMetaData("PLAYER_"..id.."_TAIL_SPAWNED") == 1) then
 		MainScene:getBoneAnimatedMesh(MainScene:getMetaData("PLAYER_"..id.."_TAIL_ID")):setAnimation(anim)
 		MainScene:getBoneAnimatedMesh(MainScene:getMetaData("PLAYER_"..id.."_TAIL_ID")):setSpeed(speed)
 		MainScene:getBoneAnimatedMesh(MainScene:getMetaData("PLAYER_"..id.."_TAIL_ID")):setFrameLoop(frame1, frame2)
-	end
+	end]]--
 end

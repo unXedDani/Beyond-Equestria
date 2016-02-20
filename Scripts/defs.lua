@@ -23,6 +23,30 @@ function createWindow(title, x1, y1, x2, y2, parent, script)
 	MainScene:getGUIObject(window):bringCloseButtonToFront()
 	return window
 end
+
+Thread = {}
+Thread.__index = Thread
+
+function Thread.create(f)
+	local thr = {}
+	setmetatable(thr, Thread)
+	thr.func = f
+	thr.running = 1
+	thr.cycle = 0
+	return thr
+end
+
+function Thread:update()
+	if self.running == 0 then return 0 end
+	cycle = self.cycle
+	if self.func(cycle) == 0 then
+		self.running = 0
+	end
+	self.cycle = cycle + 1
+	return 1
+end
+
+
 -- KEY DEFINITIONS
 
 KEY_LBUTTON = 0x01 -- Left mouse button

@@ -13,7 +13,7 @@ function gameInit()
 	end
 	playerCam = MainScene:addEmpty(0, -0.7, 0, 0, 0, 0, 0.2, 0.1, 0.1)
 	if GENTERRAIN == 0 then
-		playerCollider = MainScene:addEmpty(4600, 10, 1530, 0, 0, 0, 1, 2, 2)
+		playerCollider = MainScene:addEmpty(500, 500, 500, 0, 0, 0, 1, 2, 2)
 	else
 		playerCollider = MainScene:addEmpty(0, 10, 0, 0, 0, 0, 1, 2, 2)
 	end
@@ -76,7 +76,10 @@ local mousePositionBuffer = {0,0,0,0,0,0} -- xy xy xy
 
 local mouseCameraRotationX = 0
 local mouseCameraRotationY = 0
-
+isOnFire = 0
+fireTimer = 0
+fireDelay = 1
+fireId = 0
 function gameUpdate()
 	lastAnim = anim
 	--MainScene:getObject(playerCam):setPosition(MainScene:characterData("posX"), MainScene:characterData("posY")-2, MainScene:characterData("posZ"))
@@ -100,7 +103,7 @@ function gameUpdate()
 		DirX = -1.0
 	end
 	if MainScene:getKey(KEY_LSHIFT) == 1 then
-		sprint = 2
+		sprint = 10
 	end
 	if MainScene:getKey(KEY_KEY_Q) == 1 then
 		local d = MainScene:getMetaData("CameraDistanceFromPlayer")
@@ -122,8 +125,6 @@ function gameUpdate()
 		MainScene:getObject(playerCollider):getCollider():addCentralForce(0, 2000, 0)
 	end
 	
-	
-
 	if DirX ~= 0 or DirZ ~= 0 then
 		MainScene:getObject(playerCollider):getCollider():setState("ACTIVE")
 		--MainScene:getObject(playerCam):setRotation(0, cY-180, 0)
@@ -260,7 +261,6 @@ function gameUpdate()
 		MainScene:getCamera():setTarget(MainScene:getObject(playerCollider))
 	end
 
-
 	curTime = curTime + MainScene:deltaTime()
 	if curTime > 500 then
 		tx, ty, tz = MainScene:getObject(playerCollider):getPosition()
@@ -269,7 +269,7 @@ function gameUpdate()
 	end
 	local vx, vy, vz = MainScene:getObject(playerCollider):getCollider():getVelocity()
 	packBuffer = packBuffer + 1
-	if (vx ~= 0 or vy ~= 0 or vz ~= 0) and packBuffer > 10 then
+	if (vx ~= 0 or vy ~= 0 or vz ~= 0) and packBuffer > 2 then
 		packBuffer = 0
 		local p = MainScene:createPacket()
 		p:writeNumber(3)
@@ -391,6 +391,13 @@ function gameRender()
 			setPlayerAnim("idle1", 20, 1, 80)
 		end
 	end
+	
+	if MainScene:getConfigValue("poster") == 1 then
+			
+			MainScene:RenderEffect(9)
+			MainScene:RenderEffect(10)
+		end
+		
 end
 
 function distance(x1, y1, x2, y2)
@@ -425,5 +432,5 @@ function setPlayerAnim(anim, speed, frame1, frame2)
 	pack:writeNumber(frame1)
 	pack:writeNumber(frame2)
 	pack:writeNumber(speed)
-	MainScene:broadcastPacket(pack)
+	MainScene:sendPacket(pack, MainScene:getMetaString("SERVERCOMBINEDIP"))
 end
