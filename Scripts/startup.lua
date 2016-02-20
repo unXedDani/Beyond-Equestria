@@ -43,7 +43,7 @@ function init()
 	MainScene:setMetaData("NETRUNNING", 0)
 	MainScene:setMetaData("NETWORKERROR", 0)
 	MainScene:setMetaData("CONNECTED_TO_SERVER", 0)
-	MainScene:setMetaData("WORLDDEBUG", 1)
+	MainScene:setMetaData("WORLDDEBUG", 0)
 end
 
 function update()
@@ -90,7 +90,9 @@ function render()
 		MainScene:RenderEffect(24)
 		--MainScene:RenderEffect(29)
 	end
-	
+	if GameState == 0 then
+		menuRender()
+	end
 	if GameState == 1 then
 		gameRender()
 	end

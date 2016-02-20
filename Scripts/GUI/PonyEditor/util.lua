@@ -55,6 +55,9 @@ function generatePlayer()
 	MainScene:getObject(curBody):setMaterialData(1, "diffuse_color", 0, 255, 255, 255)
 	MainScene:getObject(curBody):setMaterialData(2, "diffuse_color", 0, 255, 255, 255)
 	MainScene:getObject(curBody):setMaterialData(0, "specular_color", 0, 0, 0, 0)
+	for t=0, MainScene:getObject(curBody):getMaterialCount() do
+		--MainScene:getObject(curBody):useShaderOnMaterial(MainScene, "Shaders/bodyShader.xml", t)
+	end
 	--MainScene:getObject(curBody):useShader(MainScene, "Shaders/bodyShader.xml")
 	--RACE--
 	if(MainScene:getMetaData("PLAYER_ACCESSORIES_SPAWNED") > 0) then

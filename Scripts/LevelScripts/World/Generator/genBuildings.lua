@@ -1,40 +1,26 @@
-largeBuildingBottomFiles = {
-	"Assets/Levels/World/Models/CityBuildingParts/base1.dae",
-	"Assets/Levels/World/Models/CityBuildingParts/base2.dae",
-	"Assets/Levels/World/Models/CityBuildingParts/base3.dae",
-	"Assets/Levels/World/Models/CityBuildingParts/base4.dae",
-	"Assets/Levels/World/Models/CityBuildingParts/base5.dae"
-}
-largeBuildingBottoms = 5
-
-largeBuildingMiddleFiles = {
-	"Assets/Levels/World/Models/CityBuildingParts/middle1.dae",
-	"Assets/Levels/World/Models/CityBuildingParts/middle2.dae",
-	"Assets/Levels/World/Models/CityBuildingParts/middle3.dae",
-	"Assets/Levels/World/Models/CityBuildingParts/middle4.dae"
-}
-largeBuildingMiddles = 4
-
-smallBuildingModelFiles = {
-	"Assets/Levels/World/Models/CityBuildingParts/small1.dae"
-}
-
 edgeBuildingFiles = {
-	"Assets/Levels/World/Models/CityBuildingParts/City/edge1.dae",
 	"Assets/Levels/World/Models/CityBuildingParts/City/apartment1.dae",
-	"Assets/Levels/World/Models/CityBuildingParts/City/apartment2.dae"
+	"Assets/Levels/World/Models/CityBuildingParts/City/apartment2.dae",
+	"Assets/Levels/World/Models/CityBuildingParts/City/apartment3.dae"
 }
 edgeBuildings = 3
+edgeBuildingDoorX = {20, 20, 20}
+edgeBuildingDoorY = {2, 2, 2}
+edgeBuildingDoorZ = {0, 0, 0}
 
 cornerBuildingFiles = {
-	"Assets/Levels/World/Models/CityBuildingParts/City/corner1.dae"
+	"Assets/Levels/World/Models/CityBuildingParts/City/cornerapartment.dae"
 }
 cornerBuildings = 1
-
+cornerBuildingDoorX = {10.5}
+cornerBuildingDoorY = {2}
+cornerBuildingDoorZ = {10.5}
 centerBuildingFiles = {
 	"Assets/Levels/World/Models/CityBuildingParts/City/center.dae"
 }
 centerBuildings = 1
+
+
 function generateCity(startx, starty, sizex, sizey, blockSize, buildingWidth)
 local models = {}
 local curIndex = 2
@@ -185,34 +171,44 @@ function createSmallBuilding(x, y, z)
 	return tmp
 end
 function createCorner(x, y, z, ry)
-	local t1 = MainScene:addMesh(cornerBuildingFiles[1], x, 0, z, 0, ry, 0, 13, 13, 13)
+	local t1 = MainScene:addMesh(cornerBuildingFiles[1], x, 0, z, 0, ry, 0, 1, 1, 1)
 	--MainScene:getMesh(t1):addCollider(MainScene, "MESH_GIMPACT", 0)
-	MainScene:getObject(t1):setMaterialTexture(MainScene, 1, "Assets/Levels/world/textures/Detail.jpg")
+	for i=0, MainScene:getObject(t1):getMaterialCount() do
+		MainScene:getObject(t1):setMaterialData(i, "texture", MainScene, 0, "Assets/Levels/world/textures/mane.jpg")
+	end
+	MainScene:getObject(t1):setMaterialTexture(MainScene, 0, "Assets/Levels/world/textures/mane.jpg")
 	--MainScene:getObject(t1):useShader(MainScene, "Shaders/buildingShader.xml")
+	local e = MainScene:addEmpty(cornerBuildingDoorX[1]+x, cornerBuildingDoorX[1], cornerBuildingDoorX[1]+z, 0, 0, 0, 1, 1, 1)
+	MainScene:getObject(e):setMetaData("BUILDING_TYPE", 1)
 	local tmp = {}
 	tmp[1] = t1
-	tmp[2] = t2
+	tmp[2] = e
 	return tmp
 end
 function createEdge(x, y, z, ry)
 	local buildingBottom = noise2(x/9000, z/9000)+1
 	buildingBottom = buildingBottom * 10
 	buildingBottom = math.floor(buildingBottom%edgeBuildings)+1
-	local t1 = MainScene:addMesh(edgeBuildingFiles[buildingBottom], x, 0, z, 0, ry, 0, 13, 13, 13)
-	--MainScene:getMesh(t1):addCollider(MainScene, "MESH_GIMPACT", 0)
-	MainScene:getObject(t1):setMaterialTexture(MainScene, 1, "Assets/Levels/world/textures/Detail.jpg")
-	MainScene:getObject(t1):setMaterialTexture(MainScene, 0, "Assets/Levels/world/textures/Building_texture.jpg")
-	--MainScene:getObject(t1):useShader(MainScene, "Shaders/buildingShader.xml")
+	local t1 = MainScene:addMesh(edgeBuildingFiles[buildingBottom], x, 0, z, 0, ry, 0, 1, 1, 1)
+	for i=0, MainScene:getObject(t1):getMaterialCount() do
+		MainScene:getObject(t1):setMaterialData(i, "texture", MainScene, 0, "Assets/Levels/world/textures/buildingWhite.png")
+	end
+	local modx, modz
+	modx = x+edgeBuildingDoorX[buildingBottom]+math.sin(ry)
+	modz = z+edgeBuildingDoorZ[buildingBottom]+math.cos(ry)
+	local e = MainScene:addEmpty(modx+x, edgeBuildingDoorY[buildingBottom], modz+z, 0, 0, 0, 1, 1, 1)
+	MainScene:getObject(e):setMetaData("BUILDING_TYPE", 2)
+	MainScene:getObject(e):addScript(MainScene, "Scripts/LevelScripts/World/Buildings/DoorScript.lua")
 	local tmp = {}
 	tmp[1] = t1
-	tmp[2] = t2
+	tmp[2] = e
 	return tmp
 end
 
 function createCenter(x, y, z, ry)
 	local t1 = MainScene:addMesh(centerBuildingFiles[1], x, 0, z, 0, ry, 0, 8, 10, 8)
 	--MainScene:getMesh(t1):addCollider(MainScene, "MESH_GIMPACT", 0)
-	MainScene:getObject(t1):setMaterialTexture(MainScene, 1, "Assets/Levels/world/textures/Detail.jpg")
+	--MainScene:getObject(t1):setMaterialTexture(MainScene, 1, "Assets/Levels/world/textures/Detail.jpg")
 	--MainScene:getObject(t1):useShader(MainScene, "Shaders/buildingShader.xml")
 	local tmp = {}
 	tmp[1] = t1
@@ -229,6 +225,8 @@ function createRoad(x, y, z, rot)
 	tmp[1] = t1
 	return tmp
 end
+
+
 function bxor(a,b)
   local r = 0
   for i = 0, 31 do

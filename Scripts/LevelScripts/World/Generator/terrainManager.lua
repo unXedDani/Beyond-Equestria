@@ -216,14 +216,18 @@ function createChunk(chunkx, chunky, chunksize, terrainScale)
 		MainScene:setMetaData("CITYCHUNKMODELS"..chunkx.."_"..chunky, 1)
 		local cmesh = CMESH.new(MainScene, 0)
 		for i=2, cityBuildingModels[1] do
-			cmesh:addMesh(MainScene:getMesh(cityBuildingModels[i]))
-			--MainScene:setMetaData("CITYCHUNKID"..(i-1)..chunkx.."_"..chunky, cityBuildingModels[i])
-			--MainScene:SNLog("Found building model", cityBuildingModels[i])
+			if MainScene:getObject(cityBuildingModels[i]):getType() == "EMPTYOBJECT" then
+			else
+				cmesh:addMesh(MainScene:getMesh(cityBuildingModels[i]))
+			end
 		end
 		local cm = MainScene:addCMesh(cmesh, 0, 0, 0, 0, 0, 0, 1, 1, 1)
 		MainScene:getMesh(cm):addCollider(MainScene, "MESH_TRIMESH", 0)
-		MainScene:getObject(cm):setMaterialFlag("normalize_normals", 1)
-		MainScene:getObject(cm):useShader(MainScene, "Shaders/buildingShader.xml")
+		--MainScene:getObject(cm):setMaterialFlag("normalize_normals", 1)
+		for m=0, MainScene:getObject(cm):getMaterialCount() do
+			MainScene:getObject(cm):useShaderOnMaterial(MainScene, "Shaders/buildingShaderSolid.xml", m)
+		end
+		MainScene:SLog("MATERIAL COUNT: ", MainScene:getObject(cm):getMaterialCount())
 		MainScene:setMetaData("CITYCHUNKID".."1".."_"..chunkx.."_"..chunky, cm)
 	end
 	return terrain

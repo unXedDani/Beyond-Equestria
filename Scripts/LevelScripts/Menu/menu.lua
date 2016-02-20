@@ -71,6 +71,10 @@ local CTargetLX = {0, 0, 0, -6}
 local CTargetLY = {0.5, 0.5, 3, 1}
 local CTargetLZ = {0, 0, 5, 3}
 
+local rotModX = math.random()/1000
+local rotModZ = math.random()/1000
+local curTime = 0
+local updateTime = 0
 function menuUpdate()
 	local cTrack = MainScene:getMetaData("MENUCAMERATRACK")
 	local width = MainScene:getConfigValue("width")
@@ -99,10 +103,21 @@ function menuUpdate()
 			MainScene:setMetaData("GAMESTATECHANGED", 1)
 		end
 	end
+	if curTime >= updateTime then
+		curTime = 0
+		updateTime = math.random()/2
+		rotModX = math.random()/750
+		rotModZ = math.random()/800
+		MainScene:getParticle(6):setDirection(rotModX, 0.004, rotModZ)
+		MainScene:getParticle(7):setDirection(rotModX, 0.001, rotModZ)
+		MainScene:getParticle(8):setDirection(rotModX, 0.002, rotModZ)
+	else
+		curTime = curTime + (MainScene:deltaTime()/1000)
+	end
 end
 
 function menuRender()
-
+	MainScene:RenderEffect(4)
 end
 
 function addRandomHorseModel(x, y, z, rx, ry, rz)
