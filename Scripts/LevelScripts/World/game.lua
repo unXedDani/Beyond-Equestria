@@ -1,8 +1,9 @@
 GENTERRAIN = 1
+local CameraStatePrev = 2
 function gameInit()
 	GENTERRAIN = MainScene:getMetaData("WORLDDEBUG")
-	--MainScene:addCamera(2)
-	MainScene:addCamera(1)
+	MainScene:addCamera(CameraStatePrev)
+	MainScene:setMetaData("CameraToggleState", CameraStatePrev )
 	MainScene:getCamera():setClipping(1, MainScene:getConfigValue("Clipping"))
 	--MainScene:createCharacter( 2, 5, 3)
 	--MainScene:modifyCharacter("warp", 500, 10, 500)
@@ -42,8 +43,11 @@ function gameInit()
 	MainScene:setMetaData("CHATMESSAGEBOX", mes)
 	MainScene:addEditBox("", 10, 160, 290, 180, 1, win, "Scripts/GUI/Chat/sendMessage.lua")
 
-	MainScene:setMouseVisibility(0)
-	MainScene:setMousePosition(0.5,0.5)
+	local CameraState = MainScene:getMetaData("CameraToggleState")
+	if CameraState == 1 then
+		MainScene:setMouseVisibility(0)
+		MainScene:setMousePosition(0.5,0.5)
+	end
 	
 	MainScene:setMetaData("CameraDistanceFromCollider", 4)
 	MainScene:setMetaData("CameraDistanceFromPlayer", 10)
@@ -82,6 +86,7 @@ function gameUpdate()
 	if(MainScene:getKey(KEY_ESCAPE) == 1) then
 		initPause()
 	end
+	
 	local DirX = 0
 	local DirZ = 0
 	local sprint = 0
@@ -152,97 +157,109 @@ function gameUpdate()
 	--MainScene:moveCharacter(DirX*(sprint+1), 0, DirZ*(sprint+1), 0, cY - 180, 0, 0.1)
 	end
 
-	
-
-	if MainScene:getMetaData("PAUSED") == 0 then
-		local x,y = MainScene:getMousePosition()
-
-		-- If the three last frames have the exact same input, ignore input.
-		-- Used to avoid camera drift.
-		mousePositionBuffer[5], mousePositionBuffer[6] =
-			mousePositionBuffer[3], mousePositionBuffer[4]
-		mousePositionBuffer[3], mousePositionBuffer[4] =
-			mousePositionBuffer[1], mousePositionBuffer[2]
-		mousePositionBuffer[1], mousePositionBuffer[2] = x,y
-
-		local mouseAvoidDrift = false
-		if mousePositionBuffer[1] == mousePositionBuffer[3] and
-			mousePositionBuffer[1] == mousePositionBuffer[5] and 
-			mousePositionBuffer[2] == mousePositionBuffer[4] and
-			mousePositionBuffer[2] == mousePositionBuffer[6] then
-
-			mouseAvoidDrift = true
-		end
-
-
-
-		if firstFrameAfterMenuClose == 0 or mouseAvoidDrift then
-			MainScene:setMousePosition(0.5,0.5)
-			firstFrameAfterMenuClose = 1
+	local CameraState = MainScene:getMetaData("CameraToggleState")
+	if CameraStatePrev ~= CameraState then
+		MainScene:addCamera(CameraState)
+		if CameraState == 1 then
+			MainScene:setMouseVisibility(0)
 		else
-			
-
-			x = x - MainScene:getConfigValue("width")/2 
-			y = y - MainScene:getConfigValue("height")/2
-
-			mouseCameraRotationX = mouseCameraRotationX + x*0.005
-			mouseCameraRotationY = mouseCameraRotationY + y*0.01
-			mouseCameraRotationY = math.max(mouseCameraRotationY,-1)
-			mouseCameraRotationY = math.min(mouseCameraRotationY,6) -- Clamp Y 
-			MainScene:setMousePosition(0.5,0.5)
+			MainScene:setMouseVisibility(1)
 		end
-	else
-		firstFrameAfterMenuClose = 0
+		CameraStatePrev = CameraState
 	end
 
+	if CameraState == 1 then
+		if MainScene:getMetaData("PAUSED") == 0 then
+			local x,y = MainScene:getMousePosition()
 
-	local cameraTargetObject = MainScene:addEmpty(0, 0, 0, 0, 0, 0, 0, 0, 0)
-	MainScene:getCamera():setTarget(MainScene:getObject(cameraTargetObject))
+			-- If the three last frames have the exact same input, ignore input.
+			-- Used to avoid camera drift.
+			mousePositionBuffer[5], mousePositionBuffer[6] =
+				mousePositionBuffer[3], mousePositionBuffer[4]
+			mousePositionBuffer[3], mousePositionBuffer[4] =
+				mousePositionBuffer[1], mousePositionBuffer[2]
+			mousePositionBuffer[1], mousePositionBuffer[2] = x,y
+
+			local mouseAvoidDrift = false
+			if mousePositionBuffer[1] == mousePositionBuffer[3] and
+				mousePositionBuffer[1] == mousePositionBuffer[5] and 
+				mousePositionBuffer[2] == mousePositionBuffer[4] and
+				mousePositionBuffer[2] == mousePositionBuffer[6] then
+
+				mouseAvoidDrift = true
+			end
 
 
-	local playerX, playerY, playerZ =
-		MainScene:getObject(playerCollider):getPosition()
-	
-	local cameraDistanceFromCollision = MainScene:getMetaData("CameraDistanceFromCollider")
-	local cameraDistanceFromPlayer = MainScene:getMetaData("CameraDistanceFromPlayer") + cameraDistanceFromCollision
 
-	-- Relative position of camera position and camera target around the player.
-	local cameraTargetX,cameraTargetY,cameraTargetZ =
-		playerX + math.sin(mouseCameraRotationX)*cameraDistanceFromPlayer,
-		playerY + -4,
-		playerZ + math.cos(mouseCameraRotationX)*cameraDistanceFromPlayer
+			if firstFrameAfterMenuClose == 0 or mouseAvoidDrift then
+				MainScene:setMousePosition(0.5,0.5)
+				firstFrameAfterMenuClose = 1
+			else
+				
 
-	local cameraPosX,cameraPosY,cameraPosZ = 
-		playerX + -math.sin(mouseCameraRotationX)*cameraDistanceFromPlayer,
-		playerY + 10,
-		playerZ + -math.cos(mouseCameraRotationX)*cameraDistanceFromPlayer
+				x = x - MainScene:getConfigValue("width")/2 
+				y = y - MainScene:getConfigValue("height")/2
 
-	-- Set position of the camera target, determens angle of the camera.
-	MainScene:getObject(cameraTargetObject):setPosition(
-		cameraTargetX,
-		cameraTargetY+mouseCameraRotationY*0.1, -- Gives some perspective
-		cameraTargetZ)
-	
-	-- Raycast from player to cameraPos. 
-	local cameraClippedX,cameraClippedY,cameraClippedZ = MainScene:rayCast(
-		playerX,
-		playerY,
-		playerZ,
-		cameraPosX,
-		cameraPosY,
-		cameraPosZ)
+				mouseCameraRotationX = mouseCameraRotationX + x*0.005
+				mouseCameraRotationY = mouseCameraRotationY + y*0.01
+				mouseCameraRotationY = math.max(mouseCameraRotationY,-1)
+				mouseCameraRotationY = math.min(mouseCameraRotationY,6) -- Clamp Y 
+				MainScene:setMousePosition(0.5,0.5)
+			end
+		else
+			firstFrameAfterMenuClose = 0
+		end
 
-	-- Move camera away from wall
-	cameraClippedX = cameraClippedX + math.sin(mouseCameraRotationX) * cameraDistanceFromCollision
-	cameraClippedZ = cameraClippedZ + math.cos(mouseCameraRotationX) * cameraDistanceFromCollision
 
-	MainScene:getCamera():setPosition(
-		cameraClippedX,
-		cameraPosY+mouseCameraRotationY, -- Moves the camera around up and down
-		cameraClippedZ)
+		local cameraTargetObject = MainScene:addEmpty(0, 0, 0, 0, 0, 0, 0, 0, 0)
+		MainScene:getCamera():setTarget(MainScene:getObject(cameraTargetObject))
 
-	MainScene:removeObject(cameraTargetObject)
 
+		local playerX, playerY, playerZ =
+			MainScene:getObject(playerCollider):getPosition()
+		
+		local cameraDistanceFromCollision = MainScene:getMetaData("CameraDistanceFromCollider")
+		local cameraDistanceFromPlayer = MainScene:getMetaData("CameraDistanceFromPlayer") + cameraDistanceFromCollision
+
+		-- Relative position of camera position and camera target around the player.
+		local cameraTargetX,cameraTargetY,cameraTargetZ =
+			playerX + math.sin(mouseCameraRotationX)*cameraDistanceFromPlayer,
+			playerY + -4,
+			playerZ + math.cos(mouseCameraRotationX)*cameraDistanceFromPlayer
+
+		local cameraPosX,cameraPosY,cameraPosZ = 
+			playerX + -math.sin(mouseCameraRotationX)*cameraDistanceFromPlayer,
+			playerY + 5,
+			playerZ + -math.cos(mouseCameraRotationX)*cameraDistanceFromPlayer
+
+		-- Set position of the camera target, determens angle of the camera.
+		MainScene:getObject(cameraTargetObject):setPosition(
+			cameraTargetX,
+			cameraTargetY+mouseCameraRotationY*0.1, -- Gives some perspective
+			cameraTargetZ)
+		
+		-- Raycast from player to cameraPos. 
+		local cameraClippedX,cameraClippedY,cameraClippedZ = MainScene:rayCast(
+			playerX,
+			playerY,
+			playerZ,
+			cameraPosX,
+			cameraPosY,
+			cameraPosZ)
+
+		-- Move camera away from wall
+		cameraClippedX = cameraClippedX + math.sin(mouseCameraRotationX) * cameraDistanceFromCollision
+		cameraClippedZ = cameraClippedZ + math.cos(mouseCameraRotationX) * cameraDistanceFromCollision
+
+		MainScene:getCamera():setPosition(
+			cameraClippedX,
+			cameraPosY+mouseCameraRotationY, -- Moves the camera around up and down
+			cameraClippedZ)
+
+		MainScene:removeObject(cameraTargetObject)
+	else
+		MainScene:getCamera():setTarget(MainScene:getObject(playerCollider))
+	end
 
 	curTime = curTime + MainScene:deltaTime()
 	if curTime > 500 then
