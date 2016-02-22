@@ -1,6 +1,6 @@
 <Shader type="GLSL">
-	<FileName vs="materials/water.vert" fs="materials/water.frag"/>
-	<vsConstant name="waveWidth" value="20" />
-	<vsConstant name="waveHeight" value="5" />
+	<FileName vs="materials/bump.vert" fs="materials/water.frag"/>
+	<vsConstant name="waveWidth" value="1" />
+	<vsConstant name="waveHeight" value="1" />
 	<fsConstant name="opacity" value = "0.2" />
 </Shader>

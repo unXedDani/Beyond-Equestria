@@ -9,6 +9,5 @@ void main() {
 	texcoord.y += (sin(time+texcoord.y/2)*cos(time+texcoord.y))/20;
 	vec4 color = texture2D(mTexture0, texcoord.st);
 	color.a = opacity;
-	vec4 envmap = texture2D(mTexture1, gl_TexCoord[1].st);
-	gl_FragColor = (color*0.5) + (envmap*0.4);
+	gl_FragColor = color;
 }

@@ -12,7 +12,7 @@ MainScene:setDebug(2)
 MainScene:setPhysicsDebug(0)
 
 chunksize = 64
-terrainScale = 16
+terrainScale = 32
 playerCam = 0
 testx = 0
 testy = 0
@@ -94,7 +94,6 @@ function render()
 		if MainScene:getConfigValue("bloom") == 1 then
 			MainScene:RenderEffect(5)
 		end
-		MainScene:RenderEffect(24)
 		--MainScene:RenderEffect(29)
 	end
 end
