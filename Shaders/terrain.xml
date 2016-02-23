@@ -1,0 +1,6 @@
+<Shader type="GLSL">
+	<FileName vs="materials/terrain/directional.vert" fs="materials/terrain/directional.frag"/>
+	<fsConstant name="ambientR" value="0.2" />
+	<fsConstant name="ambientG" value="0.2" />
+	<fsConstant name="ambientB" value="0.2" />
+</Shader>
